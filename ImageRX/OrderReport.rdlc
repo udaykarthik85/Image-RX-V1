@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Tablix Name="Tablix2">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>7.43334in</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>6.41667in</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Rectangle Name="Rectangle2">
+                      <ReportItems>
+                        <Textbox Name="CustomerName">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CustomerName.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>CustomerName</rd:DefaultName>
+                          <Top>0.525in</Top>
+                          <Left>4.54583in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.47084in</Width>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!patient_Name.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.525in</Top>
+                          <Left>1.08056in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.98333in</Width>
+                          <ZIndex>1</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Patient Name:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.525in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>2</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name3">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Physician Name:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.525in</Top>
+                          <Left>3.27917in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.26666in</Width>
+                          <ZIndex>3</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name4">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!shoe_size.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.84444in</Top>
+                          <Left>1.08056in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>4</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name5">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Shoe Size:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.84444in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>5</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Shoe Type:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.15in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>6</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!shoe_type.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.15in</Top>
+                          <Left>1.08056in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>7</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name8">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Weight:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.84444in</Top>
+                          <Left>2.29584in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>8</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name9">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!weight.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.84444in</Top>
+                          <Left>3.27917in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>9</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name10">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Gender:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.16389in</Top>
+                          <Left>2.29584in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>10</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name11">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Gender.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.16389in</Top>
+                          <Left>3.27917in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>11</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name12">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Diagnosis:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.46944in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>12</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name13">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Diagnosis.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>1.46944in</Top>
+                          <Left>1.08056in</Left>
+                          <Height>0.25in</Height>
+                          <Width>5.93611in</Width>
+                          <ZIndex>13</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Line Name="Line1">
+                          <Top>2.025in</Top>
+                          <Left>0.1in</Left>
+                          <Height>0in</Height>
+                          <Width>6.91667in</Width>
+                          <ZIndex>14</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Textbox Name="patient_Name14">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Orthotic Module Material:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.20417in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.4611in</Width>
+                          <ZIndex>15</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name15">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OMM.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.20417in</Top>
+                          <Left>1.55833in</Left>
+                          <Height>0.25in</Height>
+                          <Width>4.45833in</Width>
+                          <ZIndex>16</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name16">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Heel Cup Depth:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.57917in</Top>
+                          <Left>0.1in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45833in</Width>
+                          <ZIndex>17</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name17">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!HCD.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.57917in</Top>
+                          <Left>1.55833in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.19584in</Width>
+                          <ZIndex>18</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name18">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Other:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.88472in</Top>
+                          <Left>0.1in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.45833in</Width>
+                          <ZIndex>19</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name19">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!HCD_Other.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>2.88472in</Top>
+                          <Left>1.55833in</Left>
+                          <Height>0.25in</Height>
+                          <Width>2.19584in</Width>
+                          <ZIndex>20</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Line Name="Line2">
+                          <Top>3.3625in</Top>
+                          <Left>0.09723in</Left>
+                          <Height>0in</Height>
+                          <Width>6.91667in</Width>
+                          <ZIndex>21</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>Solid</Style>
+                            </Border>
+                          </Style>
+                        </Line>
+                        <Image Name="Image1">
+                          <Source>Database</Source>
+                          <Value>=Fields!img1.Value</Value>
+                          <MIMEType>image/jpeg</MIMEType>
+                          <Sizing>FitProportional</Sizing>
+                          <Top>3.55833in</Top>
+                          <Left>0.15834in</Left>
+                          <Height>1.5in</Height>
+                          <Width>1.51667in</Width>
+                          <ZIndex>22</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Image>
+                        <Textbox Name="patient_Name20">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Order ID:</Value>
+                                  <Style>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.20556in</Top>
+                          <Left>0.1in</Left>
+                          <Height>0.25in</Height>
+                          <Width>0.98333in</Width>
+                          <ZIndex>23</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="patient_Name21">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OrderID.Value</Value>
+                                  <Style />
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>patient_Name</rd:DefaultName>
+                          <Top>0.20556in</Top>
+                          <Left>1.08333in</Left>
+                          <Height>0.25in</Height>
+                          <Width>1.98333in</Width>
+                          <ZIndex>24</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                      </ReportItems>
+                      <KeepTogether>true</KeepTogether>
+                      <Style>
+                        <Border>
+                          <Style>None</Style>
+                        </Border>
+                      </Style>
+                    </Rectangle>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Details" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>DataSet1</DataSetName>
+        <Top>0.12167in</Top>
+        <Left>0.16333in</Left>
+        <Height>6.41667in</Height>
+        <Width>7.43334in</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Tablix>
+    </ReportItems>
+    <Height>6.66666in</Height>
+    <Style />
+  </Body>
+  <Width>7.59667in</Width>
+  <Page>
+    <LeftMargin>1in</LeftMargin>
+    <RightMargin>1in</RightMargin>
+    <TopMargin>1in</TopMargin>
+    <BottomMargin>1in</BottomMargin>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="ImageOrthoDBDataSet2">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>34be5a3c-1066-4263-9d2e-8bf9736359bb</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Query>
+        <DataSourceName>ImageOrthoDBDataSet2</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="OrderID">
+          <DataField>OrderID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OrderStatus">
+          <DataField>OrderStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cast_Number">
+          <DataField>Cast_Number</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="patient_Name">
+          <DataField>patient_Name</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="shoe_size">
+          <DataField>shoe_size</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="shoe_type">
+          <DataField>shoe_type</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Age">
+          <DataField>Age</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="height">
+          <DataField>height</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weight">
+          <DataField>weight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Diagnosis">
+          <DataField>Diagnosis</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OMM">
+          <DataField>OMM</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HCD">
+          <DataField>HCD</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HCD_Other">
+          <DataField>HCD_Other</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPosting">
+          <DataField>RFPosting</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPIOption">
+          <DataField>RFPIOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPIL">
+          <DataField>RFPIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPIR">
+          <DataField>RFPIR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPEOption">
+          <DataField>RFPEOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPEL">
+          <DataField>RFPEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFPER">
+          <DataField>RFPER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPosting">
+          <DataField>FFPosting</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPIOption">
+          <DataField>FFPIOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPIL">
+          <DataField>FFPIL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPIR">
+          <DataField>FFPIR</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPEOption">
+          <DataField>FFPEOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPEL">
+          <DataField>FFPEL</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FFPER">
+          <DataField>FFPER</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OM_Shape">
+          <DataField>OM_Shape</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrthoticServices">
+          <DataField>OrthoticServices</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CCMaterial">
+          <DataField>CCMaterial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MLC">
+          <DataField>MLC</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TCLength">
+          <DataField>TCLength</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ULLength">
+          <DataField>ULLength</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ULMaterial">
+          <DataField>ULMaterial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="imgname1">
+          <DataField>imgname1</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="img1">
+          <DataField>img1</DataField>
+          <rd:TypeName>System.Byte[]</rd:TypeName>
+        </Field>
+        <Field Name="insertDate">
+          <DataField>insertDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="HeelSpur_L">
+          <DataField>HeelSpur_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeelSpur_R">
+          <DataField>HeelSpur_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Ray_L">
+          <DataField>Ray_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Ray_R">
+          <DataField>Ray_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetCut_L">
+          <DataField>MetCut_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetCut_R">
+          <DataField>MetCut_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShellMedialFlag_L">
+          <DataField>ShellMedialFlag_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShellMedialFlange_R">
+          <DataField>ShellMedialFlange_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShellLateralFlange_L">
+          <DataField>ShellLateralFlange_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ShellLateralFlange_R">
+          <DataField>ShellLateralFlange_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralClip_L">
+          <DataField>LateralClip_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralClip_R">
+          <DataField>LateralClip_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PlantarFaciaGrove_L">
+          <DataField>PlantarFaciaGrove_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PlantarFaciaGrove_R">
+          <DataField>PlantarFaciaGrove_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralHeel_L">
+          <DataField>LateralHeel_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralHeel_R">
+          <DataField>LateralHeel_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedialHeel_L">
+          <DataField>MedialHeel_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedialHeel_R">
+          <DataField>MedialHeel_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RigidMortons_L">
+          <DataField>RigidMortons_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RigidMortons_R">
+          <DataField>RigidMortons_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MortonsExt_L">
+          <DataField>MortonsExt_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MortonsExt_R">
+          <DataField>MortonsExt_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RevMortons_L">
+          <DataField>RevMortons_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RevMortons_R">
+          <DataField>RevMortons_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ArchFillPad_L">
+          <DataField>ArchFillPad_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ArchFillPad_R">
+          <DataField>ArchFillPad_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedialFlange_L">
+          <DataField>MedialFlange_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MedialFlange_R">
+          <DataField>MedialFlange_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralFlange_L">
+          <DataField>LateralFlange_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LateralFlange_R">
+          <DataField>LateralFlange_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeelSpurPad_L">
+          <DataField>HeelSpurPad_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeelSpurPad_R">
+          <DataField>HeelSpurPad_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeelCushion_L">
+          <DataField>HeelCushion_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HeelCushion_R">
+          <DataField>HeelCushion_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cuboid_L">
+          <DataField>Cuboid_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cuboid_R">
+          <DataField>Cuboid_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetatarsalRaise_L">
+          <DataField>MetatarsalRaise_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetatarsalRaise_R">
+          <DataField>MetatarsalRaise_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KineticWedge_L">
+          <DataField>KineticWedge_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="KineticWedge_R">
+          <DataField>KineticWedge_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NeuromaPad_L">
+          <DataField>NeuromaPad_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NeuromaPad_R">
+          <DataField>NeuromaPad_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetPad_Options">
+          <DataField>MetPad_Options</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetPad_L">
+          <DataField>MetPad_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetPad_R">
+          <DataField>MetPad_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetBar_Options">
+          <DataField>MetBar_Options</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetBar_L">
+          <DataField>MetBar_L</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="MetBar_R">
+          <DataField>MetBar_R</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DistalEndOfShell_X">
+          <DataField>DistalEndOfShell_X</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DistalEndOfShell_Y">
+          <DataField>DistalEndOfShell_Y</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Notes">
+          <DataField>Notes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Sub_U_Cut">
+          <DataField>Sub_U_Cut</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ImageOrthoDBDataSet2</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\kdandebo\documents\visual studio 2015\Projects\ImageRX\ImageRX\ImageOrthoDBDataSet2.xsd</rd:SchemaPath>
+        <rd:TableName>RptView</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>RptViewTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <ReportParameters>
+    <ReportParameter Name="ReportParameter1">
+      <DataType>String</DataType>
+      <Prompt>ReportParameter1</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <EmbeddedImages>
+    <EmbeddedImage Name="io">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>/9j/4AAQSkZJRgABAQEAeAB4AAD/4REGRXhpZgAATU0AKgAAAAgABAE7AAIAAAAUAAAISodpAAQAAAABAAAIXpydAAEAAAAoAAAQ1uocAAcAAAgMAAAAPgAAAAAc6gAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFZhbmdhcGFuZHUsIEthcnRoaWsAAAWQAwACAAAAFAAAEKyQBAACAAAAFAAAEMCSkQACAAAAAzM2AACSkgACAAAAAzM2AADqHAAHAAAIDAAACKAAAAAAHOoAAAAIAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAyMDE5OjA4OjExIDIxOjU4OjQxADIwMTk6MDg6MTEgMjE6NTg6NDEAAABWAGEAbgBnAGEAcABhAG4AZAB1ACwAIABLAGEAcgB0AGgAaQBrAAAA/+ELJmh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8APD94cGFja2V0IGJlZ2luPSfvu78nIGlkPSdXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQnPz4NCjx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0
+YS8iPjxyZGY6UkRGIHhtbG5zOnJkZj0iaHR0cDovL3d3dy53My5vcmcvMTk5OS8wMi8yMi1yZGYtc3ludGF4LW5zIyI+PHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9InV1aWQ6ZmFmNWJkZDUtYmEzZC0xMWRhLWFkMzEtZDMzZDc1MTgyZjFiIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iLz48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyI+PHhtcDpDcmVhdGVEYXRlPjIwMTktMDgtMTFUMjE6NTg6NDEuMzU1PC94bXA6Q3JlYXRlRGF0ZT48L3JkZjpEZXNjcmlwdGlvbj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyI+PGRjOmNyZWF0b3I+PHJkZjpTZXEgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOmxpPlZhbmdhcGFuZHUsIEthcnRoaWs8L3JkZjpsaT48L3JkZjpTZXE+DQoJCQk8L2RjOmNyZWF0b3I+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg
+ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8P3hwYWNrZXQgZW5kPSd3Jz8+/9sAQwAHBQUGBQQHBgUGCAcHCAoRCwoJCQoVDxAMERgVGhkYFRgXGx4nIRsdJR0XGCIuIiUoKSssKxogLzMvKjInKisq/9sAQwEHCAgKCQoUCwsUKhwYHCoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioq/8AAEQgAcgJHAwEiAAIRAQMRAf/EAB8AAAEFAQEBAQEBAAAAAAAAAAABAgMEBQYHCAkKC//EALUQAAIBAwMCBAMFBQQEAAABfQECAwAEEQUSITFBBhNRYQcicRQygZGhCCNCscEVUtHwJDNicoIJChYXGBkaJSYnKCkqNDU2
+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
+KACiiigAooooAK+hLH9pewtNPt7Y+G7hjDGqFhdDnAx/dr57orKpShU+IuM5Q2PXviV8bLXx54ROjQaNLZsZ0l815w4+XPGNo9a8hoopwpxpq0RSk5O7CiiitCQooooAKKKKAJYLme1kEltNJE46MjFSPyp1zfXV6+67uZZ29ZHLfzqCikAU9ppXiWJ5HaNPuoW4X6CmUUAFSPPLLGiSSu6RjCKzEhfpUdFAD4ppYJN8EjRuP4kODTKKKAHpNLHG8ccjqj/fUNgN9aZRRQA+OaWEMIpGQONrbWxuHoaZRRQBLBcz2sgktppIXHRkYqR+VOub26vH33dzLO3rI5Y/rUFFABT4pZIJBJC7RuOjKcEUyigAJLEknJPUmlDMudpIz1wetJRTAKlt7u4tJBJazyQuOjRuVP6VFRSAmuLy5vJN93cSzP8A3pHLH9ahBIOQcGiigC2dW1Frf7Ob65MOMeX5rbfyzVTOetFFABU1td3NnJ5lpPJA/wDejcqf0qGigCW4uZ7qQyXM0kznq0jFj+tMaR3VVd2YIMKCc7R1wKbRQAU+WeWdgZpHkKjALNnA9KZRQAUAlSCDgjoRRRTAfLLJPIZJnaRz1Zjkmmo7I4dGKspyCDgg0lFIB0krzSGSV2d26sxyTSxTSwSB4JHjcchkbBFMooAsXOoXl7j7ZdzT46eZIWx+dV6KKAJIbia2kElvK8TjoyMQRUl1f3l6Qby6mnI6ebIWx+dV6KACn+dL5Hk+Y/lZ3bN3GfXFMooAKfJNLKqLLI7hBtUM2do9BTKKACntNK8SRvIzIn3VLZC/QUyigCaC8ubYEW1xLEG6hHIz+VS/2rqH/P8AXH/f1v8AGqlFFkBLPdXFzj7TPJLt6b2Jx+dNilkgkEkLtG46MpwRTKKAAkkkk5J6mlDMudpIz1wetJRTAKmt7u4tJN9rPJC/96Nyp/SoaKQE1xd3N3Jvup5Jn/vSOWP61DRRQAUUUUwCiiigAooooAKK
+KKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>d419efc9-6838-465f-a832-a86ba00f3c04</rd:ReportID>
+</Report>

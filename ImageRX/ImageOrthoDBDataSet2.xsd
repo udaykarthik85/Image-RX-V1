@@ -1,0 +1,740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ImageOrthoDBDataSet2" targetNamespace="http://tempuri.org/ImageOrthoDBDataSet2.xsd" xmlns:mstns="http://tempuri.org/ImageOrthoDBDataSet2.xsd" xmlns="http://tempuri.org/ImageOrthoDBDataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ImageOrthoDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ImageOrthoDBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ImageOrthoDBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="RptViewTableAdapter" GeneratorDataComponentClassName="RptViewTableAdapter" Name="RptView" UserDataComponentName="RptViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ImageOrthoDBConnectionString (Web.config)" DbObjectName="ImageOrthoDB.dbo.RptView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT OrderID, OrderStatus, Cast_Number, patient_Name, shoe_size, shoe_type, Age, height, weight, Gender, Diagnosis, CustomerName, OMM, HCD, HCD_Other, RFPosting, RFPIOption, RFPIL, RFPIR, RFPEOption, RFPEL, RFPER, FFPosting, FFPIOption, FFPIL, FFPIR, FFPEOption, FFPEL, FFPER, OM_Shape, OrthoticServices, CCMaterial, MLC, TCLength, ULLength, ULMaterial, imgname1, img1, insertDate, HeelSpur_L, HeelSpur_R, Ray_L, Ray_R, MetCut_L, MetCut_R, ShellMedialFlag_L, ShellMedialFlange_R, ShellLateralFlange_L, ShellLateralFlange_R, LateralClip_L, LateralClip_R, PlantarFaciaGrove_L, PlantarFaciaGrove_R, LateralHeel_L, LateralHeel_R, MedialHeel_L, MedialHeel_R, RigidMortons_L, RigidMortons_R, MortonsExt_L, MortonsExt_R, RevMortons_L, RevMortons_R, ArchFillPad_L, ArchFillPad_R, MedialFlange_L, MedialFlange_R, LateralFlange_L, LateralFlange_R, HeelSpurPad_L, HeelSpurPad_R, HeelCushion_L, HeelCushion_R, Cuboid_L, Cuboid_R, MetatarsalRaise_L, MetatarsalRaise_R, KineticWedge_L, KineticWedge_R, NeuromaPad_L, NeuromaPad_R, MetPad_Options, MetPad_L, MetPad_R, MetBar_Options, MetBar_L, MetBar_R, DistalEndOfShell_X, DistalEndOfShell_Y, Notes, Sub_U_Cut FROM dbo.RptView</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="OrderID" DataSetColumn="OrderID" />
+              <Mapping SourceColumn="OrderStatus" DataSetColumn="OrderStatus" />
+              <Mapping SourceColumn="Cast_Number" DataSetColumn="Cast_Number" />
+              <Mapping SourceColumn="patient_Name" DataSetColumn="patient_Name" />
+              <Mapping SourceColumn="shoe_size" DataSetColumn="shoe_size" />
+              <Mapping SourceColumn="shoe_type" DataSetColumn="shoe_type" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="Diagnosis" DataSetColumn="Diagnosis" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="OMM" DataSetColumn="OMM" />
+              <Mapping SourceColumn="HCD" DataSetColumn="HCD" />
+              <Mapping SourceColumn="HCD_Other" DataSetColumn="HCD_Other" />
+              <Mapping SourceColumn="RFPosting" DataSetColumn="RFPosting" />
+              <Mapping SourceColumn="RFPIOption" DataSetColumn="RFPIOption" />
+              <Mapping SourceColumn="RFPIL" DataSetColumn="RFPIL" />
+              <Mapping SourceColumn="RFPIR" DataSetColumn="RFPIR" />
+              <Mapping SourceColumn="RFPEOption" DataSetColumn="RFPEOption" />
+              <Mapping SourceColumn="RFPEL" DataSetColumn="RFPEL" />
+              <Mapping SourceColumn="RFPER" DataSetColumn="RFPER" />
+              <Mapping SourceColumn="FFPosting" DataSetColumn="FFPosting" />
+              <Mapping SourceColumn="FFPIOption" DataSetColumn="FFPIOption" />
+              <Mapping SourceColumn="FFPIL" DataSetColumn="FFPIL" />
+              <Mapping SourceColumn="FFPIR" DataSetColumn="FFPIR" />
+              <Mapping SourceColumn="FFPEOption" DataSetColumn="FFPEOption" />
+              <Mapping SourceColumn="FFPEL" DataSetColumn="FFPEL" />
+              <Mapping SourceColumn="FFPER" DataSetColumn="FFPER" />
+              <Mapping SourceColumn="OM_Shape" DataSetColumn="OM_Shape" />
+              <Mapping SourceColumn="OrthoticServices" DataSetColumn="OrthoticServices" />
+              <Mapping SourceColumn="CCMaterial" DataSetColumn="CCMaterial" />
+              <Mapping SourceColumn="MLC" DataSetColumn="MLC" />
+              <Mapping SourceColumn="TCLength" DataSetColumn="TCLength" />
+              <Mapping SourceColumn="ULLength" DataSetColumn="ULLength" />
+              <Mapping SourceColumn="ULMaterial" DataSetColumn="ULMaterial" />
+              <Mapping SourceColumn="imgname1" DataSetColumn="imgname1" />
+              <Mapping SourceColumn="img1" DataSetColumn="img1" />
+              <Mapping SourceColumn="insertDate" DataSetColumn="insertDate" />
+              <Mapping SourceColumn="HeelSpur_L" DataSetColumn="HeelSpur_L" />
+              <Mapping SourceColumn="HeelSpur_R" DataSetColumn="HeelSpur_R" />
+              <Mapping SourceColumn="Ray_L" DataSetColumn="Ray_L" />
+              <Mapping SourceColumn="Ray_R" DataSetColumn="Ray_R" />
+              <Mapping SourceColumn="MetCut_L" DataSetColumn="MetCut_L" />
+              <Mapping SourceColumn="MetCut_R" DataSetColumn="MetCut_R" />
+              <Mapping SourceColumn="ShellMedialFlag_L" DataSetColumn="ShellMedialFlag_L" />
+              <Mapping SourceColumn="ShellMedialFlange_R" DataSetColumn="ShellMedialFlange_R" />
+              <Mapping SourceColumn="ShellLateralFlange_L" DataSetColumn="ShellLateralFlange_L" />
+              <Mapping SourceColumn="ShellLateralFlange_R" DataSetColumn="ShellLateralFlange_R" />
+              <Mapping SourceColumn="LateralClip_L" DataSetColumn="LateralClip_L" />
+              <Mapping SourceColumn="LateralClip_R" DataSetColumn="LateralClip_R" />
+              <Mapping SourceColumn="PlantarFaciaGrove_L" DataSetColumn="PlantarFaciaGrove_L" />
+              <Mapping SourceColumn="PlantarFaciaGrove_R" DataSetColumn="PlantarFaciaGrove_R" />
+              <Mapping SourceColumn="LateralHeel_L" DataSetColumn="LateralHeel_L" />
+              <Mapping SourceColumn="LateralHeel_R" DataSetColumn="LateralHeel_R" />
+              <Mapping SourceColumn="MedialHeel_L" DataSetColumn="MedialHeel_L" />
+              <Mapping SourceColumn="MedialHeel_R" DataSetColumn="MedialHeel_R" />
+              <Mapping SourceColumn="RigidMortons_L" DataSetColumn="RigidMortons_L" />
+              <Mapping SourceColumn="RigidMortons_R" DataSetColumn="RigidMortons_R" />
+              <Mapping SourceColumn="MortonsExt_L" DataSetColumn="MortonsExt_L" />
+              <Mapping SourceColumn="MortonsExt_R" DataSetColumn="MortonsExt_R" />
+              <Mapping SourceColumn="RevMortons_L" DataSetColumn="RevMortons_L" />
+              <Mapping SourceColumn="RevMortons_R" DataSetColumn="RevMortons_R" />
+              <Mapping SourceColumn="ArchFillPad_L" DataSetColumn="ArchFillPad_L" />
+              <Mapping SourceColumn="ArchFillPad_R" DataSetColumn="ArchFillPad_R" />
+              <Mapping SourceColumn="MedialFlange_L" DataSetColumn="MedialFlange_L" />
+              <Mapping SourceColumn="MedialFlange_R" DataSetColumn="MedialFlange_R" />
+              <Mapping SourceColumn="LateralFlange_L" DataSetColumn="LateralFlange_L" />
+              <Mapping SourceColumn="LateralFlange_R" DataSetColumn="LateralFlange_R" />
+              <Mapping SourceColumn="HeelSpurPad_L" DataSetColumn="HeelSpurPad_L" />
+              <Mapping SourceColumn="HeelSpurPad_R" DataSetColumn="HeelSpurPad_R" />
+              <Mapping SourceColumn="HeelCushion_L" DataSetColumn="HeelCushion_L" />
+              <Mapping SourceColumn="HeelCushion_R" DataSetColumn="HeelCushion_R" />
+              <Mapping SourceColumn="Cuboid_L" DataSetColumn="Cuboid_L" />
+              <Mapping SourceColumn="Cuboid_R" DataSetColumn="Cuboid_R" />
+              <Mapping SourceColumn="MetatarsalRaise_L" DataSetColumn="MetatarsalRaise_L" />
+              <Mapping SourceColumn="MetatarsalRaise_R" DataSetColumn="MetatarsalRaise_R" />
+              <Mapping SourceColumn="KineticWedge_L" DataSetColumn="KineticWedge_L" />
+              <Mapping SourceColumn="KineticWedge_R" DataSetColumn="KineticWedge_R" />
+              <Mapping SourceColumn="NeuromaPad_L" DataSetColumn="NeuromaPad_L" />
+              <Mapping SourceColumn="NeuromaPad_R" DataSetColumn="NeuromaPad_R" />
+              <Mapping SourceColumn="MetPad_Options" DataSetColumn="MetPad_Options" />
+              <Mapping SourceColumn="MetPad_L" DataSetColumn="MetPad_L" />
+              <Mapping SourceColumn="MetPad_R" DataSetColumn="MetPad_R" />
+              <Mapping SourceColumn="MetBar_Options" DataSetColumn="MetBar_Options" />
+              <Mapping SourceColumn="MetBar_L" DataSetColumn="MetBar_L" />
+              <Mapping SourceColumn="MetBar_R" DataSetColumn="MetBar_R" />
+              <Mapping SourceColumn="DistalEndOfShell_X" DataSetColumn="DistalEndOfShell_X" />
+              <Mapping SourceColumn="DistalEndOfShell_Y" DataSetColumn="DistalEndOfShell_Y" />
+              <Mapping SourceColumn="Notes" DataSetColumn="Notes" />
+              <Mapping SourceColumn="Sub_U_Cut" DataSetColumn="Sub_U_Cut" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ImageOrthoDBDataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ImageOrthoDBDataSet2" msprop:Generator_UserDSName="ImageOrthoDBDataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="RptView" msprop:Generator_TableClassName="RptViewDataTable" msprop:Generator_TableVarName="tableRptView" msprop:Generator_TablePropName="RptView" msprop:Generator_RowDeletingName="RptViewRowDeleting" msprop:Generator_RowChangingName="RptViewRowChanging" msprop:Generator_RowEvHandlerName="RptViewRowChangeEventHandler" msprop:Generator_RowDeletedName="RptViewRowDeleted" msprop:Generator_UserTableName="RptView" msprop:Generator_RowChangedName="RptViewRowChanged" msprop:Generator_RowEvArgName="RptViewRowChangeEvent" msprop:Generator_RowClassName="RptViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OrderID" msprop:Generator_ColumnVarNameInTable="columnOrderID" msprop:Generator_ColumnPropNameInRow="OrderID" msprop:Generator_ColumnPropNameInTable="OrderIDColumn" msprop:Generator_UserColumnName="OrderID" type="xs:int" />
+              <xs:element name="OrderStatus" msprop:Generator_ColumnVarNameInTable="columnOrderStatus" msprop:Generator_ColumnPropNameInRow="OrderStatus" msprop:Generator_ColumnPropNameInTable="OrderStatusColumn" msprop:Generator_UserColumnName="OrderStatus">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cast_Number" msprop:Generator_ColumnVarNameInTable="columnCast_Number" msprop:Generator_ColumnPropNameInRow="Cast_Number" msprop:Generator_ColumnPropNameInTable="Cast_NumberColumn" msprop:Generator_UserColumnName="Cast_Number" type="xs:int" />
+              <xs:element name="patient_Name" msprop:Generator_ColumnVarNameInTable="columnpatient_Name" msprop:Generator_ColumnPropNameInRow="patient_Name" msprop:Generator_ColumnPropNameInTable="patient_NameColumn" msprop:Generator_UserColumnName="patient_Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shoe_size" msprop:Generator_ColumnVarNameInTable="columnshoe_size" msprop:Generator_ColumnPropNameInRow="shoe_size" msprop:Generator_ColumnPropNameInTable="shoe_sizeColumn" msprop:Generator_UserColumnName="shoe_size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shoe_type" msprop:Generator_ColumnVarNameInTable="columnshoe_type" msprop:Generator_ColumnPropNameInRow="shoe_type" msprop:Generator_ColumnPropNameInTable="shoe_typeColumn" msprop:Generator_UserColumnName="shoe_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age" type="xs:int" minOccurs="0" />
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Diagnosis" msprop:Generator_ColumnVarNameInTable="columnDiagnosis" msprop:Generator_ColumnPropNameInRow="Diagnosis" msprop:Generator_ColumnPropNameInTable="DiagnosisColumn" msprop:Generator_UserColumnName="Diagnosis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OMM" msprop:Generator_ColumnVarNameInTable="columnOMM" msprop:Generator_ColumnPropNameInRow="OMM" msprop:Generator_ColumnPropNameInTable="OMMColumn" msprop:Generator_UserColumnName="OMM">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HCD" msprop:Generator_ColumnVarNameInTable="columnHCD" msprop:Generator_ColumnPropNameInRow="HCD" msprop:Generator_ColumnPropNameInTable="HCDColumn" msprop:Generator_UserColumnName="HCD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HCD_Other" msprop:Generator_ColumnVarNameInTable="columnHCD_Other" msprop:Generator_ColumnPropNameInRow="HCD_Other" msprop:Generator_ColumnPropNameInTable="HCD_OtherColumn" msprop:Generator_UserColumnName="HCD_Other">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPosting" msprop:Generator_ColumnVarNameInTable="columnRFPosting" msprop:Generator_ColumnPropNameInRow="RFPosting" msprop:Generator_ColumnPropNameInTable="RFPostingColumn" msprop:Generator_UserColumnName="RFPosting" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPIOption" msprop:Generator_ColumnVarNameInTable="columnRFPIOption" msprop:Generator_ColumnPropNameInRow="RFPIOption" msprop:Generator_ColumnPropNameInTable="RFPIOptionColumn" msprop:Generator_UserColumnName="RFPIOption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPIL" msprop:Generator_ColumnVarNameInTable="columnRFPIL" msprop:Generator_ColumnPropNameInRow="RFPIL" msprop:Generator_ColumnPropNameInTable="RFPILColumn" msprop:Generator_UserColumnName="RFPIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPIR" msprop:Generator_ColumnVarNameInTable="columnRFPIR" msprop:Generator_ColumnPropNameInRow="RFPIR" msprop:Generator_ColumnPropNameInTable="RFPIRColumn" msprop:Generator_UserColumnName="RFPIR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPEOption" msprop:Generator_ColumnVarNameInTable="columnRFPEOption" msprop:Generator_ColumnPropNameInRow="RFPEOption" msprop:Generator_ColumnPropNameInTable="RFPEOptionColumn" msprop:Generator_UserColumnName="RFPEOption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPEL" msprop:Generator_ColumnVarNameInTable="columnRFPEL" msprop:Generator_ColumnPropNameInRow="RFPEL" msprop:Generator_ColumnPropNameInTable="RFPELColumn" msprop:Generator_UserColumnName="RFPEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFPER" msprop:Generator_ColumnVarNameInTable="columnRFPER" msprop:Generator_ColumnPropNameInRow="RFPER" msprop:Generator_ColumnPropNameInTable="RFPERColumn" msprop:Generator_UserColumnName="RFPER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPosting" msprop:Generator_ColumnVarNameInTable="columnFFPosting" msprop:Generator_ColumnPropNameInRow="FFPosting" msprop:Generator_ColumnPropNameInTable="FFPostingColumn" msprop:Generator_UserColumnName="FFPosting" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPIOption" msprop:Generator_ColumnVarNameInTable="columnFFPIOption" msprop:Generator_ColumnPropNameInRow="FFPIOption" msprop:Generator_ColumnPropNameInTable="FFPIOptionColumn" msprop:Generator_UserColumnName="FFPIOption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPIL" msprop:Generator_ColumnVarNameInTable="columnFFPIL" msprop:Generator_ColumnPropNameInRow="FFPIL" msprop:Generator_ColumnPropNameInTable="FFPILColumn" msprop:Generator_UserColumnName="FFPIL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPIR" msprop:Generator_ColumnVarNameInTable="columnFFPIR" msprop:Generator_ColumnPropNameInRow="FFPIR" msprop:Generator_ColumnPropNameInTable="FFPIRColumn" msprop:Generator_UserColumnName="FFPIR" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPEOption" msprop:Generator_ColumnVarNameInTable="columnFFPEOption" msprop:Generator_ColumnPropNameInRow="FFPEOption" msprop:Generator_ColumnPropNameInTable="FFPEOptionColumn" msprop:Generator_UserColumnName="FFPEOption" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPEL" msprop:Generator_ColumnVarNameInTable="columnFFPEL" msprop:Generator_ColumnPropNameInRow="FFPEL" msprop:Generator_ColumnPropNameInTable="FFPELColumn" msprop:Generator_UserColumnName="FFPEL" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFPER" msprop:Generator_ColumnVarNameInTable="columnFFPER" msprop:Generator_ColumnPropNameInRow="FFPER" msprop:Generator_ColumnPropNameInTable="FFPERColumn" msprop:Generator_UserColumnName="FFPER" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OM_Shape" msprop:Generator_ColumnVarNameInTable="columnOM_Shape" msprop:Generator_ColumnPropNameInRow="OM_Shape" msprop:Generator_ColumnPropNameInTable="OM_ShapeColumn" msprop:Generator_UserColumnName="OM_Shape" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrthoticServices" msprop:Generator_ColumnVarNameInTable="columnOrthoticServices" msprop:Generator_ColumnPropNameInRow="OrthoticServices" msprop:Generator_ColumnPropNameInTable="OrthoticServicesColumn" msprop:Generator_UserColumnName="OrthoticServices" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CCMaterial" msprop:Generator_ColumnVarNameInTable="columnCCMaterial" msprop:Generator_ColumnPropNameInRow="CCMaterial" msprop:Generator_ColumnPropNameInTable="CCMaterialColumn" msprop:Generator_UserColumnName="CCMaterial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MLC" msprop:Generator_ColumnVarNameInTable="columnMLC" msprop:Generator_ColumnPropNameInRow="MLC" msprop:Generator_ColumnPropNameInTable="MLCColumn" msprop:Generator_UserColumnName="MLC" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TCLength" msprop:Generator_ColumnVarNameInTable="columnTCLength" msprop:Generator_ColumnPropNameInRow="TCLength" msprop:Generator_ColumnPropNameInTable="TCLengthColumn" msprop:Generator_UserColumnName="TCLength" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ULLength" msprop:Generator_ColumnVarNameInTable="columnULLength" msprop:Generator_ColumnPropNameInRow="ULLength" msprop:Generator_ColumnPropNameInTable="ULLengthColumn" msprop:Generator_UserColumnName="ULLength" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ULMaterial" msprop:Generator_ColumnVarNameInTable="columnULMaterial" msprop:Generator_ColumnPropNameInRow="ULMaterial" msprop:Generator_ColumnPropNameInTable="ULMaterialColumn" msprop:Generator_UserColumnName="ULMaterial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="imgname1" msprop:Generator_ColumnVarNameInTable="columnimgname1" msprop:Generator_ColumnPropNameInRow="imgname1" msprop:Generator_ColumnPropNameInTable="imgname1Column" msprop:Generator_UserColumnName="imgname1" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="500" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="img1" msprop:Generator_ColumnVarNameInTable="columnimg1" msprop:Generator_ColumnPropNameInRow="img1" msprop:Generator_ColumnPropNameInTable="img1Column" msprop:Generator_UserColumnName="img1" type="xs:base64Binary" minOccurs="0" />
+              <xs:element name="insertDate" msprop:Generator_ColumnVarNameInTable="columninsertDate" msprop:Generator_ColumnPropNameInRow="insertDate" msprop:Generator_ColumnPropNameInTable="insertDateColumn" msprop:Generator_UserColumnName="insertDate" type="xs:dateTime" />
+              <xs:element name="HeelSpur_L" msprop:Generator_ColumnVarNameInTable="columnHeelSpur_L" msprop:Generator_ColumnPropNameInRow="HeelSpur_L" msprop:Generator_ColumnPropNameInTable="HeelSpur_LColumn" msprop:Generator_UserColumnName="HeelSpur_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeelSpur_R" msprop:Generator_ColumnVarNameInTable="columnHeelSpur_R" msprop:Generator_ColumnPropNameInRow="HeelSpur_R" msprop:Generator_ColumnPropNameInTable="HeelSpur_RColumn" msprop:Generator_UserColumnName="HeelSpur_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ray_L" msprop:Generator_ColumnVarNameInTable="columnRay_L" msprop:Generator_ColumnPropNameInRow="Ray_L" msprop:Generator_ColumnPropNameInTable="Ray_LColumn" msprop:Generator_UserColumnName="Ray_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Ray_R" msprop:Generator_ColumnVarNameInTable="columnRay_R" msprop:Generator_ColumnPropNameInRow="Ray_R" msprop:Generator_ColumnPropNameInTable="Ray_RColumn" msprop:Generator_UserColumnName="Ray_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetCut_L" msprop:Generator_ColumnVarNameInTable="columnMetCut_L" msprop:Generator_ColumnPropNameInRow="MetCut_L" msprop:Generator_ColumnPropNameInTable="MetCut_LColumn" msprop:Generator_UserColumnName="MetCut_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetCut_R" msprop:Generator_ColumnVarNameInTable="columnMetCut_R" msprop:Generator_ColumnPropNameInRow="MetCut_R" msprop:Generator_ColumnPropNameInTable="MetCut_RColumn" msprop:Generator_UserColumnName="MetCut_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellMedialFlag_L" msprop:Generator_ColumnVarNameInTable="columnShellMedialFlag_L" msprop:Generator_ColumnPropNameInRow="ShellMedialFlag_L" msprop:Generator_ColumnPropNameInTable="ShellMedialFlag_LColumn" msprop:Generator_UserColumnName="ShellMedialFlag_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellMedialFlange_R" msprop:Generator_ColumnVarNameInTable="columnShellMedialFlange_R" msprop:Generator_ColumnPropNameInRow="ShellMedialFlange_R" msprop:Generator_ColumnPropNameInTable="ShellMedialFlange_RColumn" msprop:Generator_UserColumnName="ShellMedialFlange_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellLateralFlange_L" msprop:Generator_ColumnVarNameInTable="columnShellLateralFlange_L" msprop:Generator_ColumnPropNameInRow="ShellLateralFlange_L" msprop:Generator_ColumnPropNameInTable="ShellLateralFlange_LColumn" msprop:Generator_UserColumnName="ShellLateralFlange_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellLateralFlange_R" msprop:Generator_ColumnVarNameInTable="columnShellLateralFlange_R" msprop:Generator_ColumnPropNameInRow="ShellLateralFlange_R" msprop:Generator_ColumnPropNameInTable="ShellLateralFlange_RColumn" msprop:Generator_UserColumnName="ShellLateralFlange_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralClip_L" msprop:Generator_ColumnVarNameInTable="columnLateralClip_L" msprop:Generator_ColumnPropNameInRow="LateralClip_L" msprop:Generator_ColumnPropNameInTable="LateralClip_LColumn" msprop:Generator_UserColumnName="LateralClip_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralClip_R" msprop:Generator_ColumnVarNameInTable="columnLateralClip_R" msprop:Generator_ColumnPropNameInRow="LateralClip_R" msprop:Generator_ColumnPropNameInTable="LateralClip_RColumn" msprop:Generator_UserColumnName="LateralClip_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlantarFaciaGrove_L" msprop:Generator_ColumnVarNameInTable="columnPlantarFaciaGrove_L" msprop:Generator_ColumnPropNameInRow="PlantarFaciaGrove_L" msprop:Generator_ColumnPropNameInTable="PlantarFaciaGrove_LColumn" msprop:Generator_UserColumnName="PlantarFaciaGrove_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PlantarFaciaGrove_R" msprop:Generator_ColumnVarNameInTable="columnPlantarFaciaGrove_R" msprop:Generator_ColumnPropNameInRow="PlantarFaciaGrove_R" msprop:Generator_ColumnPropNameInTable="PlantarFaciaGrove_RColumn" msprop:Generator_UserColumnName="PlantarFaciaGrove_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralHeel_L" msprop:Generator_ColumnVarNameInTable="columnLateralHeel_L" msprop:Generator_ColumnPropNameInRow="LateralHeel_L" msprop:Generator_ColumnPropNameInTable="LateralHeel_LColumn" msprop:Generator_UserColumnName="LateralHeel_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralHeel_R" msprop:Generator_ColumnVarNameInTable="columnLateralHeel_R" msprop:Generator_ColumnPropNameInRow="LateralHeel_R" msprop:Generator_ColumnPropNameInTable="LateralHeel_RColumn" msprop:Generator_UserColumnName="LateralHeel_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedialHeel_L" msprop:Generator_ColumnVarNameInTable="columnMedialHeel_L" msprop:Generator_ColumnPropNameInRow="MedialHeel_L" msprop:Generator_ColumnPropNameInTable="MedialHeel_LColumn" msprop:Generator_UserColumnName="MedialHeel_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedialHeel_R" msprop:Generator_ColumnVarNameInTable="columnMedialHeel_R" msprop:Generator_ColumnPropNameInRow="MedialHeel_R" msprop:Generator_ColumnPropNameInTable="MedialHeel_RColumn" msprop:Generator_UserColumnName="MedialHeel_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RigidMortons_L" msprop:Generator_ColumnVarNameInTable="columnRigidMortons_L" msprop:Generator_ColumnPropNameInRow="RigidMortons_L" msprop:Generator_ColumnPropNameInTable="RigidMortons_LColumn" msprop:Generator_UserColumnName="RigidMortons_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RigidMortons_R" msprop:Generator_ColumnVarNameInTable="columnRigidMortons_R" msprop:Generator_ColumnPropNameInRow="RigidMortons_R" msprop:Generator_ColumnPropNameInTable="RigidMortons_RColumn" msprop:Generator_UserColumnName="RigidMortons_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MortonsExt_L" msprop:Generator_ColumnVarNameInTable="columnMortonsExt_L" msprop:Generator_ColumnPropNameInRow="MortonsExt_L" msprop:Generator_ColumnPropNameInTable="MortonsExt_LColumn" msprop:Generator_UserColumnName="MortonsExt_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MortonsExt_R" msprop:Generator_ColumnVarNameInTable="columnMortonsExt_R" msprop:Generator_ColumnPropNameInRow="MortonsExt_R" msprop:Generator_ColumnPropNameInTable="MortonsExt_RColumn" msprop:Generator_UserColumnName="MortonsExt_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RevMortons_L" msprop:Generator_ColumnVarNameInTable="columnRevMortons_L" msprop:Generator_ColumnPropNameInRow="RevMortons_L" msprop:Generator_ColumnPropNameInTable="RevMortons_LColumn" msprop:Generator_UserColumnName="RevMortons_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RevMortons_R" msprop:Generator_ColumnVarNameInTable="columnRevMortons_R" msprop:Generator_ColumnPropNameInRow="RevMortons_R" msprop:Generator_ColumnPropNameInTable="RevMortons_RColumn" msprop:Generator_UserColumnName="RevMortons_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArchFillPad_L" msprop:Generator_ColumnVarNameInTable="columnArchFillPad_L" msprop:Generator_ColumnPropNameInRow="ArchFillPad_L" msprop:Generator_ColumnPropNameInTable="ArchFillPad_LColumn" msprop:Generator_UserColumnName="ArchFillPad_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ArchFillPad_R" msprop:Generator_ColumnVarNameInTable="columnArchFillPad_R" msprop:Generator_ColumnPropNameInRow="ArchFillPad_R" msprop:Generator_ColumnPropNameInTable="ArchFillPad_RColumn" msprop:Generator_UserColumnName="ArchFillPad_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedialFlange_L" msprop:Generator_ColumnVarNameInTable="columnMedialFlange_L" msprop:Generator_ColumnPropNameInRow="MedialFlange_L" msprop:Generator_ColumnPropNameInTable="MedialFlange_LColumn" msprop:Generator_UserColumnName="MedialFlange_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MedialFlange_R" msprop:Generator_ColumnVarNameInTable="columnMedialFlange_R" msprop:Generator_ColumnPropNameInRow="MedialFlange_R" msprop:Generator_ColumnPropNameInTable="MedialFlange_RColumn" msprop:Generator_UserColumnName="MedialFlange_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralFlange_L" msprop:Generator_ColumnVarNameInTable="columnLateralFlange_L" msprop:Generator_ColumnPropNameInRow="LateralFlange_L" msprop:Generator_ColumnPropNameInTable="LateralFlange_LColumn" msprop:Generator_UserColumnName="LateralFlange_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LateralFlange_R" msprop:Generator_ColumnVarNameInTable="columnLateralFlange_R" msprop:Generator_ColumnPropNameInRow="LateralFlange_R" msprop:Generator_ColumnPropNameInTable="LateralFlange_RColumn" msprop:Generator_UserColumnName="LateralFlange_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeelSpurPad_L" msprop:Generator_ColumnVarNameInTable="columnHeelSpurPad_L" msprop:Generator_ColumnPropNameInRow="HeelSpurPad_L" msprop:Generator_ColumnPropNameInTable="HeelSpurPad_LColumn" msprop:Generator_UserColumnName="HeelSpurPad_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeelSpurPad_R" msprop:Generator_ColumnVarNameInTable="columnHeelSpurPad_R" msprop:Generator_ColumnPropNameInRow="HeelSpurPad_R" msprop:Generator_ColumnPropNameInTable="HeelSpurPad_RColumn" msprop:Generator_UserColumnName="HeelSpurPad_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeelCushion_L" msprop:Generator_ColumnVarNameInTable="columnHeelCushion_L" msprop:Generator_ColumnPropNameInRow="HeelCushion_L" msprop:Generator_ColumnPropNameInTable="HeelCushion_LColumn" msprop:Generator_UserColumnName="HeelCushion_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HeelCushion_R" msprop:Generator_ColumnVarNameInTable="columnHeelCushion_R" msprop:Generator_ColumnPropNameInRow="HeelCushion_R" msprop:Generator_ColumnPropNameInTable="HeelCushion_RColumn" msprop:Generator_UserColumnName="HeelCushion_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cuboid_L" msprop:Generator_ColumnVarNameInTable="columnCuboid_L" msprop:Generator_ColumnPropNameInRow="Cuboid_L" msprop:Generator_ColumnPropNameInTable="Cuboid_LColumn" msprop:Generator_UserColumnName="Cuboid_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cuboid_R" msprop:Generator_ColumnVarNameInTable="columnCuboid_R" msprop:Generator_ColumnPropNameInRow="Cuboid_R" msprop:Generator_ColumnPropNameInTable="Cuboid_RColumn" msprop:Generator_UserColumnName="Cuboid_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetatarsalRaise_L" msprop:Generator_ColumnVarNameInTable="columnMetatarsalRaise_L" msprop:Generator_ColumnPropNameInRow="MetatarsalRaise_L" msprop:Generator_ColumnPropNameInTable="MetatarsalRaise_LColumn" msprop:Generator_UserColumnName="MetatarsalRaise_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetatarsalRaise_R" msprop:Generator_ColumnVarNameInTable="columnMetatarsalRaise_R" msprop:Generator_ColumnPropNameInRow="MetatarsalRaise_R" msprop:Generator_ColumnPropNameInTable="MetatarsalRaise_RColumn" msprop:Generator_UserColumnName="MetatarsalRaise_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KineticWedge_L" msprop:Generator_ColumnVarNameInTable="columnKineticWedge_L" msprop:Generator_ColumnPropNameInRow="KineticWedge_L" msprop:Generator_ColumnPropNameInTable="KineticWedge_LColumn" msprop:Generator_UserColumnName="KineticWedge_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KineticWedge_R" msprop:Generator_ColumnVarNameInTable="columnKineticWedge_R" msprop:Generator_ColumnPropNameInRow="KineticWedge_R" msprop:Generator_ColumnPropNameInTable="KineticWedge_RColumn" msprop:Generator_UserColumnName="KineticWedge_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NeuromaPad_L" msprop:Generator_ColumnVarNameInTable="columnNeuromaPad_L" msprop:Generator_ColumnPropNameInRow="NeuromaPad_L" msprop:Generator_ColumnPropNameInTable="NeuromaPad_LColumn" msprop:Generator_UserColumnName="NeuromaPad_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NeuromaPad_R" msprop:Generator_ColumnVarNameInTable="columnNeuromaPad_R" msprop:Generator_ColumnPropNameInRow="NeuromaPad_R" msprop:Generator_ColumnPropNameInTable="NeuromaPad_RColumn" msprop:Generator_UserColumnName="NeuromaPad_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetPad_Options" msprop:Generator_ColumnVarNameInTable="columnMetPad_Options" msprop:Generator_ColumnPropNameInRow="MetPad_Options" msprop:Generator_ColumnPropNameInTable="MetPad_OptionsColumn" msprop:Generator_UserColumnName="MetPad_Options" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetPad_L" msprop:Generator_ColumnVarNameInTable="columnMetPad_L" msprop:Generator_ColumnPropNameInRow="MetPad_L" msprop:Generator_ColumnPropNameInTable="MetPad_LColumn" msprop:Generator_UserColumnName="MetPad_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetPad_R" msprop:Generator_ColumnVarNameInTable="columnMetPad_R" msprop:Generator_ColumnPropNameInRow="MetPad_R" msprop:Generator_ColumnPropNameInTable="MetPad_RColumn" msprop:Generator_UserColumnName="MetPad_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetBar_Options" msprop:Generator_ColumnVarNameInTable="columnMetBar_Options" msprop:Generator_ColumnPropNameInRow="MetBar_Options" msprop:Generator_ColumnPropNameInTable="MetBar_OptionsColumn" msprop:Generator_UserColumnName="MetBar_Options" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetBar_L" msprop:Generator_ColumnVarNameInTable="columnMetBar_L" msprop:Generator_ColumnPropNameInRow="MetBar_L" msprop:Generator_ColumnPropNameInTable="MetBar_LColumn" msprop:Generator_UserColumnName="MetBar_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MetBar_R" msprop:Generator_ColumnVarNameInTable="columnMetBar_R" msprop:Generator_ColumnPropNameInRow="MetBar_R" msprop:Generator_ColumnPropNameInTable="MetBar_RColumn" msprop:Generator_UserColumnName="MetBar_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DistalEndOfShell_X" msprop:Generator_ColumnVarNameInTable="columnDistalEndOfShell_X" msprop:Generator_ColumnPropNameInRow="DistalEndOfShell_X" msprop:Generator_ColumnPropNameInTable="DistalEndOfShell_XColumn" msprop:Generator_UserColumnName="DistalEndOfShell_X" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DistalEndOfShell_Y" msprop:Generator_ColumnVarNameInTable="columnDistalEndOfShell_Y" msprop:Generator_ColumnPropNameInRow="DistalEndOfShell_Y" msprop:Generator_ColumnPropNameInTable="DistalEndOfShell_YColumn" msprop:Generator_UserColumnName="DistalEndOfShell_Y" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sub_U_Cut" msprop:Generator_ColumnVarNameInTable="columnSub_U_Cut" msprop:Generator_ColumnPropNameInRow="Sub_U_Cut" msprop:Generator_ColumnPropNameInTable="Sub_U_CutColumn" msprop:Generator_UserColumnName="Sub_U_Cut" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

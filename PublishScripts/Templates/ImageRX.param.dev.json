@@ -1,0 +1,29 @@
+{
+  "siteName": {
+    "value": "ImageRX"
+  },
+  "hostingPlanName": {
+    "value": "rxFormV2"
+  },
+  "siteLocation": {
+    "value": "East US 2"
+  },
+  "sku": {
+    "value": "Free"
+  },
+  "workerSize": {
+    "value": "0"
+  },
+  "siteMode": {
+    "value": "Limited"
+  },
+  "computeMode": {
+    "value": "0"
+  },
+  "subscriptionId": {
+    "value": "8fe06e85-e3a4-4a4b-95ec-711d91ac7be2"
+  },
+  "resourceGroup": {
+    "value": "bolresourcegroup"
+  }
+}
