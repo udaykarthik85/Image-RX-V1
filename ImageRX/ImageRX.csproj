@@ -251,7 +251,6 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
-    <Content Include="CushonCover.aspx" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
     <Content Include="OrderPage.aspx" />
@@ -331,7 +330,6 @@
     <Content Include="Images\RigidMortonsExt.jpg" />
     <Content Include="Images\rp.jpg" />
     <Content Include="OrthoticMM.aspx" />
-    <Content Include="OrthoticMShape.aspx" />
     <Content Include="Posting.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -514,13 +512,6 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
-    <Compile Include="CushonCover.aspx.cs">
-      <DependentUpon>CushonCover.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="CushonCover.aspx.designer.cs">
-      <DependentUpon>CushonCover.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DashboarddataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -587,13 +578,6 @@
     </Compile>
     <Compile Include="OrthoticMM.aspx.designer.cs">
       <DependentUpon>OrthoticMM.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="OrthoticMShape.aspx.cs">
-      <DependentUpon>OrthoticMShape.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="OrthoticMShape.aspx.designer.cs">
-      <DependentUpon>OrthoticMShape.aspx</DependentUpon>
     </Compile>
     <Compile Include="Posting.aspx.cs">
       <DependentUpon>Posting.aspx</DependentUpon>

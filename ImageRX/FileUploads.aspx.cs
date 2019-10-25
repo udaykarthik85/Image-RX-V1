@@ -34,7 +34,7 @@ namespace ImageRX
                 {
                     con.Open();
                     
-                    SqlCommand com = new SqlCommand("UPDATE [dbo].[tbl_Patient] SET [imgname1] = @name, img1 = @photo WHERE [patient_id]= '" + pid + "'", con);
+                    SqlCommand com = new SqlCommand("UPDATE [dbo].[tbl_Patient] SET [imgname1] = @name, img1 = @photo WHERE [Order_id]= '" + pid + "'", con);
                     com.Parameters.AddWithValue("@photo", pic);
                     com.Parameters.AddWithValue("@name", strname);
                     com.ExecuteNonQuery();
@@ -64,7 +64,7 @@ namespace ImageRX
                             try
                             {
                                 con.Open();
-                                SqlCommand com = new SqlCommand("UPDATE [dbo].[tbl_Patient] SET [imgname2] = @name, img2 = @photo WHERE [patient_id]= '" + pid + "'", con);
+                                SqlCommand com = new SqlCommand("UPDATE [dbo].[tbl_Patient] SET [imgname2] = @name, img2 = @photo WHERE [Order_id]= '" + pid + "'", con);
                                 com.Parameters.AddWithValue("@photo", pic1);
                                 com.Parameters.AddWithValue("@name", strname1);
                                 com.ExecuteNonQuery();

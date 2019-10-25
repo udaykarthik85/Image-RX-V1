@@ -57,6 +57,16 @@
                             <asp:TextBox ID="TextBox2" runat="server" Width="135px"></asp:TextBox>
                         </td>
                     </tr>
+                    <tr>
+                        <td style="width: 108px"># of Orthotics</td>
+                        <td>
+                            <asp:DropDownList ID="DropDownList1" runat="server" Height="18px" Width="218px">
+                                <asp:ListItem>One Pair</asp:ListItem>
+                                <asp:ListItem>2 Identical Pairs</asp:ListItem>
+                                <asp:ListItem>2 Different Pairs</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
                     <tr> 
                         <td style="width: 108px">Gender</td>
                         <td>
@@ -77,6 +87,19 @@
                             (Doctor Name)</td>
                         <td>
                             <asp:TextBox ID="TextBox5" runat="server" Width="416px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td style="width: 108px">Date Required:</td>
+                        <td>
+                            <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="118px" NextPrevFormat="FullMonth" Width="375px">
+                                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                                <OtherMonthDayStyle ForeColor="#999999" />
+                                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                                <TodayDayStyle BackColor="#CCCCCC" />
+                            </asp:Calendar>
                         </td>
                     </tr>
                 </table>
