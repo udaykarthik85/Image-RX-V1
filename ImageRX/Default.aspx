@@ -67,9 +67,19 @@
                             </asp:DropDownList>
                         </td>
                     </tr>
-                    <tr> 
-                        <td style="width: 108px">Gender</td>
+                    <tr>
+                        <td style="width: 108px">Foot Impression</td>
                         <td>
+                            <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Width="215px">
+                                <asp:ListItem>Foam</asp:ListItem>
+                                <asp:ListItem>Cast</asp:ListItem>
+                                <asp:ListItem>Electronic(Scanned Images)</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                    </tr>
+                    <tr> 
+                        <td style="width: 108px; height: 46px;">Gender</td>
+                        <td style="height: 46px">
                             <asp:RadioButtonList ID="RadioButtonList1" runat="server" Width="135px">
                                 <asp:ListItem>Male</asp:ListItem>
                                 <asp:ListItem>Female</asp:ListItem>

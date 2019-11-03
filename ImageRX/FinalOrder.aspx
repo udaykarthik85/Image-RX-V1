@@ -14,10 +14,17 @@
             </tr>
                         <tr>
                 <td style="width: 635px; font-size: small;">
-                    <strong>Client Number:</strong>
+                    <strong>Cast Number:</strong>
                     <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Patient Name: </strong>
                     <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+                            </td>
+            </tr>
+                        <tr>
+                <td style="width: 635px; font-size: small;">
+                    <strong>Customer Name:</strong><asp:Label ID="Label28" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>DateRequired:</strong><asp:Label ID="Label29" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             </td>
             </tr>
                         <tr>
@@ -31,188 +38,28 @@
                             </td>
                         </tr>
                         <tr>
-                <td style="width: 635px; font-size: medium;">
-                    <strong>Order Summary</strong></td>
-            </tr>
+                <td style="width: 635px; font-size: small;">
+                    <strong>Show Type:</strong><asp:Label ID="Label25" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong># of Orthotics:</strong>
+                    <asp:Label ID="Label26" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
                         <tr>
                 <td style="width: 635px; font-size: small;">
-                    <strong>Orthotic Module Material:</strong>
-                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
-                            </td>
-            </tr>
+                    <strong>Foot Impression:</strong>
+                    <asp:Label ID="Label30" runat="server" Text="Label"></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                        </tr>
                         <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    
-              
-                
-                            <span style="font-size: small"><strong>Heel Cup Depth: </strong>
-                    <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp; Other:</strong><asp:Label ID="Label9" runat="server" Text="Label"></asp:Label>
-                    </span>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    &nbsp;</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Rear Foot Posting: </strong>
-                    <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>L: </strong>
-                    <asp:Label ID="Label12" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp; <strong>R: </strong>
-                    <asp:Label ID="Label13" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    &nbsp;</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Fore Foot Posting: </strong>
-                    <asp:Label ID="Label14" runat="server" Text="Label"></asp:Label>
-              
-                
+                <td style="width: 635px; font-size: small; height: 102px;">
+                    <strong>Diagnosis:</strong><asp:Label ID="Label27" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
                             </td>
                         </tr>
                         <tr>
                 <td style="width: 635px; font-size: small;">
-              
-                
-                    <asp:Label ID="Label15" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
+                    &nbsp;</td>
                         </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>L: </strong>
-                    <asp:Label ID="Label16" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp; <strong>R: </strong>
-                    <asp:Label ID="Label17" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-                        </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    &nbsp;</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Orthotic Module Shape: </strong>&nbsp;<asp:Label ID="Label18" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Orthotic Services:</strong>&nbsp;
-                    <asp:Label ID="Label19" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    &nbsp;</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Cushion &amp; Cover Materials:</strong>
-                    <asp:Label ID="Label20" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Mid Layer Cushion: </strong>&nbsp;<asp:Label ID="Label21" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: small;">
-              
-                
-                    <strong>Top Cover Length:</strong>
-                    <asp:Label ID="Label22" runat="server" Text="Label"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>
-                    <br />
-                    Underlay Length:</strong>
-                    <asp:Label ID="Label23" runat="server" Text="Label"></asp:Label>
-&nbsp; <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Underlay Material:</strong>
-                    <asp:Label ID="Label24" runat="server" Text="Label"></asp:Label>
-              
-                
-                            </td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    &nbsp;</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    Image:</td>
-            </tr>
-                        <tr>
-                <td style="width: 635px; font-size: x-small;">
-              
-                
-                    <asp:Image ID="Image1"  ImageUrl="ImgHandler.ashx.cs" runat="server" style="width: 200px; height: 200px" /></td>
-            </tr>
                         </table>
     </h3>
   <p>

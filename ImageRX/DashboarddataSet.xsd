@@ -11,8 +11,18 @@
             <MainSource>
               <DbSource ConnectionRef="ImageOrthoDBConnectionString (Web.config)" DbObjectName="ImageOrthoDB.dbo.Dashboard" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT CreatedDate, OrderID, Cast_Number, Status, shoe_type, Physician, patient_Name FROM dbo.Dashboard</CommandText>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT [CreatedDate]
+      ,[OrderID]
+      ,[Cast_Number]
+      ,[Status]
+      ,[shoe_type]
+      ,[Physician]
+      ,[patient_Name]
+      ,[FootImpression]
+      ,[Daterequired]
+  FROM [dbo].[Dashboard]
+</CommandText>
                     <Parameters />
                   </DbCommand>
                 </SelectCommand>
@@ -26,6 +36,8 @@
               <Mapping SourceColumn="shoe_type" DataSetColumn="shoe_type" />
               <Mapping SourceColumn="Physician" DataSetColumn="Physician" />
               <Mapping SourceColumn="patient_Name" DataSetColumn="patient_Name" />
+              <Mapping SourceColumn="FootImpression" DataSetColumn="FootImpression" />
+              <Mapping SourceColumn="Daterequired" DataSetColumn="Daterequired" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -37,7 +49,7 @@
   <xs:element name="DashboarddataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DashboarddataSet" msprop:Generator_UserDSName="DashboarddataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="Dashboard" msprop:Generator_TableClassName="DashboardDataTable" msprop:Generator_TableVarName="tableDashboard" msprop:Generator_TablePropName="Dashboard" msprop:Generator_RowDeletingName="DashboardRowDeleting" msprop:Generator_RowChangingName="DashboardRowChanging" msprop:Generator_RowEvHandlerName="DashboardRowChangeEventHandler" msprop:Generator_RowDeletedName="DashboardRowDeleted" msprop:Generator_UserTableName="Dashboard" msprop:Generator_RowChangedName="DashboardRowChanged" msprop:Generator_RowEvArgName="DashboardRowChangeEvent" msprop:Generator_RowClassName="DashboardRow">
+        <xs:element name="Dashboard" msprop:Generator_TableClassName="DashboardDataTable" msprop:Generator_TableVarName="tableDashboard" msprop:Generator_RowChangedName="DashboardRowChanged" msprop:Generator_TablePropName="Dashboard" msprop:Generator_RowDeletingName="DashboardRowDeleting" msprop:Generator_RowChangingName="DashboardRowChanging" msprop:Generator_RowEvHandlerName="DashboardRowChangeEventHandler" msprop:Generator_RowDeletedName="DashboardRowDeleted" msprop:Generator_RowClassName="DashboardRow" msprop:Generator_UserTableName="Dashboard" msprop:Generator_RowEvArgName="DashboardRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" />
@@ -71,6 +83,14 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="FootImpression" msprop:Generator_ColumnVarNameInTable="columnFootImpression" msprop:Generator_ColumnPropNameInRow="FootImpression" msprop:Generator_ColumnPropNameInTable="FootImpressionColumn" msprop:Generator_UserColumnName="FootImpression" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Daterequired" msprop:Generator_ColumnVarNameInTable="columnDaterequired" msprop:Generator_ColumnPropNameInRow="Daterequired" msprop:Generator_ColumnPropNameInTable="DaterequiredColumn" msprop:Generator_UserColumnName="Daterequired" type="xs:dateTime" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

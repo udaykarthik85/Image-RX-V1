@@ -293,6 +293,10 @@ namespace ImageRX {
             
             private global::System.Data.DataColumn columnpatient_Name;
             
+            private global::System.Data.DataColumn columnFootImpression;
+            
+            private global::System.Data.DataColumn columnDaterequired;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public DashboardDataTable() {
@@ -384,6 +388,22 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FootImpressionColumn {
+                get {
+                    return this.columnFootImpression;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DaterequiredColumn {
+                get {
+                    return this.columnDaterequired;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -419,7 +439,7 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public DashboardRow AddDashboardRow(System.DateTime CreatedDate, int OrderID, int Cast_Number, string Status, string shoe_type, string Physician, string patient_Name) {
+            public DashboardRow AddDashboardRow(System.DateTime CreatedDate, int OrderID, int Cast_Number, string Status, string shoe_type, string Physician, string patient_Name, string FootImpression, System.DateTime Daterequired) {
                 DashboardRow rowDashboardRow = ((DashboardRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CreatedDate,
@@ -428,7 +448,9 @@ namespace ImageRX {
                         Status,
                         shoe_type,
                         Physician,
-                        patient_Name};
+                        patient_Name,
+                        FootImpression,
+                        Daterequired};
                 rowDashboardRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDashboardRow);
                 return rowDashboardRow;
@@ -458,6 +480,8 @@ namespace ImageRX {
                 this.columnshoe_type = base.Columns["shoe_type"];
                 this.columnPhysician = base.Columns["Physician"];
                 this.columnpatient_Name = base.Columns["patient_Name"];
+                this.columnFootImpression = base.Columns["FootImpression"];
+                this.columnDaterequired = base.Columns["Daterequired"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -477,6 +501,10 @@ namespace ImageRX {
                 base.Columns.Add(this.columnPhysician);
                 this.columnpatient_Name = new global::System.Data.DataColumn("patient_Name", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnpatient_Name);
+                this.columnFootImpression = new global::System.Data.DataColumn("FootImpression", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFootImpression);
+                this.columnDaterequired = new global::System.Data.DataColumn("Daterequired", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDaterequired);
                 this.columnCreatedDate.AllowDBNull = false;
                 this.columnOrderID.AllowDBNull = false;
                 this.columnCast_Number.AllowDBNull = false;
@@ -486,6 +514,7 @@ namespace ImageRX {
                 this.columnPhysician.MaxLength = 100;
                 this.columnpatient_Name.AllowDBNull = false;
                 this.columnpatient_Name.MaxLength = 100;
+                this.columnFootImpression.MaxLength = 100;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -720,6 +749,38 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FootImpression {
+                get {
+                    try {
+                        return ((string)(this[this.tableDashboard.FootImpressionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FootImpression\' in table \'Dashboard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDashboard.FootImpressionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime Daterequired {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tableDashboard.DaterequiredColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Daterequired\' in table \'Dashboard\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDashboard.DaterequiredColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsStatusNull() {
                 return this.IsNull(this.tableDashboard.StatusColumn);
             }
@@ -752,6 +813,30 @@ namespace ImageRX {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetPhysicianNull() {
                 this[this.tableDashboard.PhysicianColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsFootImpressionNull() {
+                return this.IsNull(this.tableDashboard.FootImpressionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetFootImpressionNull() {
+                this[this.tableDashboard.FootImpressionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsDaterequiredNull() {
+                return this.IsNull(this.tableDashboard.DaterequiredColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetDaterequiredNull() {
+                this[this.tableDashboard.DaterequiredColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -921,6 +1006,8 @@ namespace ImageRX.DashboarddataSetTableAdapters {
             tableMapping.ColumnMappings.Add("shoe_type", "shoe_type");
             tableMapping.ColumnMappings.Add("Physician", "Physician");
             tableMapping.ColumnMappings.Add("patient_Name", "patient_Name");
+            tableMapping.ColumnMappings.Add("FootImpression", "FootImpression");
+            tableMapping.ColumnMappings.Add("Daterequired", "Daterequired");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -937,8 +1024,9 @@ namespace ImageRX.DashboarddataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT CreatedDate, OrderID, Cast_Number, Status, shoe_type, Physician, patient_N" +
-                "ame FROM dbo.Dashboard";
+            this._commandCollection[0].CommandText = "SELECT [CreatedDate]\r\n      ,[OrderID]\r\n      ,[Cast_Number]\r\n      ,[Status]\r\n  " +
+                "    ,[shoe_type]\r\n      ,[Physician]\r\n      ,[patient_Name]\r\n      ,[FootImpress" +
+                "ion]\r\n      ,[Daterequired]\r\n  FROM [dbo].[Dashboard]\r\n";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
