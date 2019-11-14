@@ -283,6 +283,10 @@ namespace ImageRX {
             
             private global::System.Data.DataColumn columnOrderStatus;
             
+            private global::System.Data.DataColumn columnCreatedDate;
+            
+            private global::System.Data.DataColumn columnLastModified;
+            
             private global::System.Data.DataColumn columnCast_Number;
             
             private global::System.Data.DataColumn columnpatient_Name;
@@ -303,59 +307,67 @@ namespace ImageRX {
             
             private global::System.Data.DataColumn columnCustomerName;
             
-            private global::System.Data.DataColumn columnOMM;
+            private global::System.Data.DataColumn columnWhite_PolyPro;
+            
+            private global::System.Data.DataColumn columnGraphite;
+            
+            private global::System.Data.DataColumn columnDressDevice1;
+            
+            private global::System.Data.DataColumn columnDressDevice2;
+            
+            private global::System.Data.DataColumn columnDressDevice3;
+            
+            private global::System.Data.DataColumn columnCork;
+            
+            private global::System.Data.DataColumn columnPlastizoteDiabetic;
+            
+            private global::System.Data.DataColumn columnPolyproPlantarFill_Shell;
+            
+            private global::System.Data.DataColumn columnPolyproPlantarFill;
+            
+            private global::System.Data.DataColumn columnChildrensDevice;
+            
+            private global::System.Data.DataColumn columnCork_LeatherDevice;
+            
+            private global::System.Data.DataColumn columnCastBalanceOption;
+            
+            private global::System.Data.DataColumn columnCastBalance_L;
+            
+            private global::System.Data.DataColumn columnCastBalance_R;
+            
+            private global::System.Data.DataColumn columnArchFillOption;
+            
+            private global::System.Data.DataColumn columnArchFill_L;
+            
+            private global::System.Data.DataColumn columnArchFill_R;
+            
+            private global::System.Data.DataColumn columnRFP_Option;
+            
+            private global::System.Data.DataColumn columnRFP_L;
+            
+            private global::System.Data.DataColumn columnRFP_R;
+            
+            private global::System.Data.DataColumn columnFFP_Option;
+            
+            private global::System.Data.DataColumn columnFFP_L;
+            
+            private global::System.Data.DataColumn columnFFP_R;
+            
+            private global::System.Data.DataColumn columnGrinding;
             
             private global::System.Data.DataColumn columnHCD;
             
             private global::System.Data.DataColumn columnHCD_Other;
             
-            private global::System.Data.DataColumn columnRFPosting;
+            private global::System.Data.DataColumn columnMaterial;
             
-            private global::System.Data.DataColumn columnRFPIOption;
+            private global::System.Data.DataColumn columnThickness;
             
-            private global::System.Data.DataColumn columnRFPIL;
+            private global::System.Data.DataColumn columnTopCovers;
             
-            private global::System.Data.DataColumn columnRFPIR;
+            private global::System.Data.DataColumn columnLength;
             
-            private global::System.Data.DataColumn columnRFPEOption;
-            
-            private global::System.Data.DataColumn columnRFPEL;
-            
-            private global::System.Data.DataColumn columnRFPER;
-            
-            private global::System.Data.DataColumn columnFFPosting;
-            
-            private global::System.Data.DataColumn columnFFPIOption;
-            
-            private global::System.Data.DataColumn columnFFPIL;
-            
-            private global::System.Data.DataColumn columnFFPIR;
-            
-            private global::System.Data.DataColumn columnFFPEOption;
-            
-            private global::System.Data.DataColumn columnFFPEL;
-            
-            private global::System.Data.DataColumn columnFFPER;
-            
-            private global::System.Data.DataColumn columnOM_Shape;
-            
-            private global::System.Data.DataColumn columnOrthoticServices;
-            
-            private global::System.Data.DataColumn columnCCMaterial;
-            
-            private global::System.Data.DataColumn columnMLC;
-            
-            private global::System.Data.DataColumn columnTCLength;
-            
-            private global::System.Data.DataColumn columnULLength;
-            
-            private global::System.Data.DataColumn columnULMaterial;
-            
-            private global::System.Data.DataColumn columnimgname1;
-            
-            private global::System.Data.DataColumn columnimg1;
-            
-            private global::System.Data.DataColumn columninsertDate;
+            private global::System.Data.DataColumn columnLen_AddBottomCover;
             
             private global::System.Data.DataColumn columnHeelSpur_L;
             
@@ -461,6 +473,26 @@ namespace ImageRX {
             
             private global::System.Data.DataColumn columnSub_U_Cut;
             
+            private global::System.Data.DataColumn columnR1;
+            
+            private global::System.Data.DataColumn columnR2;
+            
+            private global::System.Data.DataColumn columnR3;
+            
+            private global::System.Data.DataColumn columnR4;
+            
+            private global::System.Data.DataColumn columnR5;
+            
+            private global::System.Data.DataColumn columnL1;
+            
+            private global::System.Data.DataColumn columnL2;
+            
+            private global::System.Data.DataColumn columnL3;
+            
+            private global::System.Data.DataColumn columnL4;
+            
+            private global::System.Data.DataColumn columnL5;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public RptViewDataTable() {
@@ -507,6 +539,22 @@ namespace ImageRX {
             public global::System.Data.DataColumn OrderStatusColumn {
                 get {
                     return this.columnOrderStatus;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CreatedDateColumn {
+                get {
+                    return this.columnCreatedDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn LastModifiedColumn {
+                get {
+                    return this.columnLastModified;
                 }
             }
             
@@ -592,9 +640,193 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn OMMColumn {
+            public global::System.Data.DataColumn White_PolyProColumn {
                 get {
-                    return this.columnOMM;
+                    return this.columnWhite_PolyPro;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GraphiteColumn {
+                get {
+                    return this.columnGraphite;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DressDevice1Column {
+                get {
+                    return this.columnDressDevice1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DressDevice2Column {
+                get {
+                    return this.columnDressDevice2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn DressDevice3Column {
+                get {
+                    return this.columnDressDevice3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CorkColumn {
+                get {
+                    return this.columnCork;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PlastizoteDiabeticColumn {
+                get {
+                    return this.columnPlastizoteDiabetic;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PolyproPlantarFill_ShellColumn {
+                get {
+                    return this.columnPolyproPlantarFill_Shell;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PolyproPlantarFillColumn {
+                get {
+                    return this.columnPolyproPlantarFill;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ChildrensDeviceColumn {
+                get {
+                    return this.columnChildrensDevice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Cork_LeatherDeviceColumn {
+                get {
+                    return this.columnCork_LeatherDevice;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CastBalanceOptionColumn {
+                get {
+                    return this.columnCastBalanceOption;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CastBalance_LColumn {
+                get {
+                    return this.columnCastBalance_L;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CastBalance_RColumn {
+                get {
+                    return this.columnCastBalance_R;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArchFillOptionColumn {
+                get {
+                    return this.columnArchFillOption;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArchFill_LColumn {
+                get {
+                    return this.columnArchFill_L;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn ArchFill_RColumn {
+                get {
+                    return this.columnArchFill_R;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RFP_OptionColumn {
+                get {
+                    return this.columnRFP_Option;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RFP_LColumn {
+                get {
+                    return this.columnRFP_L;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RFP_RColumn {
+                get {
+                    return this.columnRFP_R;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FFP_OptionColumn {
+                get {
+                    return this.columnFFP_Option;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FFP_LColumn {
+                get {
+                    return this.columnFFP_L;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn FFP_RColumn {
+                get {
+                    return this.columnFFP_R;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn GrindingColumn {
+                get {
+                    return this.columnGrinding;
                 }
             }
             
@@ -616,193 +848,41 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPostingColumn {
+            public global::System.Data.DataColumn MaterialColumn {
                 get {
-                    return this.columnRFPosting;
+                    return this.columnMaterial;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPIOptionColumn {
+            public global::System.Data.DataColumn ThicknessColumn {
                 get {
-                    return this.columnRFPIOption;
+                    return this.columnThickness;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPILColumn {
+            public global::System.Data.DataColumn TopCoversColumn {
                 get {
-                    return this.columnRFPIL;
+                    return this.columnTopCovers;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPIRColumn {
+            public global::System.Data.DataColumn LengthColumn {
                 get {
-                    return this.columnRFPIR;
+                    return this.columnLength;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPEOptionColumn {
+            public global::System.Data.DataColumn Len_AddBottomCoverColumn {
                 get {
-                    return this.columnRFPEOption;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPELColumn {
-                get {
-                    return this.columnRFPEL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn RFPERColumn {
-                get {
-                    return this.columnRFPER;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPostingColumn {
-                get {
-                    return this.columnFFPosting;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPIOptionColumn {
-                get {
-                    return this.columnFFPIOption;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPILColumn {
-                get {
-                    return this.columnFFPIL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPIRColumn {
-                get {
-                    return this.columnFFPIR;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPEOptionColumn {
-                get {
-                    return this.columnFFPEOption;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPELColumn {
-                get {
-                    return this.columnFFPEL;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn FFPERColumn {
-                get {
-                    return this.columnFFPER;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn OM_ShapeColumn {
-                get {
-                    return this.columnOM_Shape;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn OrthoticServicesColumn {
-                get {
-                    return this.columnOrthoticServices;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn CCMaterialColumn {
-                get {
-                    return this.columnCCMaterial;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn MLCColumn {
-                get {
-                    return this.columnMLC;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn TCLengthColumn {
-                get {
-                    return this.columnTCLength;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ULLengthColumn {
-                get {
-                    return this.columnULLength;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn ULMaterialColumn {
-                get {
-                    return this.columnULMaterial;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn imgname1Column {
-                get {
-                    return this.columnimgname1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn img1Column {
-                get {
-                    return this.columnimg1;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public global::System.Data.DataColumn insertDateColumn {
-                get {
-                    return this.columninsertDate;
+                    return this.columnLen_AddBottomCover;
                 }
             }
             
@@ -1224,6 +1304,86 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn R1Column {
+                get {
+                    return this.columnR1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn R2Column {
+                get {
+                    return this.columnR2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn R3Column {
+                get {
+                    return this.columnR3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn R4Column {
+                get {
+                    return this.columnR4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn R5Column {
+                get {
+                    return this.columnR5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn L1Column {
+                get {
+                    return this.columnL1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn L2Column {
+                get {
+                    return this.columnL2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn L3Column {
+                get {
+                    return this.columnL3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn L4Column {
+                get {
+                    return this.columnL4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn L5Column {
+                get {
+                    return this.columnL5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1262,6 +1422,8 @@ namespace ImageRX {
             public RptViewRow AddRptViewRow(
                         int OrderID, 
                         string OrderStatus, 
+                        System.DateTime CreatedDate, 
+                        System.DateTime LastModified, 
                         int Cast_Number, 
                         string patient_Name, 
                         string shoe_size, 
@@ -1272,33 +1434,37 @@ namespace ImageRX {
                         string Gender, 
                         string Diagnosis, 
                         string CustomerName, 
-                        string OMM, 
+                        string White_PolyPro, 
+                        string Graphite, 
+                        string DressDevice1, 
+                        string DressDevice2, 
+                        string DressDevice3, 
+                        string Cork, 
+                        string PlastizoteDiabetic, 
+                        string PolyproPlantarFill_Shell, 
+                        string PolyproPlantarFill, 
+                        string ChildrensDevice, 
+                        string Cork_LeatherDevice, 
+                        string CastBalanceOption, 
+                        int CastBalance_L, 
+                        int CastBalance_R, 
+                        string ArchFillOption, 
+                        int ArchFill_L, 
+                        int ArchFill_R, 
+                        string RFP_Option, 
+                        int RFP_L, 
+                        int RFP_R, 
+                        string FFP_Option, 
+                        int FFP_L, 
+                        int FFP_R, 
+                        string Grinding, 
                         string HCD, 
                         string HCD_Other, 
-                        string RFPosting, 
-                        string RFPIOption, 
-                        string RFPIL, 
-                        string RFPIR, 
-                        string RFPEOption, 
-                        string RFPEL, 
-                        string RFPER, 
-                        string FFPosting, 
-                        string FFPIOption, 
-                        string FFPIL, 
-                        string FFPIR, 
-                        string FFPEOption, 
-                        string FFPEL, 
-                        string FFPER, 
-                        string OM_Shape, 
-                        string OrthoticServices, 
-                        string CCMaterial, 
-                        string MLC, 
-                        string TCLength, 
-                        string ULLength, 
-                        string ULMaterial, 
-                        string imgname1, 
-                        byte[] img1, 
-                        System.DateTime insertDate, 
+                        string Material, 
+                        string Thickness, 
+                        string TopCovers, 
+                        string Length, 
+                        string Len_AddBottomCover, 
                         string HeelSpur_L, 
                         string HeelSpur_R, 
                         string Ray_L, 
@@ -1350,11 +1516,23 @@ namespace ImageRX {
                         string DistalEndOfShell_X, 
                         string DistalEndOfShell_Y, 
                         string Notes, 
-                        string Sub_U_Cut) {
+                        string Sub_U_Cut, 
+                        string R1, 
+                        string R2, 
+                        string R3, 
+                        string R4, 
+                        string R5, 
+                        string L1, 
+                        string L2, 
+                        string L3, 
+                        string L4, 
+                        string L5) {
                 RptViewRow rowRptViewRow = ((RptViewRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         OrderID,
                         OrderStatus,
+                        CreatedDate,
+                        LastModified,
                         Cast_Number,
                         patient_Name,
                         shoe_size,
@@ -1365,33 +1543,37 @@ namespace ImageRX {
                         Gender,
                         Diagnosis,
                         CustomerName,
-                        OMM,
+                        White_PolyPro,
+                        Graphite,
+                        DressDevice1,
+                        DressDevice2,
+                        DressDevice3,
+                        Cork,
+                        PlastizoteDiabetic,
+                        PolyproPlantarFill_Shell,
+                        PolyproPlantarFill,
+                        ChildrensDevice,
+                        Cork_LeatherDevice,
+                        CastBalanceOption,
+                        CastBalance_L,
+                        CastBalance_R,
+                        ArchFillOption,
+                        ArchFill_L,
+                        ArchFill_R,
+                        RFP_Option,
+                        RFP_L,
+                        RFP_R,
+                        FFP_Option,
+                        FFP_L,
+                        FFP_R,
+                        Grinding,
                         HCD,
                         HCD_Other,
-                        RFPosting,
-                        RFPIOption,
-                        RFPIL,
-                        RFPIR,
-                        RFPEOption,
-                        RFPEL,
-                        RFPER,
-                        FFPosting,
-                        FFPIOption,
-                        FFPIL,
-                        FFPIR,
-                        FFPEOption,
-                        FFPEL,
-                        FFPER,
-                        OM_Shape,
-                        OrthoticServices,
-                        CCMaterial,
-                        MLC,
-                        TCLength,
-                        ULLength,
-                        ULMaterial,
-                        imgname1,
-                        img1,
-                        insertDate,
+                        Material,
+                        Thickness,
+                        TopCovers,
+                        Length,
+                        Len_AddBottomCover,
                         HeelSpur_L,
                         HeelSpur_R,
                         Ray_L,
@@ -1443,7 +1625,17 @@ namespace ImageRX {
                         DistalEndOfShell_X,
                         DistalEndOfShell_Y,
                         Notes,
-                        Sub_U_Cut};
+                        Sub_U_Cut,
+                        R1,
+                        R2,
+                        R3,
+                        R4,
+                        R5,
+                        L1,
+                        L2,
+                        L3,
+                        L4,
+                        L5};
                 rowRptViewRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRptViewRow);
                 return rowRptViewRow;
@@ -1468,6 +1660,8 @@ namespace ImageRX {
             internal void InitVars() {
                 this.columnOrderID = base.Columns["OrderID"];
                 this.columnOrderStatus = base.Columns["OrderStatus"];
+                this.columnCreatedDate = base.Columns["CreatedDate"];
+                this.columnLastModified = base.Columns["LastModified"];
                 this.columnCast_Number = base.Columns["Cast_Number"];
                 this.columnpatient_Name = base.Columns["patient_Name"];
                 this.columnshoe_size = base.Columns["shoe_size"];
@@ -1478,33 +1672,37 @@ namespace ImageRX {
                 this.columnGender = base.Columns["Gender"];
                 this.columnDiagnosis = base.Columns["Diagnosis"];
                 this.columnCustomerName = base.Columns["CustomerName"];
-                this.columnOMM = base.Columns["OMM"];
+                this.columnWhite_PolyPro = base.Columns["White_PolyPro"];
+                this.columnGraphite = base.Columns["Graphite"];
+                this.columnDressDevice1 = base.Columns["DressDevice1"];
+                this.columnDressDevice2 = base.Columns["DressDevice2"];
+                this.columnDressDevice3 = base.Columns["DressDevice3"];
+                this.columnCork = base.Columns["Cork"];
+                this.columnPlastizoteDiabetic = base.Columns["PlastizoteDiabetic"];
+                this.columnPolyproPlantarFill_Shell = base.Columns["PolyproPlantarFill_Shell"];
+                this.columnPolyproPlantarFill = base.Columns["PolyproPlantarFill"];
+                this.columnChildrensDevice = base.Columns["ChildrensDevice"];
+                this.columnCork_LeatherDevice = base.Columns["Cork_LeatherDevice"];
+                this.columnCastBalanceOption = base.Columns["CastBalanceOption"];
+                this.columnCastBalance_L = base.Columns["CastBalance_L"];
+                this.columnCastBalance_R = base.Columns["CastBalance_R"];
+                this.columnArchFillOption = base.Columns["ArchFillOption"];
+                this.columnArchFill_L = base.Columns["ArchFill_L"];
+                this.columnArchFill_R = base.Columns["ArchFill_R"];
+                this.columnRFP_Option = base.Columns["RFP_Option"];
+                this.columnRFP_L = base.Columns["RFP_L"];
+                this.columnRFP_R = base.Columns["RFP_R"];
+                this.columnFFP_Option = base.Columns["FFP_Option"];
+                this.columnFFP_L = base.Columns["FFP_L"];
+                this.columnFFP_R = base.Columns["FFP_R"];
+                this.columnGrinding = base.Columns["Grinding"];
                 this.columnHCD = base.Columns["HCD"];
                 this.columnHCD_Other = base.Columns["HCD_Other"];
-                this.columnRFPosting = base.Columns["RFPosting"];
-                this.columnRFPIOption = base.Columns["RFPIOption"];
-                this.columnRFPIL = base.Columns["RFPIL"];
-                this.columnRFPIR = base.Columns["RFPIR"];
-                this.columnRFPEOption = base.Columns["RFPEOption"];
-                this.columnRFPEL = base.Columns["RFPEL"];
-                this.columnRFPER = base.Columns["RFPER"];
-                this.columnFFPosting = base.Columns["FFPosting"];
-                this.columnFFPIOption = base.Columns["FFPIOption"];
-                this.columnFFPIL = base.Columns["FFPIL"];
-                this.columnFFPIR = base.Columns["FFPIR"];
-                this.columnFFPEOption = base.Columns["FFPEOption"];
-                this.columnFFPEL = base.Columns["FFPEL"];
-                this.columnFFPER = base.Columns["FFPER"];
-                this.columnOM_Shape = base.Columns["OM_Shape"];
-                this.columnOrthoticServices = base.Columns["OrthoticServices"];
-                this.columnCCMaterial = base.Columns["CCMaterial"];
-                this.columnMLC = base.Columns["MLC"];
-                this.columnTCLength = base.Columns["TCLength"];
-                this.columnULLength = base.Columns["ULLength"];
-                this.columnULMaterial = base.Columns["ULMaterial"];
-                this.columnimgname1 = base.Columns["imgname1"];
-                this.columnimg1 = base.Columns["img1"];
-                this.columninsertDate = base.Columns["insertDate"];
+                this.columnMaterial = base.Columns["Material"];
+                this.columnThickness = base.Columns["Thickness"];
+                this.columnTopCovers = base.Columns["TopCovers"];
+                this.columnLength = base.Columns["Length"];
+                this.columnLen_AddBottomCover = base.Columns["Len_AddBottomCover"];
                 this.columnHeelSpur_L = base.Columns["HeelSpur_L"];
                 this.columnHeelSpur_R = base.Columns["HeelSpur_R"];
                 this.columnRay_L = base.Columns["Ray_L"];
@@ -1557,6 +1755,16 @@ namespace ImageRX {
                 this.columnDistalEndOfShell_Y = base.Columns["DistalEndOfShell_Y"];
                 this.columnNotes = base.Columns["Notes"];
                 this.columnSub_U_Cut = base.Columns["Sub_U_Cut"];
+                this.columnR1 = base.Columns["R1"];
+                this.columnR2 = base.Columns["R2"];
+                this.columnR3 = base.Columns["R3"];
+                this.columnR4 = base.Columns["R4"];
+                this.columnR5 = base.Columns["R5"];
+                this.columnL1 = base.Columns["L1"];
+                this.columnL2 = base.Columns["L2"];
+                this.columnL3 = base.Columns["L3"];
+                this.columnL4 = base.Columns["L4"];
+                this.columnL5 = base.Columns["L5"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1566,6 +1774,10 @@ namespace ImageRX {
                 base.Columns.Add(this.columnOrderID);
                 this.columnOrderStatus = new global::System.Data.DataColumn("OrderStatus", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnOrderStatus);
+                this.columnCreatedDate = new global::System.Data.DataColumn("CreatedDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCreatedDate);
+                this.columnLastModified = new global::System.Data.DataColumn("LastModified", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLastModified);
                 this.columnCast_Number = new global::System.Data.DataColumn("Cast_Number", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCast_Number);
                 this.columnpatient_Name = new global::System.Data.DataColumn("patient_Name", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1586,60 +1798,68 @@ namespace ImageRX {
                 base.Columns.Add(this.columnDiagnosis);
                 this.columnCustomerName = new global::System.Data.DataColumn("CustomerName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCustomerName);
-                this.columnOMM = new global::System.Data.DataColumn("OMM", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOMM);
+                this.columnWhite_PolyPro = new global::System.Data.DataColumn("White_PolyPro", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWhite_PolyPro);
+                this.columnGraphite = new global::System.Data.DataColumn("Graphite", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGraphite);
+                this.columnDressDevice1 = new global::System.Data.DataColumn("DressDevice1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDressDevice1);
+                this.columnDressDevice2 = new global::System.Data.DataColumn("DressDevice2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDressDevice2);
+                this.columnDressDevice3 = new global::System.Data.DataColumn("DressDevice3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDressDevice3);
+                this.columnCork = new global::System.Data.DataColumn("Cork", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCork);
+                this.columnPlastizoteDiabetic = new global::System.Data.DataColumn("PlastizoteDiabetic", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPlastizoteDiabetic);
+                this.columnPolyproPlantarFill_Shell = new global::System.Data.DataColumn("PolyproPlantarFill_Shell", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPolyproPlantarFill_Shell);
+                this.columnPolyproPlantarFill = new global::System.Data.DataColumn("PolyproPlantarFill", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPolyproPlantarFill);
+                this.columnChildrensDevice = new global::System.Data.DataColumn("ChildrensDevice", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnChildrensDevice);
+                this.columnCork_LeatherDevice = new global::System.Data.DataColumn("Cork_LeatherDevice", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCork_LeatherDevice);
+                this.columnCastBalanceOption = new global::System.Data.DataColumn("CastBalanceOption", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCastBalanceOption);
+                this.columnCastBalance_L = new global::System.Data.DataColumn("CastBalance_L", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCastBalance_L);
+                this.columnCastBalance_R = new global::System.Data.DataColumn("CastBalance_R", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCastBalance_R);
+                this.columnArchFillOption = new global::System.Data.DataColumn("ArchFillOption", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArchFillOption);
+                this.columnArchFill_L = new global::System.Data.DataColumn("ArchFill_L", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArchFill_L);
+                this.columnArchFill_R = new global::System.Data.DataColumn("ArchFill_R", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnArchFill_R);
+                this.columnRFP_Option = new global::System.Data.DataColumn("RFP_Option", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRFP_Option);
+                this.columnRFP_L = new global::System.Data.DataColumn("RFP_L", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRFP_L);
+                this.columnRFP_R = new global::System.Data.DataColumn("RFP_R", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRFP_R);
+                this.columnFFP_Option = new global::System.Data.DataColumn("FFP_Option", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFFP_Option);
+                this.columnFFP_L = new global::System.Data.DataColumn("FFP_L", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFFP_L);
+                this.columnFFP_R = new global::System.Data.DataColumn("FFP_R", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFFP_R);
+                this.columnGrinding = new global::System.Data.DataColumn("Grinding", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGrinding);
                 this.columnHCD = new global::System.Data.DataColumn("HCD", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHCD);
                 this.columnHCD_Other = new global::System.Data.DataColumn("HCD_Other", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHCD_Other);
-                this.columnRFPosting = new global::System.Data.DataColumn("RFPosting", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPosting);
-                this.columnRFPIOption = new global::System.Data.DataColumn("RFPIOption", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPIOption);
-                this.columnRFPIL = new global::System.Data.DataColumn("RFPIL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPIL);
-                this.columnRFPIR = new global::System.Data.DataColumn("RFPIR", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPIR);
-                this.columnRFPEOption = new global::System.Data.DataColumn("RFPEOption", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPEOption);
-                this.columnRFPEL = new global::System.Data.DataColumn("RFPEL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPEL);
-                this.columnRFPER = new global::System.Data.DataColumn("RFPER", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnRFPER);
-                this.columnFFPosting = new global::System.Data.DataColumn("FFPosting", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPosting);
-                this.columnFFPIOption = new global::System.Data.DataColumn("FFPIOption", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPIOption);
-                this.columnFFPIL = new global::System.Data.DataColumn("FFPIL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPIL);
-                this.columnFFPIR = new global::System.Data.DataColumn("FFPIR", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPIR);
-                this.columnFFPEOption = new global::System.Data.DataColumn("FFPEOption", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPEOption);
-                this.columnFFPEL = new global::System.Data.DataColumn("FFPEL", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPEL);
-                this.columnFFPER = new global::System.Data.DataColumn("FFPER", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFFPER);
-                this.columnOM_Shape = new global::System.Data.DataColumn("OM_Shape", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOM_Shape);
-                this.columnOrthoticServices = new global::System.Data.DataColumn("OrthoticServices", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOrthoticServices);
-                this.columnCCMaterial = new global::System.Data.DataColumn("CCMaterial", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCCMaterial);
-                this.columnMLC = new global::System.Data.DataColumn("MLC", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMLC);
-                this.columnTCLength = new global::System.Data.DataColumn("TCLength", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTCLength);
-                this.columnULLength = new global::System.Data.DataColumn("ULLength", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnULLength);
-                this.columnULMaterial = new global::System.Data.DataColumn("ULMaterial", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnULMaterial);
-                this.columnimgname1 = new global::System.Data.DataColumn("imgname1", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnimgname1);
-                this.columnimg1 = new global::System.Data.DataColumn("img1", typeof(byte[]), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnimg1);
-                this.columninsertDate = new global::System.Data.DataColumn("insertDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columninsertDate);
+                this.columnMaterial = new global::System.Data.DataColumn("Material", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaterial);
+                this.columnThickness = new global::System.Data.DataColumn("Thickness", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnThickness);
+                this.columnTopCovers = new global::System.Data.DataColumn("TopCovers", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTopCovers);
+                this.columnLength = new global::System.Data.DataColumn("Length", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLength);
+                this.columnLen_AddBottomCover = new global::System.Data.DataColumn("Len_AddBottomCover", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLen_AddBottomCover);
                 this.columnHeelSpur_L = new global::System.Data.DataColumn("HeelSpur_L", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnHeelSpur_L);
                 this.columnHeelSpur_R = new global::System.Data.DataColumn("HeelSpur_R", typeof(string), null, global::System.Data.MappingType.Element);
@@ -1744,9 +1964,31 @@ namespace ImageRX {
                 base.Columns.Add(this.columnNotes);
                 this.columnSub_U_Cut = new global::System.Data.DataColumn("Sub_U_Cut", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSub_U_Cut);
+                this.columnR1 = new global::System.Data.DataColumn("R1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnR1);
+                this.columnR2 = new global::System.Data.DataColumn("R2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnR2);
+                this.columnR3 = new global::System.Data.DataColumn("R3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnR3);
+                this.columnR4 = new global::System.Data.DataColumn("R4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnR4);
+                this.columnR5 = new global::System.Data.DataColumn("R5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnR5);
+                this.columnL1 = new global::System.Data.DataColumn("L1", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL1);
+                this.columnL2 = new global::System.Data.DataColumn("L2", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL2);
+                this.columnL3 = new global::System.Data.DataColumn("L3", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL3);
+                this.columnL4 = new global::System.Data.DataColumn("L4", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL4);
+                this.columnL5 = new global::System.Data.DataColumn("L5", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnL5);
                 this.columnOrderID.AllowDBNull = false;
                 this.columnOrderStatus.AllowDBNull = false;
                 this.columnOrderStatus.MaxLength = 500;
+                this.columnCreatedDate.AllowDBNull = false;
+                this.columnLastModified.AllowDBNull = false;
                 this.columnCast_Number.AllowDBNull = false;
                 this.columnpatient_Name.AllowDBNull = false;
                 this.columnpatient_Name.MaxLength = 100;
@@ -1758,35 +2000,59 @@ namespace ImageRX {
                 this.columnGender.MaxLength = 100;
                 this.columnDiagnosis.MaxLength = 100;
                 this.columnCustomerName.MaxLength = 100;
-                this.columnOMM.AllowDBNull = false;
-                this.columnOMM.MaxLength = 100;
+                this.columnWhite_PolyPro.AllowDBNull = false;
+                this.columnWhite_PolyPro.MaxLength = 200;
+                this.columnGraphite.AllowDBNull = false;
+                this.columnGraphite.MaxLength = 200;
+                this.columnDressDevice1.AllowDBNull = false;
+                this.columnDressDevice1.MaxLength = 200;
+                this.columnDressDevice2.AllowDBNull = false;
+                this.columnDressDevice2.MaxLength = 200;
+                this.columnDressDevice3.AllowDBNull = false;
+                this.columnDressDevice3.MaxLength = 200;
+                this.columnCork.AllowDBNull = false;
+                this.columnCork.MaxLength = 200;
+                this.columnPlastizoteDiabetic.AllowDBNull = false;
+                this.columnPlastizoteDiabetic.MaxLength = 200;
+                this.columnPolyproPlantarFill_Shell.AllowDBNull = false;
+                this.columnPolyproPlantarFill_Shell.MaxLength = 200;
+                this.columnPolyproPlantarFill.AllowDBNull = false;
+                this.columnPolyproPlantarFill.MaxLength = 200;
+                this.columnChildrensDevice.AllowDBNull = false;
+                this.columnChildrensDevice.MaxLength = 200;
+                this.columnCork_LeatherDevice.AllowDBNull = false;
+                this.columnCork_LeatherDevice.MaxLength = 200;
+                this.columnCastBalanceOption.AllowDBNull = false;
+                this.columnCastBalanceOption.MaxLength = 200;
+                this.columnCastBalance_L.AllowDBNull = false;
+                this.columnCastBalance_R.AllowDBNull = false;
+                this.columnArchFillOption.AllowDBNull = false;
+                this.columnArchFillOption.MaxLength = 200;
+                this.columnArchFill_L.AllowDBNull = false;
+                this.columnArchFill_R.AllowDBNull = false;
+                this.columnRFP_Option.AllowDBNull = false;
+                this.columnRFP_Option.MaxLength = 200;
+                this.columnRFP_L.AllowDBNull = false;
+                this.columnRFP_R.AllowDBNull = false;
+                this.columnFFP_Option.AllowDBNull = false;
+                this.columnFFP_Option.MaxLength = 200;
+                this.columnFFP_L.AllowDBNull = false;
+                this.columnFFP_R.AllowDBNull = false;
+                this.columnGrinding.AllowDBNull = false;
+                this.columnGrinding.MaxLength = 200;
                 this.columnHCD.AllowDBNull = false;
-                this.columnHCD.MaxLength = 100;
-                this.columnHCD_Other.AllowDBNull = false;
-                this.columnHCD_Other.MaxLength = 100;
-                this.columnRFPosting.MaxLength = 500;
-                this.columnRFPIOption.MaxLength = 500;
-                this.columnRFPIL.MaxLength = 10;
-                this.columnRFPIR.MaxLength = 10;
-                this.columnRFPEOption.MaxLength = 500;
-                this.columnRFPEL.MaxLength = 10;
-                this.columnRFPER.MaxLength = 10;
-                this.columnFFPosting.MaxLength = 500;
-                this.columnFFPIOption.MaxLength = 500;
-                this.columnFFPIL.MaxLength = 10;
-                this.columnFFPIR.MaxLength = 10;
-                this.columnFFPEOption.MaxLength = 500;
-                this.columnFFPEL.MaxLength = 10;
-                this.columnFFPER.MaxLength = 10;
-                this.columnOM_Shape.MaxLength = 100;
-                this.columnOrthoticServices.MaxLength = 500;
-                this.columnCCMaterial.MaxLength = 500;
-                this.columnMLC.MaxLength = 500;
-                this.columnTCLength.MaxLength = 50;
-                this.columnULLength.MaxLength = 50;
-                this.columnULMaterial.MaxLength = 50;
-                this.columnimgname1.MaxLength = 500;
-                this.columninsertDate.AllowDBNull = false;
+                this.columnHCD.MaxLength = 200;
+                this.columnHCD_Other.MaxLength = 200;
+                this.columnMaterial.AllowDBNull = false;
+                this.columnMaterial.MaxLength = 200;
+                this.columnThickness.AllowDBNull = false;
+                this.columnThickness.MaxLength = 10;
+                this.columnTopCovers.AllowDBNull = false;
+                this.columnTopCovers.MaxLength = 200;
+                this.columnLength.AllowDBNull = false;
+                this.columnLength.MaxLength = 200;
+                this.columnLen_AddBottomCover.AllowDBNull = false;
+                this.columnLen_AddBottomCover.MaxLength = 10;
                 this.columnHeelSpur_L.MaxLength = 10;
                 this.columnHeelSpur_R.MaxLength = 10;
                 this.columnRay_L.MaxLength = 10;
@@ -1839,6 +2105,16 @@ namespace ImageRX {
                 this.columnDistalEndOfShell_Y.MaxLength = 10;
                 this.columnNotes.MaxLength = 1000;
                 this.columnSub_U_Cut.MaxLength = 10;
+                this.columnR1.MaxLength = 10;
+                this.columnR2.MaxLength = 10;
+                this.columnR3.MaxLength = 10;
+                this.columnR4.MaxLength = 10;
+                this.columnR5.MaxLength = 10;
+                this.columnL1.MaxLength = 10;
+                this.columnL2.MaxLength = 10;
+                this.columnL3.MaxLength = 10;
+                this.columnL4.MaxLength = 10;
+                this.columnL5.MaxLength = 10;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2003,6 +2279,28 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime CreatedDate {
+                get {
+                    return ((global::System.DateTime)(this[this.tableRptView.CreatedDateColumn]));
+                }
+                set {
+                    this[this.tableRptView.CreatedDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime LastModified {
+                get {
+                    return ((global::System.DateTime)(this[this.tableRptView.LastModifiedColumn]));
+                }
+                set {
+                    this[this.tableRptView.LastModifiedColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public int Cast_Number {
                 get {
                     return ((int)(this[this.tableRptView.Cast_NumberColumn]));
@@ -2148,12 +2446,265 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string OMM {
+            public string White_PolyPro {
                 get {
-                    return ((string)(this[this.tableRptView.OMMColumn]));
+                    return ((string)(this[this.tableRptView.White_PolyProColumn]));
                 }
                 set {
-                    this[this.tableRptView.OMMColumn] = value;
+                    this[this.tableRptView.White_PolyProColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Graphite {
+                get {
+                    return ((string)(this[this.tableRptView.GraphiteColumn]));
+                }
+                set {
+                    this[this.tableRptView.GraphiteColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DressDevice1 {
+                get {
+                    return ((string)(this[this.tableRptView.DressDevice1Column]));
+                }
+                set {
+                    this[this.tableRptView.DressDevice1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DressDevice2 {
+                get {
+                    return ((string)(this[this.tableRptView.DressDevice2Column]));
+                }
+                set {
+                    this[this.tableRptView.DressDevice2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string DressDevice3 {
+                get {
+                    return ((string)(this[this.tableRptView.DressDevice3Column]));
+                }
+                set {
+                    this[this.tableRptView.DressDevice3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cork {
+                get {
+                    return ((string)(this[this.tableRptView.CorkColumn]));
+                }
+                set {
+                    this[this.tableRptView.CorkColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PlastizoteDiabetic {
+                get {
+                    return ((string)(this[this.tableRptView.PlastizoteDiabeticColumn]));
+                }
+                set {
+                    this[this.tableRptView.PlastizoteDiabeticColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PolyproPlantarFill_Shell {
+                get {
+                    return ((string)(this[this.tableRptView.PolyproPlantarFill_ShellColumn]));
+                }
+                set {
+                    this[this.tableRptView.PolyproPlantarFill_ShellColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PolyproPlantarFill {
+                get {
+                    return ((string)(this[this.tableRptView.PolyproPlantarFillColumn]));
+                }
+                set {
+                    this[this.tableRptView.PolyproPlantarFillColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ChildrensDevice {
+                get {
+                    return ((string)(this[this.tableRptView.ChildrensDeviceColumn]));
+                }
+                set {
+                    this[this.tableRptView.ChildrensDeviceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Cork_LeatherDevice {
+                get {
+                    return ((string)(this[this.tableRptView.Cork_LeatherDeviceColumn]));
+                }
+                set {
+                    this[this.tableRptView.Cork_LeatherDeviceColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CastBalanceOption {
+                get {
+                    return ((string)(this[this.tableRptView.CastBalanceOptionColumn]));
+                }
+                set {
+                    this[this.tableRptView.CastBalanceOptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CastBalance_L {
+                get {
+                    return ((int)(this[this.tableRptView.CastBalance_LColumn]));
+                }
+                set {
+                    this[this.tableRptView.CastBalance_LColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int CastBalance_R {
+                get {
+                    return ((int)(this[this.tableRptView.CastBalance_RColumn]));
+                }
+                set {
+                    this[this.tableRptView.CastBalance_RColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string ArchFillOption {
+                get {
+                    return ((string)(this[this.tableRptView.ArchFillOptionColumn]));
+                }
+                set {
+                    this[this.tableRptView.ArchFillOptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ArchFill_L {
+                get {
+                    return ((int)(this[this.tableRptView.ArchFill_LColumn]));
+                }
+                set {
+                    this[this.tableRptView.ArchFill_LColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int ArchFill_R {
+                get {
+                    return ((int)(this[this.tableRptView.ArchFill_RColumn]));
+                }
+                set {
+                    this[this.tableRptView.ArchFill_RColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string RFP_Option {
+                get {
+                    return ((string)(this[this.tableRptView.RFP_OptionColumn]));
+                }
+                set {
+                    this[this.tableRptView.RFP_OptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int RFP_L {
+                get {
+                    return ((int)(this[this.tableRptView.RFP_LColumn]));
+                }
+                set {
+                    this[this.tableRptView.RFP_LColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int RFP_R {
+                get {
+                    return ((int)(this[this.tableRptView.RFP_RColumn]));
+                }
+                set {
+                    this[this.tableRptView.RFP_RColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string FFP_Option {
+                get {
+                    return ((string)(this[this.tableRptView.FFP_OptionColumn]));
+                }
+                set {
+                    this[this.tableRptView.FFP_OptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int FFP_L {
+                get {
+                    return ((int)(this[this.tableRptView.FFP_LColumn]));
+                }
+                set {
+                    this[this.tableRptView.FFP_LColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int FFP_R {
+                get {
+                    return ((int)(this[this.tableRptView.FFP_RColumn]));
+                }
+                set {
+                    this[this.tableRptView.FFP_RColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string Grinding {
+                get {
+                    return ((string)(this[this.tableRptView.GrindingColumn]));
+                }
+                set {
+                    this[this.tableRptView.GrindingColumn] = value;
                 }
             }
             
@@ -2172,7 +2723,12 @@ namespace ImageRX {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public string HCD_Other {
                 get {
-                    return ((string)(this[this.tableRptView.HCD_OtherColumn]));
+                    try {
+                        return ((string)(this[this.tableRptView.HCD_OtherColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'HCD_Other\' in table \'RptView\' is DBNull.", e);
+                    }
                 }
                 set {
                     this[this.tableRptView.HCD_OtherColumn] = value;
@@ -2181,380 +2737,56 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPosting {
+            public string Material {
                 get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPostingColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPosting\' in table \'RptView\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableRptView.MaterialColumn]));
                 }
                 set {
-                    this[this.tableRptView.RFPostingColumn] = value;
+                    this[this.tableRptView.MaterialColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPIOption {
+            public string Thickness {
                 get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPIOptionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPIOption\' in table \'RptView\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableRptView.ThicknessColumn]));
                 }
                 set {
-                    this[this.tableRptView.RFPIOptionColumn] = value;
+                    this[this.tableRptView.ThicknessColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPIL {
+            public string TopCovers {
                 get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPILColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPIL\' in table \'RptView\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableRptView.TopCoversColumn]));
                 }
                 set {
-                    this[this.tableRptView.RFPILColumn] = value;
+                    this[this.tableRptView.TopCoversColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPIR {
+            public string Length {
                 get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPIRColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPIR\' in table \'RptView\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableRptView.LengthColumn]));
                 }
                 set {
-                    this[this.tableRptView.RFPIRColumn] = value;
+                    this[this.tableRptView.LengthColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPEOption {
+            public string Len_AddBottomCover {
                 get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPEOptionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPEOption\' in table \'RptView\' is DBNull.", e);
-                    }
+                    return ((string)(this[this.tableRptView.Len_AddBottomCoverColumn]));
                 }
                 set {
-                    this[this.tableRptView.RFPEOptionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPEL {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPELColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPEL\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.RFPELColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string RFPER {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.RFPERColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'RFPER\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.RFPERColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPosting {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPostingColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPosting\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPostingColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPIOption {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPIOptionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPIOption\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPIOptionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPIL {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPILColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPIL\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPILColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPIR {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPIRColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPIR\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPIRColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPEOption {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPEOptionColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPEOption\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPEOptionColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPEL {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPELColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPEL\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPELColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string FFPER {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.FFPERColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FFPER\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.FFPERColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string OM_Shape {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.OM_ShapeColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OM_Shape\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.OM_ShapeColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string OrthoticServices {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.OrthoticServicesColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'OrthoticServices\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.OrthoticServicesColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string CCMaterial {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.CCMaterialColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'CCMaterial\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.CCMaterialColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string MLC {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.MLCColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'MLC\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.MLCColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string TCLength {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.TCLengthColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TCLength\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.TCLengthColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ULLength {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.ULLengthColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ULLength\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.ULLengthColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string ULMaterial {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.ULMaterialColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ULMaterial\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.ULMaterialColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public string imgname1 {
-                get {
-                    try {
-                        return ((string)(this[this.tableRptView.imgname1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'imgname1\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.imgname1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public byte[] img1 {
-                get {
-                    try {
-                        return ((byte[])(this[this.tableRptView.img1Column]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'img1\' in table \'RptView\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableRptView.img1Column] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public System.DateTime insertDate {
-                get {
-                    return ((global::System.DateTime)(this[this.tableRptView.insertDateColumn]));
-                }
-                set {
-                    this[this.tableRptView.insertDateColumn] = value;
+                    this[this.tableRptView.Len_AddBottomCoverColumn] = value;
                 }
             }
             
@@ -3392,6 +3624,166 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string R1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.R1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'R1\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.R1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string R2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.R2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'R2\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.R2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string R3 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.R3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'R3\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.R3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string R4 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.R4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'R4\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.R4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string R5 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.R5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'R5\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.R5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string L1 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.L1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L1\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.L1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string L2 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.L2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L2\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.L2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string L3 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.L3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L3\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.L3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string L4 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.L4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L4\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.L4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string L5 {
+                get {
+                    try {
+                        return ((string)(this[this.tableRptView.L5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'L5\' in table \'RptView\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableRptView.L5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool Isshoe_sizeNull() {
                 return this.IsNull(this.tableRptView.shoe_sizeColumn);
             }
@@ -3476,278 +3868,14 @@ namespace ImageRX {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPostingNull() {
-                return this.IsNull(this.tableRptView.RFPostingColumn);
+            public bool IsHCD_OtherNull() {
+                return this.IsNull(this.tableRptView.HCD_OtherColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPostingNull() {
-                this[this.tableRptView.RFPostingColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPIOptionNull() {
-                return this.IsNull(this.tableRptView.RFPIOptionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPIOptionNull() {
-                this[this.tableRptView.RFPIOptionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPILNull() {
-                return this.IsNull(this.tableRptView.RFPILColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPILNull() {
-                this[this.tableRptView.RFPILColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPIRNull() {
-                return this.IsNull(this.tableRptView.RFPIRColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPIRNull() {
-                this[this.tableRptView.RFPIRColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPEOptionNull() {
-                return this.IsNull(this.tableRptView.RFPEOptionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPEOptionNull() {
-                this[this.tableRptView.RFPEOptionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPELNull() {
-                return this.IsNull(this.tableRptView.RFPELColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPELNull() {
-                this[this.tableRptView.RFPELColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsRFPERNull() {
-                return this.IsNull(this.tableRptView.RFPERColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetRFPERNull() {
-                this[this.tableRptView.RFPERColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPostingNull() {
-                return this.IsNull(this.tableRptView.FFPostingColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPostingNull() {
-                this[this.tableRptView.FFPostingColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPIOptionNull() {
-                return this.IsNull(this.tableRptView.FFPIOptionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPIOptionNull() {
-                this[this.tableRptView.FFPIOptionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPILNull() {
-                return this.IsNull(this.tableRptView.FFPILColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPILNull() {
-                this[this.tableRptView.FFPILColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPIRNull() {
-                return this.IsNull(this.tableRptView.FFPIRColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPIRNull() {
-                this[this.tableRptView.FFPIRColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPEOptionNull() {
-                return this.IsNull(this.tableRptView.FFPEOptionColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPEOptionNull() {
-                this[this.tableRptView.FFPEOptionColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPELNull() {
-                return this.IsNull(this.tableRptView.FFPELColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPELNull() {
-                this[this.tableRptView.FFPELColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsFFPERNull() {
-                return this.IsNull(this.tableRptView.FFPERColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetFFPERNull() {
-                this[this.tableRptView.FFPERColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOM_ShapeNull() {
-                return this.IsNull(this.tableRptView.OM_ShapeColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOM_ShapeNull() {
-                this[this.tableRptView.OM_ShapeColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsOrthoticServicesNull() {
-                return this.IsNull(this.tableRptView.OrthoticServicesColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetOrthoticServicesNull() {
-                this[this.tableRptView.OrthoticServicesColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsCCMaterialNull() {
-                return this.IsNull(this.tableRptView.CCMaterialColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetCCMaterialNull() {
-                this[this.tableRptView.CCMaterialColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsMLCNull() {
-                return this.IsNull(this.tableRptView.MLCColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetMLCNull() {
-                this[this.tableRptView.MLCColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsTCLengthNull() {
-                return this.IsNull(this.tableRptView.TCLengthColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetTCLengthNull() {
-                this[this.tableRptView.TCLengthColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsULLengthNull() {
-                return this.IsNull(this.tableRptView.ULLengthColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetULLengthNull() {
-                this[this.tableRptView.ULLengthColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool IsULMaterialNull() {
-                return this.IsNull(this.tableRptView.ULMaterialColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void SetULMaterialNull() {
-                this[this.tableRptView.ULMaterialColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isimgname1Null() {
-                return this.IsNull(this.tableRptView.imgname1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setimgname1Null() {
-                this[this.tableRptView.imgname1Column] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public bool Isimg1Null() {
-                return this.IsNull(this.tableRptView.img1Column);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public void Setimg1Null() {
-                this[this.tableRptView.img1Column] = global::System.Convert.DBNull;
+            public void SetHCD_OtherNull() {
+                this[this.tableRptView.HCD_OtherColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4373,6 +4501,126 @@ namespace ImageRX {
             public void SetSub_U_CutNull() {
                 this[this.tableRptView.Sub_U_CutColumn] = global::System.Convert.DBNull;
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsR1Null() {
+                return this.IsNull(this.tableRptView.R1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetR1Null() {
+                this[this.tableRptView.R1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsR2Null() {
+                return this.IsNull(this.tableRptView.R2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetR2Null() {
+                this[this.tableRptView.R2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsR3Null() {
+                return this.IsNull(this.tableRptView.R3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetR3Null() {
+                this[this.tableRptView.R3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsR4Null() {
+                return this.IsNull(this.tableRptView.R4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetR4Null() {
+                this[this.tableRptView.R4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsR5Null() {
+                return this.IsNull(this.tableRptView.R5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetR5Null() {
+                this[this.tableRptView.R5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsL1Null() {
+                return this.IsNull(this.tableRptView.L1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetL1Null() {
+                this[this.tableRptView.L1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsL2Null() {
+                return this.IsNull(this.tableRptView.L2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetL2Null() {
+                this[this.tableRptView.L2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsL3Null() {
+                return this.IsNull(this.tableRptView.L3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetL3Null() {
+                this[this.tableRptView.L3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsL4Null() {
+                return this.IsNull(this.tableRptView.L4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetL4Null() {
+                this[this.tableRptView.L4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsL5Null() {
+                return this.IsNull(this.tableRptView.L5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetL5Null() {
+                this[this.tableRptView.L5Column] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -4536,6 +4784,8 @@ namespace ImageRX.ImageOrthoDBDataSet2TableAdapters {
             tableMapping.DataSetTable = "RptView";
             tableMapping.ColumnMappings.Add("OrderID", "OrderID");
             tableMapping.ColumnMappings.Add("OrderStatus", "OrderStatus");
+            tableMapping.ColumnMappings.Add("CreatedDate", "CreatedDate");
+            tableMapping.ColumnMappings.Add("LastModified", "LastModified");
             tableMapping.ColumnMappings.Add("Cast_Number", "Cast_Number");
             tableMapping.ColumnMappings.Add("patient_Name", "patient_Name");
             tableMapping.ColumnMappings.Add("shoe_size", "shoe_size");
@@ -4546,33 +4796,37 @@ namespace ImageRX.ImageOrthoDBDataSet2TableAdapters {
             tableMapping.ColumnMappings.Add("Gender", "Gender");
             tableMapping.ColumnMappings.Add("Diagnosis", "Diagnosis");
             tableMapping.ColumnMappings.Add("CustomerName", "CustomerName");
-            tableMapping.ColumnMappings.Add("OMM", "OMM");
+            tableMapping.ColumnMappings.Add("White_PolyPro", "White_PolyPro");
+            tableMapping.ColumnMappings.Add("Graphite", "Graphite");
+            tableMapping.ColumnMappings.Add("DressDevice1", "DressDevice1");
+            tableMapping.ColumnMappings.Add("DressDevice2", "DressDevice2");
+            tableMapping.ColumnMappings.Add("DressDevice3", "DressDevice3");
+            tableMapping.ColumnMappings.Add("Cork", "Cork");
+            tableMapping.ColumnMappings.Add("PlastizoteDiabetic", "PlastizoteDiabetic");
+            tableMapping.ColumnMappings.Add("PolyproPlantarFill_Shell", "PolyproPlantarFill_Shell");
+            tableMapping.ColumnMappings.Add("PolyproPlantarFill", "PolyproPlantarFill");
+            tableMapping.ColumnMappings.Add("ChildrensDevice", "ChildrensDevice");
+            tableMapping.ColumnMappings.Add("Cork_LeatherDevice", "Cork_LeatherDevice");
+            tableMapping.ColumnMappings.Add("CastBalanceOption", "CastBalanceOption");
+            tableMapping.ColumnMappings.Add("CastBalance_L", "CastBalance_L");
+            tableMapping.ColumnMappings.Add("CastBalance_R", "CastBalance_R");
+            tableMapping.ColumnMappings.Add("ArchFillOption", "ArchFillOption");
+            tableMapping.ColumnMappings.Add("ArchFill_L", "ArchFill_L");
+            tableMapping.ColumnMappings.Add("ArchFill_R", "ArchFill_R");
+            tableMapping.ColumnMappings.Add("RFP_Option", "RFP_Option");
+            tableMapping.ColumnMappings.Add("RFP_L", "RFP_L");
+            tableMapping.ColumnMappings.Add("RFP_R", "RFP_R");
+            tableMapping.ColumnMappings.Add("FFP_Option", "FFP_Option");
+            tableMapping.ColumnMappings.Add("FFP_L", "FFP_L");
+            tableMapping.ColumnMappings.Add("FFP_R", "FFP_R");
+            tableMapping.ColumnMappings.Add("Grinding", "Grinding");
             tableMapping.ColumnMappings.Add("HCD", "HCD");
             tableMapping.ColumnMappings.Add("HCD_Other", "HCD_Other");
-            tableMapping.ColumnMappings.Add("RFPosting", "RFPosting");
-            tableMapping.ColumnMappings.Add("RFPIOption", "RFPIOption");
-            tableMapping.ColumnMappings.Add("RFPIL", "RFPIL");
-            tableMapping.ColumnMappings.Add("RFPIR", "RFPIR");
-            tableMapping.ColumnMappings.Add("RFPEOption", "RFPEOption");
-            tableMapping.ColumnMappings.Add("RFPEL", "RFPEL");
-            tableMapping.ColumnMappings.Add("RFPER", "RFPER");
-            tableMapping.ColumnMappings.Add("FFPosting", "FFPosting");
-            tableMapping.ColumnMappings.Add("FFPIOption", "FFPIOption");
-            tableMapping.ColumnMappings.Add("FFPIL", "FFPIL");
-            tableMapping.ColumnMappings.Add("FFPIR", "FFPIR");
-            tableMapping.ColumnMappings.Add("FFPEOption", "FFPEOption");
-            tableMapping.ColumnMappings.Add("FFPEL", "FFPEL");
-            tableMapping.ColumnMappings.Add("FFPER", "FFPER");
-            tableMapping.ColumnMappings.Add("OM_Shape", "OM_Shape");
-            tableMapping.ColumnMappings.Add("OrthoticServices", "OrthoticServices");
-            tableMapping.ColumnMappings.Add("CCMaterial", "CCMaterial");
-            tableMapping.ColumnMappings.Add("MLC", "MLC");
-            tableMapping.ColumnMappings.Add("TCLength", "TCLength");
-            tableMapping.ColumnMappings.Add("ULLength", "ULLength");
-            tableMapping.ColumnMappings.Add("ULMaterial", "ULMaterial");
-            tableMapping.ColumnMappings.Add("imgname1", "imgname1");
-            tableMapping.ColumnMappings.Add("img1", "img1");
-            tableMapping.ColumnMappings.Add("insertDate", "insertDate");
+            tableMapping.ColumnMappings.Add("Material", "Material");
+            tableMapping.ColumnMappings.Add("Thickness", "Thickness");
+            tableMapping.ColumnMappings.Add("TopCovers", "TopCovers");
+            tableMapping.ColumnMappings.Add("Length", "Length");
+            tableMapping.ColumnMappings.Add("Len_AddBottomCover", "Len_AddBottomCover");
             tableMapping.ColumnMappings.Add("HeelSpur_L", "HeelSpur_L");
             tableMapping.ColumnMappings.Add("HeelSpur_R", "HeelSpur_R");
             tableMapping.ColumnMappings.Add("Ray_L", "Ray_L");
@@ -4625,6 +4879,16 @@ namespace ImageRX.ImageOrthoDBDataSet2TableAdapters {
             tableMapping.ColumnMappings.Add("DistalEndOfShell_Y", "DistalEndOfShell_Y");
             tableMapping.ColumnMappings.Add("Notes", "Notes");
             tableMapping.ColumnMappings.Add("Sub_U_Cut", "Sub_U_Cut");
+            tableMapping.ColumnMappings.Add("R1", "R1");
+            tableMapping.ColumnMappings.Add("R2", "R2");
+            tableMapping.ColumnMappings.Add("R3", "R3");
+            tableMapping.ColumnMappings.Add("R4", "R4");
+            tableMapping.ColumnMappings.Add("R5", "R5");
+            tableMapping.ColumnMappings.Add("L1", "L1");
+            tableMapping.ColumnMappings.Add("L2", "L2");
+            tableMapping.ColumnMappings.Add("L3", "L3");
+            tableMapping.ColumnMappings.Add("L4", "L4");
+            tableMapping.ColumnMappings.Add("L5", "L5");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -4641,7 +4905,7 @@ namespace ImageRX.ImageOrthoDBDataSet2TableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT OrderID, OrderStatus, Cast_Number, patient_Name, shoe_size, shoe_type, Age, height, weight, Gender, Diagnosis, CustomerName, OMM, HCD, HCD_Other, RFPosting, RFPIOption, RFPIL, RFPIR, RFPEOption, RFPEL, RFPER, FFPosting, FFPIOption, FFPIL, FFPIR, FFPEOption, FFPEL, FFPER, OM_Shape, OrthoticServices, CCMaterial, MLC, TCLength, ULLength, ULMaterial, imgname1, img1, insertDate, HeelSpur_L, HeelSpur_R, Ray_L, Ray_R, MetCut_L, MetCut_R, ShellMedialFlag_L, ShellMedialFlange_R, ShellLateralFlange_L, ShellLateralFlange_R, LateralClip_L, LateralClip_R, PlantarFaciaGrove_L, PlantarFaciaGrove_R, LateralHeel_L, LateralHeel_R, MedialHeel_L, MedialHeel_R, RigidMortons_L, RigidMortons_R, MortonsExt_L, MortonsExt_R, RevMortons_L, RevMortons_R, ArchFillPad_L, ArchFillPad_R, MedialFlange_L, MedialFlange_R, LateralFlange_L, LateralFlange_R, HeelSpurPad_L, HeelSpurPad_R, HeelCushion_L, HeelCushion_R, Cuboid_L, Cuboid_R, MetatarsalRaise_L, MetatarsalRaise_R, KineticWedge_L, KineticWedge_R, NeuromaPad_L, NeuromaPad_R, MetPad_Options, MetPad_L, MetPad_R, MetBar_Options, MetBar_L, MetBar_R, DistalEndOfShell_X, DistalEndOfShell_Y, Notes, Sub_U_Cut FROM dbo.RptView";
+            this._commandCollection[0].CommandText = "SELECT RptView.*\r\nFROM     RptView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

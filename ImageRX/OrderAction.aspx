@@ -108,6 +108,10 @@
               
                 
                     <asp:Button ID="Button1" runat="server" Text="Move to Next Stage" Width="242px" OnClick="Button1_Click" />
+                            &nbsp;
+              
+                
+                    <asp:Button ID="Button2" runat="server" Text="Go to Order Summmary" Width="242px" OnClick="Button2_Click" />
                             </td>
                         </tr>
                         </table>

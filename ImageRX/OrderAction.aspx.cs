@@ -156,6 +156,10 @@ namespace ImageRX
 
             ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Action submitted.');", true);
         }
-       
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("OrderPageV2.aspx");
+        }
     }
 }

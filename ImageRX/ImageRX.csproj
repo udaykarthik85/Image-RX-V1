@@ -640,7 +640,7 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="ImageOrderMgmt.rdlc" />
-    <EmbeddedResource Include="OrderReport.rdlc" />
+    <EmbeddedResource Include="Ordersummary.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
