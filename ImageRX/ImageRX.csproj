@@ -253,7 +253,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
-    <Content Include="OrderPage.aspx" />
+    <Content Include="OrderAction.aspx" />
     <Content Include="FinalOrder.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -549,12 +549,12 @@
     <Compile Include="ImgHandler.ashx.cs">
       <DependentUpon>ImgHandler.ashx</DependentUpon>
     </Compile>
-    <Compile Include="OrderPage.aspx.cs">
-      <DependentUpon>OrderPage.aspx</DependentUpon>
+    <Compile Include="OrderAction.aspx.cs">
+      <DependentUpon>OrderAction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="OrderPage.aspx.designer.cs">
-      <DependentUpon>OrderPage.aspx</DependentUpon>
+    <Compile Include="OrderAction.aspx.designer.cs">
+      <DependentUpon>OrderAction.aspx</DependentUpon>
     </Compile>
     <Compile Include="FinalOrder.aspx.cs">
       <DependentUpon>FinalOrder.aspx</DependentUpon>

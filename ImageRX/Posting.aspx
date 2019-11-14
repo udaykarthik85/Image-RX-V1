@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="POSTING" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Posting.aspx.cs" Inherits="ImageRX.Posting" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 class="text-left"><%: Title %>POSTING INSTRUCTIONS</h2>
+    <h2 class="text-left">POSTING INSTRUCTIONS</h2>
     <h3>
         <table style="width:100%; font-size: xx-small; border-color: black">
                         <tr>

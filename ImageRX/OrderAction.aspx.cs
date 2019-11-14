@@ -12,16 +12,19 @@ using System.Web.UI.WebControls;
 
 namespace ImageRX
 {
-    public partial class OrderPage: Page
+    public partial class OrderAction: Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string v = "5";// Request.QueryString["id"];
 
-           
+            string message = "Do you want to submit?";
+            ClientScript.RegisterOnSubmitStatement(this.GetType(), "confirm", "return confirm('" + message + "');");
+            string v = Request.QueryString["id"];
+
+         
 
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-               // int pid = (int)(v.ToString());//(Session["IDValue"]);
+            // int pid = (int)(v.ToString());//(Session["IDValue"]);
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * from [dbo].[tbl_OrderStageDate] WHERE [Orderid]= '" + v + "'", con);
             SqlDataReader readStage = cmd.ExecuteReader();
@@ -33,7 +36,7 @@ namespace ImageRX
                 Label26.Text = readStage["LabReceived"].ToString();
                 if (readStage["LabReceived_tek"] != DBNull.Value || readStage["LabReceived_tek"].ToString() != "")
                 { TextBox2.Text = readStage["LabReceived_tek"].ToString(); }
-                 Label27.Text = readStage["ManufacturingStart"].ToString();
+                Label27.Text = readStage["ManufacturingStart"].ToString();
                 if (readStage["ManufacturingStart_tek"].ToString() != "" || readStage["ManufacturingStart_tek"] != DBNull.Value)
                 { TextBox3.Text = readStage["ManufacturingStart_tek"].ToString(); }
                 Label28.Text = readStage["Station1"].ToString();
@@ -57,9 +60,6 @@ namespace ImageRX
             }
             readStage.Close();
             con.Close();
-
-
-
         }
      
 
@@ -67,7 +67,7 @@ namespace ImageRX
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
             con.Open();
-            string v = "5";//Request.QueryString["id"]; 
+            string v = Request.QueryString["id"]; 
             int i = 0;
             SqlCommand cmd = new SqlCommand("Select * from [dbo].[tbl_OrderStageDate] WHERE [Orderid]= '" + v + "'", con);
             SqlDataReader reader = cmd.ExecuteReader();
@@ -154,6 +154,8 @@ namespace ImageRX
             reader.Close();
             con.Close();
 
+            ClientScript.RegisterStartupScript(this.GetType(), "alert", "alert('Action submitted.');", true);
         }
+       
     }
 }

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="Orthotic Device Material" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="OrthoticMM.aspx.cs" Inherits="ImageRX.OrthoticMM" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 style="width: 840px"><%: Title %>ORTHOTIC DEVICE MATERIAL</h2>
+    <h2 style="width: 840px">ORTHOTIC DEVICE MATERIAL</h2>
     <h3>
         <table style="width:48%; font-size: xx-small; border-color: black">
             <tr>
