@@ -186,7 +186,7 @@
             </tr>
             <tr style="font-size: x-small">
                 <td class="text-left" colspan="5" style="font-size: xx-small">
-                    <asp:TextBox ID="TextBox1" runat="server" Height="223px" Width="679px"></asp:TextBox>
+                    <asp:TextBox ID="TextBox1" runat="server" Height="223px" Width="679px" TextMode="MultiLine"></asp:TextBox>
                 </td>
                 <td class="text-left" colspan="5" style="font-size: xx-small">
                     <asp:CheckBox ID="CheckBox49" runat="server" />

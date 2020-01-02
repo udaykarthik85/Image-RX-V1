@@ -31,15 +31,6 @@ namespace ImageRX {
         protected global::System.Web.UI.WebControls.DropDownList DropDownList19;
         
         /// <summary>
-        /// RadioButton9 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton9;
-        
-        /// <summary>
         /// DropDownList7 control.
         /// </summary>
         /// <remarks>
@@ -56,15 +47,6 @@ namespace ImageRX {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList8;
-        
-        /// <summary>
-        /// RadioButton10 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton10;
         
         /// <summary>
         /// DropDownList9 control.
@@ -94,15 +76,6 @@ namespace ImageRX {
         protected global::System.Web.UI.WebControls.RadioButton RadioButton12;
         
         /// <summary>
-        /// RadioButton13 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton13;
-        
-        /// <summary>
         /// DropDownList15 control.
         /// </summary>
         /// <remarks>
@@ -119,15 +92,6 @@ namespace ImageRX {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.DropDownList DropDownList16;
-        
-        /// <summary>
-        /// RadioButton14 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RadioButton RadioButton14;
         
         /// <summary>
         /// DropDownList17 control.

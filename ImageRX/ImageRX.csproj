@@ -251,6 +251,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="DesignUploads.aspx" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
     <Content Include="OrderAction.aspx" />
@@ -512,6 +513,9 @@
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DashboarddataSet.cs">
+      <DependentUpon>DashboarddataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DashboarddataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -523,6 +527,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignUploads.aspx.cs">
+      <DependentUpon>DesignUploads.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignUploads.aspx.designer.cs">
+      <DependentUpon>DesignUploads.aspx</DependentUpon>
     </Compile>
     <Compile Include="OrderPageV2.aspx.cs">
       <DependentUpon>OrderPageV2.aspx</DependentUpon>
@@ -657,7 +668,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>34410</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:34410/</IISUrl>
+          <IISUrl>http://localhost:22933/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

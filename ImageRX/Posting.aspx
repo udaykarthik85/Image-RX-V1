@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="POSTING" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Posting.aspx.cs" Inherits="ImageRX.Posting" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 class="text-left">POSTING INSTRUCTIONS</h2>
+    <h2 class="text-left">Posting Instructions</h2>
     <h3>
         <table style="width:100%; font-size: xx-small; border-color: black">
                         <tr>
@@ -17,6 +17,7 @@
                 <td style="width: 635px; font-size: small; height: 32px;" class="text-left">
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList19" Enabled="false"  runat="server" Height="16px" Width="283px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Crepe</asp:ListItem>
                         <asp:ListItem>Acrylic</asp:ListItem>
                         <asp:ListItem>Unibody</asp:ListItem>
@@ -25,33 +26,13 @@
             </tr>
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">
-                    <span style="font-size: small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="RadioButton9" runat="server" Enabled="False"  AutoPostBack="true" OnCheckedChanged="RadioButton9_CheckedChanged"/>
-                    INVERSION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; L:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList7" runat="server" Enabled="False" style="font-size: small">
-                        <asp:ListItem>0</asp:ListItem>
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
-                        <asp:ListItem>11</asp:ListItem>
-                        <asp:ListItem>12</asp:ListItem>
-                        <asp:ListItem>13</asp:ListItem>
-                        <asp:ListItem>14</asp:ListItem>
-                        <asp:ListItem>15</asp:ListItem>
-                        <asp:ListItem>16</asp:ListItem>
-                        <asp:ListItem>17</asp:ListItem>
-                        <asp:ListItem>18</asp:ListItem>
-                        <asp:ListItem>19</asp:ListItem>
-                        <asp:ListItem>20</asp:ListItem>
+                    <span style="font-size: small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Left Foot Option:&nbsp;&nbsp; </span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList7" runat="server" Enabled="False" style="font-size: small" Height="18px" Width="130px">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>INVERSION</asp:ListItem>
+                        <asp:ListItem>MOTION</asp:ListItem>
                     </asp:DropDownList>
                     </span>
-                    <span style="font-size: small">&nbsp;&nbsp; R:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList8" runat="server" Enabled="False" style="font-size: small">
+                    <span style="font-size: small">&nbsp;&nbsp; L:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList8" runat="server" Enabled="False" style="font-size: small">
                         <asp:ListItem>0</asp:ListItem>
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -78,30 +59,10 @@
             </tr>
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">
-                    <span style="font-size: small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="RadioButton10" runat="server" Enabled="False"  AutoPostBack="true" OnCheckedChanged="RadioButton10_CheckedChanged"/>
-                    MOTION&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; L:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList9" runat="server" Enabled="False" style="font-size: small">
-                       <asp:ListItem>0</asp:ListItem>
-                         <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
-                        <asp:ListItem>11</asp:ListItem>
-                        <asp:ListItem>12</asp:ListItem>
-                        <asp:ListItem>13</asp:ListItem>
-                        <asp:ListItem>14</asp:ListItem>
-                        <asp:ListItem>15</asp:ListItem>
-                        <asp:ListItem>16</asp:ListItem>
-                        <asp:ListItem>17</asp:ListItem>
-                        <asp:ListItem>18</asp:ListItem>
-                        <asp:ListItem>19</asp:ListItem>
-                        <asp:ListItem>20</asp:ListItem>
+                    <span style="font-size: small">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Right Foot Option:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList9" runat="server" Enabled="False" style="font-size: small" Height="18px" Width="129px">
+                       <asp:ListItem></asp:ListItem>
+                         <asp:ListItem>INVERSION</asp:ListItem>
+                        <asp:ListItem>MOTION</asp:ListItem>
                     </asp:DropDownList>
                     </span>
                     <span style="font-size: small">&nbsp;&nbsp; R:&nbsp;</span><span style="font-size: x-small"><asp:DropDownList ID="DropDownList10" runat="server" Enabled="False" style="font-size: small">
@@ -142,32 +103,12 @@
             </tr>
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="RadioButton13" runat="server" AutoPostBack="true" Enabled="False" GroupName="FFEP" style="font-size: small" OnCheckedChanged="RadioButton13_CheckedChanged" />
-                    <span style="font-size: small">VARUS&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;L:&nbsp;<span style="font-size: x-small"><asp:DropDownList ID="DropDownList15" runat="server" Enabled="False" style="font-size: small">
-                        <asp:ListItem>0</asp:ListItem>
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
-                        <asp:ListItem>11</asp:ListItem>
-                        <asp:ListItem>12</asp:ListItem>
-                        <asp:ListItem>13</asp:ListItem>
-                        <asp:ListItem>14</asp:ListItem>
-                        <asp:ListItem>15</asp:ListItem>
-                        <asp:ListItem>16</asp:ListItem>
-                        <asp:ListItem>17</asp:ListItem>
-                        <asp:ListItem>18</asp:ListItem>
-                        <asp:ListItem>19</asp:ListItem>
-                        <asp:ListItem>20</asp:ListItem>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size: small">&nbsp;&nbsp; Left Foot Option: &nbsp;<span style="font-size: x-small">&nbsp;&nbsp;&nbsp; <asp:DropDownList ID="DropDownList15" runat="server" Enabled="False" style="font-size: small" Height="16px" Width="120px">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>VARUS</asp:ListItem>
+                        <asp:ListItem>VALGUS</asp:ListItem>
                     </asp:DropDownList>
-                    </span>&nbsp;&nbsp; R:&nbsp;<span style="font-size: x-small"><asp:DropDownList ID="DropDownList16" runat="server" Enabled="False" style="font-size: small">
+                    </span>&nbsp;&nbsp; L:&nbsp;<span style="font-size: x-small"><asp:DropDownList ID="DropDownList16" runat="server" Enabled="False" style="font-size: small">
                         <asp:ListItem>0</asp:ListItem>
                         <asp:ListItem>1</asp:ListItem>
                         <asp:ListItem>2</asp:ListItem>
@@ -194,30 +135,10 @@
             </tr>
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:RadioButton ID="RadioButton14" runat="server" Enabled="False" AutoPostBack="true" GroupName="FFEP" style="font-size: small" OnCheckedChanged="RadioButton14_CheckedChanged" />
-                    <span style="font-size: small">VALGUS&nbsp;&nbsp;&nbsp; &nbsp;L:&nbsp;<span style="font-size: x-small"><asp:DropDownList ID="DropDownList17" runat="server" Enabled="False" style="font-size: small">
-                        <asp:ListItem>0</asp:ListItem>
-                        <asp:ListItem>1</asp:ListItem>
-                        <asp:ListItem>2</asp:ListItem>
-                        <asp:ListItem>3</asp:ListItem>
-                        <asp:ListItem>4</asp:ListItem>
-                        <asp:ListItem>5</asp:ListItem>
-                        <asp:ListItem>6</asp:ListItem>
-                        <asp:ListItem>7</asp:ListItem>
-                        <asp:ListItem>8</asp:ListItem>
-                        <asp:ListItem>9</asp:ListItem>
-                        <asp:ListItem>10</asp:ListItem>
-                        <asp:ListItem>11</asp:ListItem>
-                        <asp:ListItem>12</asp:ListItem>
-                        <asp:ListItem>13</asp:ListItem>
-                        <asp:ListItem>14</asp:ListItem>
-                        <asp:ListItem>15</asp:ListItem>
-                        <asp:ListItem>16</asp:ListItem>
-                        <asp:ListItem>17</asp:ListItem>
-                        <asp:ListItem>18</asp:ListItem>
-                        <asp:ListItem>19</asp:ListItem>
-                        <asp:ListItem>20</asp:ListItem>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: small">&nbsp;&nbsp; Right Foot Option:&nbsp;<span style="font-size: x-small">&nbsp; <asp:DropDownList ID="DropDownList17" runat="server" Enabled="False" style="font-size: small" Height="18px" Width="120px">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>VARUS</asp:ListItem>
+                        <asp:ListItem>VALGUS</asp:ListItem>
                     </asp:DropDownList>
                     </span>&nbsp;&nbsp; R:&nbsp;<span style="font-size: x-small"><asp:DropDownList ID="DropDownList18" runat="server" Enabled="False" style="font-size: small">
                         <asp:ListItem>0</asp:ListItem>
@@ -253,6 +174,7 @@
                 <td style="width: 907px; font-size: small; height: 32px;" class="text-left">
                     Grinding Instructions:&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList20" runat="server" Height="16px" Width="193px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Use Lab Discretion</asp:ListItem>
                         <asp:ListItem>Narrow</asp:ListItem>
                         <asp:ListItem>Normal</asp:ListItem>
@@ -264,6 +186,7 @@
                 <td style="width: 907px; font-size: small; height: 32px;" class="text-left">
                     Heel Cup Depth:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList21" runat="server" Height="19px" Width="184px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Low: (5-7mm)</asp:ListItem>
                         <asp:ListItem>Med: (10-12mm)</asp:ListItem>
                         <asp:ListItem>Deep: (15-17mm)</asp:ListItem>
@@ -280,6 +203,7 @@
                 <td style="width: 907px; font-size: small; height: 32px;" class="text-left">
                     Material:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:DropDownList ID="DropDownList22" runat="server" Height="19px" style="font-size: small" Width="211px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Black Poron</asp:ListItem>
                         <asp:ListItem>Pink Plastizote</asp:ListItem>
                         <asp:ListItem>Special Poron</asp:ListItem>
@@ -291,6 +215,7 @@
                 <td style="width: 907px; font-size: medium; height: 32px;" class="text-left">
                     <span style="font-size: small">Thickness:&nbsp;&nbsp; </span>
                     <asp:DropDownList ID="DropDownList23" runat="server" style="font-size: small" Width="90px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>1/16&quot;</asp:ListItem>
                         <asp:ListItem>1/8&quot;</asp:ListItem>
                         <asp:ListItem>3/16&quot;</asp:ListItem>
@@ -302,6 +227,7 @@
                 <td style="width: 907px; font-size: medium; height: 32px;" class="text-left">
                     <span style="font-size: small">Top Covers:
                     <asp:DropDownList ID="DropDownList24" runat="server" Height="22px" Width="212px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Vinyl</asp:ListItem>
                         <asp:ListItem>Leather (perf)</asp:ListItem>
                         <asp:ListItem>Ultra Suede</asp:ListItem>
@@ -314,6 +240,7 @@
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">
                     <span style="font-size: small">Length:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; </span>&nbsp;<asp:DropDownList ID="DropDownList25" runat="server" Height="16px" style="font-size: small" Width="212px">
+                        <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>On Device Only</asp:ListItem>
                         <asp:ListItem>Distal of Device to Sulcus</asp:ListItem>
                         <asp:ListItem>Distal of Device to Toes</asp:ListItem>
@@ -330,7 +257,7 @@
                     &nbsp;</td>
             </tr>
                         <tr>
-                <td style="width: 907px; font-size: xx-small;" class="text-left">&nbsp;</td>
+                <td style="width: 907px; font-size: xx-small; height: 10px;" class="text-left"></td>
             </tr>
                         </table>
     </h3>

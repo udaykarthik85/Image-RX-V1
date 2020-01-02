@@ -12,6 +12,10 @@
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="ImageRX.ImageOrthoDBDataSet2TableAdapters.RptViewTableAdapter"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetDataByOID" TypeName="ImageRX.ImageOrthoDBDataSet2TableAdapters.RptViewTableAdapter">
+                <SelectParameters>
+                    <asp:QueryStringParameter Name="OID" QueryStringField="Id" Type="Int32" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
 </div>
 </asp:Content>

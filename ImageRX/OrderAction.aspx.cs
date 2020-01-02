@@ -36,6 +36,15 @@ namespace ImageRX
                 Label26.Text = readStage["LabReceived"].ToString();
                 if (readStage["LabReceived_tek"] != DBNull.Value || readStage["LabReceived_tek"].ToString() != "")
                 { TextBox2.Text = readStage["LabReceived_tek"].ToString(); }
+
+                Label37.Text = readStage["DesignStart"].ToString();
+                if (readStage["DesignStart_tek"] != DBNull.Value || readStage["DesignStart_tek"].ToString() != "")
+                { TextBox13.Text = readStage["DesignStart_tek"].ToString(); }
+
+                Label38.Text = readStage["LabReady"].ToString();
+                if (readStage["LabReady_tek"] != DBNull.Value || readStage["LabReady_tek"].ToString() != "")
+                { TextBox14.Text = readStage["LabReady_tek"].ToString(); }
+
                 Label27.Text = readStage["ManufacturingStart"].ToString();
                 if (readStage["ManufacturingStart_tek"].ToString() != "" || readStage["ManufacturingStart_tek"] != DBNull.Value)
                 { TextBox3.Text = readStage["ManufacturingStart_tek"].ToString(); }
@@ -81,6 +90,24 @@ namespace ImageRX
                     da.InsertCommand = new SqlCommand(sql, con);
                     i=da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl); 
+                }
+                else if (reader["DesignStart"] == DBNull.Value)
+                {
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [DesignStart] = '" + DateTime.Now.ToString() + "',[DesignStart_tek] = '" + TextBox13.Text + "' where [OrderID] = " + v + "";
+                    reader.Close();
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand(sql, con);
+                    i = da.InsertCommand.ExecuteNonQuery();
+                    Response.Redirect(Request.RawUrl);
+                }
+                else if (reader["LabReady"] == DBNull.Value)
+                {
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [LabReady] = '" + DateTime.Now.ToString() + "',[LabReady_tek] = '" + TextBox14.Text + "' where [OrderID] = " + v + "";
+                    reader.Close();
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand(sql, con);
+                    i = da.InsertCommand.ExecuteNonQuery();
+                    Response.Redirect(Request.RawUrl);
                 }
                 else if (reader["ManufacturingStart"] == DBNull.Value)
                 {
@@ -159,7 +186,16 @@ namespace ImageRX
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            Response.Redirect("OrderPageV2.aspx");
+            string v = Request.QueryString["id"];
+            
+            Response.Redirect("OrderPageV2.aspx?id=" + v);
+        }
+
+        protected void Upload_Click(object sender, EventArgs e)
+        {
+            string v = Request.QueryString["id"];
+
+            Response.Redirect("DesignUploads.aspx?id=" + v);
         }
     }
 }

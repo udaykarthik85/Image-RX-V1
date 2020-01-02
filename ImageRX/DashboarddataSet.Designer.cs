@@ -509,7 +509,7 @@ namespace ImageRX {
                 this.columnOrderID.AllowDBNull = false;
                 this.columnCast_Number.AllowDBNull = false;
                 this.columnStatus.ReadOnly = true;
-                this.columnStatus.MaxLength = 20;
+                this.columnStatus.MaxLength = 50;
                 this.columnshoe_type.MaxLength = 100;
                 this.columnPhysician.MaxLength = 100;
                 this.columnpatient_Name.AllowDBNull = false;
@@ -1024,9 +1024,8 @@ namespace ImageRX.DashboarddataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT [CreatedDate]\r\n      ,[OrderID]\r\n      ,[Cast_Number]\r\n      ,[Status]\r\n  " +
-                "    ,[shoe_type]\r\n      ,[Physician]\r\n      ,[patient_Name]\r\n      ,[FootImpress" +
-                "ion]\r\n      ,[Daterequired]\r\n  FROM [dbo].[Dashboard]\r\n";
+            this._commandCollection[0].CommandText = "SELECT        CreatedDate, OrderID, Cast_Number, Status, shoe_type, Physician, pa" +
+                "tient_Name, FootImpression, Daterequired\r\nFROM            Dashboard";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
