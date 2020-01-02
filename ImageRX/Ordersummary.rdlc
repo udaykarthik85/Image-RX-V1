@@ -1999,18 +1999,18 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ORS_DataSet">
+    <DataSource Name="ImageOrthoDBDataSet2">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>c846e2f0-f730-43ab-a623-eda53045fe49</rd:DataSourceID>
+      <rd:DataSourceID>0d705906-d3cb-4abe-9ee7-bfb60bbe80e9</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>ORS_DataSet</DataSourceName>
+        <DataSourceName>ImageOrthoDBDataSet2</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -2082,10 +2082,6 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
           <DataField>DressDevice1</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="DressDevice2">
-          <DataField>DressDevice2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
         <Field Name="DressDevice3">
           <DataField>DressDevice3</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -2149,10 +2145,6 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
         <Field Name="RFP_R">
           <DataField>RFP_R</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="FFP_Option">
-          <DataField>FFP_Option</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="FFP_L">
           <DataField>FFP_L</DataField>
