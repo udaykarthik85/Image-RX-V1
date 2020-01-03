@@ -299,6 +299,17 @@
       <DependentUpon>ImageOrthoDBDataSet2.xsd</DependentUpon>
     </Content>
     <Content Include="ImgHandler.ashx" />
+    <Content Include="ImageOrthoDBDataSet3.xsc">
+      <DependentUpon>ImageOrthoDBDataSet3.xsd</DependentUpon>
+    </Content>
+    <None Include="ImageOrthoDBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImageOrthoDBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ImageOrthoDBDataSet3.xss">
+      <DependentUpon>ImageOrthoDBDataSet3.xsd</DependentUpon>
+    </Content>
     <None Include="Properties\PublishProfiles\ImageRX.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\1st met cutout.jpg" />
@@ -534,6 +545,11 @@
     </Compile>
     <Compile Include="DesignUploads.aspx.designer.cs">
       <DependentUpon>DesignUploads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOrthoDBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageOrthoDBDataSet3.xsd</DependentUpon>
     </Compile>
     <Compile Include="OrderPageV2.aspx.cs">
       <DependentUpon>OrderPageV2.aspx</DependentUpon>

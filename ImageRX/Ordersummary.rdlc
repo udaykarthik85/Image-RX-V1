@@ -1999,18 +1999,18 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ImageOrthoDBDataSet2">
+    <DataSource Name="ImageOrthoDBDataSet3">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>0d705906-d3cb-4abe-9ee7-bfb60bbe80e9</rd:DataSourceID>
+      <rd:DataSourceID>91636d9f-e1de-4fcb-89aa-f2743995b4e4</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>ImageOrthoDBDataSet2</DataSourceName>
+        <DataSourceName>ImageOrthoDBDataSet3</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -2038,6 +2038,14 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
           <DataField>patient_Name</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
+        <Field Name="height">
+          <DataField>height</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="weight">
+          <DataField>weight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="shoe_size">
           <DataField>shoe_size</DataField>
           <rd:TypeName>System.String</rd:TypeName>
@@ -2050,12 +2058,8 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
           <DataField>Age</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="height">
-          <DataField>height</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="weight">
-          <DataField>weight</DataField>
+        <Field Name="No_of_Orthotics">
+          <DataField>No_of_Orthotics</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Gender">
@@ -2068,6 +2072,34 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
         </Field>
         <Field Name="CustomerName">
           <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Daterequired">
+          <DataField>Daterequired</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FootImpression">
+          <DataField>FootImpression</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Factory">
+          <DataField>Factory</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Ship_to">
+          <DataField>Ship_to</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Shipping_Address">
+          <DataField>Shipping_Address</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Return_Positive">
+          <DataField>Return_Positive</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ODMaterial">
+          <DataField>ODMaterial</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="White_PolyPro">
@@ -2110,45 +2142,81 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
           <DataField>Cork_LeatherDevice</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CastBalanceOption">
-          <DataField>CastBalanceOption</DataField>
+        <Field Name="CastBalanceLeftOption">
+          <DataField>CastBalanceLeftOption</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="CastBalance_L">
           <DataField>CastBalance_L</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="CastBalanceRightOption">
+          <DataField>CastBalanceRightOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="CastBalance_R">
           <DataField>CastBalance_R</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ArchFillOption">
-          <DataField>ArchFillOption</DataField>
+        <Field Name="RaiseArch">
+          <DataField>RaiseArch</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ArchFill_L">
-          <DataField>ArchFill_L</DataField>
+        <Field Name="Raise_ArchFill_L">
+          <DataField>Raise_ArchFill_L</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="ArchFill_R">
-          <DataField>ArchFill_R</DataField>
+        <Field Name="Raise_ArchFill_R">
+          <DataField>Raise_ArchFill_R</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="LowerArch">
+          <DataField>LowerArch</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Lower_ArchFill_L">
+          <DataField>Lower_ArchFill_L</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Lower_ArchFill_R">
+          <DataField>Lower_ArchFill_R</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SameasCast">
+          <DataField>SameasCast</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="RFP_Option">
           <DataField>RFP_Option</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RFP_LOption">
+          <DataField>RFP_LOption</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="RFP_L">
           <DataField>RFP_L</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="RFP_ROption">
+          <DataField>RFP_ROption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="RFP_R">
           <DataField>RFP_R</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
+        <Field Name="FFP_LOption">
+          <DataField>FFP_LOption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
         <Field Name="FFP_L">
           <DataField>FFP_L</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FFP_ROption">
+          <DataField>FFP_ROption</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="FFP_R">
           <DataField>FFP_R</DataField>
@@ -2434,94 +2502,10 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True     ", "SUB
           <DataField>L5</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="No_of_Orthotics">
-          <DataField>No_of_Orthotics</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Daterequired">
-          <DataField>Daterequired</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="FootImpression">
-          <DataField>FootImpression</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Factory">
-          <DataField>Factory</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Ship_to">
-          <DataField>Ship_to</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Shipping_Address">
-          <DataField>Shipping_Address</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Return_Positive">
-          <DataField>Return_Positive</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ODMaterial">
-          <DataField>ODMaterial</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CastBalanceLeftOption">
-          <DataField>CastBalanceLeftOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CastBalanceRightOption">
-          <DataField>CastBalanceRightOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RaiseArch">
-          <DataField>RaiseArch</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Raise_ArchFill_L">
-          <DataField>Raise_ArchFill_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Raise_ArchFill_R">
-          <DataField>Raise_ArchFill_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="LowerArch">
-          <DataField>LowerArch</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Lower_ArchFill_L">
-          <DataField>Lower_ArchFill_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Lower_ArchFill_R">
-          <DataField>Lower_ArchFill_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="SameasCast">
-          <DataField>SameasCast</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_LOption">
-          <DataField>RFP_LOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_ROption">
-          <DataField>RFP_ROption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FFP_LOption">
-          <DataField>FFP_LOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FFP_ROption">
-          <DataField>FFP_ROption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>ImageOrthoDBDataSet2</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\kdandebo\Documents\Visual Studio 2015\Projects\ImageRX\ImageRX\ImageOrthoDBDataSet2.xsd</rd:SchemaPath>
+        <rd:DataSetName>ImageOrthoDBDataSet3</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\kdandebo\Documents\Visual Studio 2015\Projects\ImageRX\ImageRX\ImageOrthoDBDataSet3.xsd</rd:SchemaPath>
         <rd:TableName>RptView</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>

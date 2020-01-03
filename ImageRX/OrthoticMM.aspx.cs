@@ -132,22 +132,89 @@ namespace ImageRX
         protected void DropDownList19_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (DropDownList19.SelectedValue == "Graphite")
-            { DropDownList2.Enabled = true;
-                DropDownList1.SelectedIndex = 0 ;
+            {
                 DropDownList1.Enabled = false;
+                DropDownList1.SelectedIndex = 0;
+                DropDownList2.Enabled = true;
+                DropDownList3.Enabled = true;
+                DropDownList5.Enabled = true;
+                DropDownList6.Enabled = false;
+                DropDownList6.SelectedIndex = 0; DropDownList7.Enabled = false;
+                DropDownList7.SelectedIndex = 0; DropDownList8.Enabled = false;
+                DropDownList8.SelectedIndex = 0; DropDownList9.Enabled = false;
+                DropDownList9.SelectedIndex = 0;
+                CheckBox1.Enabled = false;
+                CheckBox1.Checked = false;
 
             }
             else if (DropDownList19.SelectedValue == "White Polypropylene")
             { DropDownList1.Enabled = true;
                 DropDownList2.SelectedIndex = 0;
                 DropDownList2.Enabled = false;
-
+                DropDownList5.Enabled = false;
+                DropDownList5.SelectedIndex = 0;
+                DropDownList6.Enabled = false;
+                DropDownList6.SelectedIndex = 0; DropDownList7.Enabled = false;
+                DropDownList7.SelectedIndex = 0; DropDownList8.Enabled = false;
+                DropDownList8.SelectedIndex = 0; DropDownList9.Enabled = false;
+                DropDownList9.SelectedIndex = 0;
+                CheckBox1.Enabled = false;
+                CheckBox1.Checked = false;
             }
-            else
-            { DropDownList2.Enabled = false;
+            else if (DropDownList19.SelectedValue == "Cork")
+            {
                 DropDownList1.Enabled = false;
                 DropDownList1.SelectedIndex = 0;
+                DropDownList2.Enabled = false;
                 DropDownList2.SelectedIndex = 0;
+                DropDownList3.Enabled = false;
+                DropDownList3.SelectedIndex = 0;
+                DropDownList5.Enabled = false;
+                DropDownList5.SelectedIndex = 0;
+                DropDownList6.Enabled = true;
+                DropDownList7.Enabled = false;
+                DropDownList7.SelectedIndex = 0; DropDownList8.Enabled = false;
+                DropDownList8.SelectedIndex = 0; DropDownList9.Enabled = false;
+                DropDownList9.SelectedIndex = 0;
+                CheckBox1.Enabled = true;
+
+            }
+            else if (DropDownList19.SelectedValue == "Plastizote Diabetic Devices")
+            {
+                DropDownList1.Enabled = false;
+                DropDownList1.SelectedIndex = 0;
+                DropDownList2.Enabled = false;
+                DropDownList2.SelectedIndex = 0;
+                DropDownList3.Enabled = false;
+                DropDownList3.SelectedIndex = 0;
+                DropDownList5.Enabled = false;
+                DropDownList5.SelectedIndex = 0;
+                DropDownList6.Enabled = false;
+                DropDownList6.SelectedIndex = 0; DropDownList7.Enabled = true;
+                DropDownList8.Enabled = false;
+                DropDownList8.SelectedIndex = 0; DropDownList9.Enabled = false;
+                DropDownList9.SelectedIndex = 0;
+                CheckBox1.Enabled = false;
+                CheckBox1.Checked = false;
+
+            }
+            else if (DropDownList19.SelectedValue == "Polypro with Plantar Fill")
+            {
+                DropDownList1.Enabled = false;
+                DropDownList1.SelectedIndex = 0;
+                DropDownList2.Enabled = false;
+                DropDownList2.SelectedIndex = 0;
+                DropDownList3.Enabled = false;
+                DropDownList3.SelectedIndex = 0;
+                DropDownList5.Enabled = false;
+                DropDownList5.SelectedIndex = 0;
+                DropDownList6.Enabled = false;
+                DropDownList6.SelectedIndex = 0; DropDownList7.Enabled = false;
+                DropDownList7.SelectedIndex = 0; DropDownList8.Enabled = true;
+                DropDownList9.Enabled = true;
+                CheckBox1.Enabled = false;
+                CheckBox1.Checked = false;
+
             }
         }
     }

@@ -12,6 +12,9 @@
                         <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>White Polypropylene</asp:ListItem>
                         <asp:ListItem>Graphite</asp:ListItem>
+                        <asp:ListItem>Cork</asp:ListItem>
+                        <asp:ListItem>Plastizote Diabetic Devices</asp:ListItem>
+                        <asp:ListItem>Polypro with Plantar Fill</asp:ListItem>
                     </asp:DropDownList>
                 </td>
             </tr>
