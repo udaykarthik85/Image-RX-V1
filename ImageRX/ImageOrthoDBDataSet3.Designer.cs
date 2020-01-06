@@ -5446,7 +5446,7 @@ namespace ImageRX.ImageOrthoDBDataSet3TableAdapters {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[2];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT OrderID, OrderStatus, CreatedDate, LastModified, Cast_Number, patient_Name" +
@@ -5471,6 +5471,34 @@ namespace ImageRX.ImageOrthoDBDataSet3TableAdapters {
                 "istalEndOfShell_Y, Notes, Sub_U_Cut, R1, R2, R3, R4, R5, L1, L2, L3, L4, L5 FROM" +
                 " dbo.RptView";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[1].Connection = this.Connection;
+            this._commandCollection[1].CommandText = "SELECT        OrderID, OrderStatus, CreatedDate, LastModified, Cast_Number, patie" +
+                "nt_Name, height, weight, shoe_size, shoe_type, Age, No_of_Orthotics, Gender, Dia" +
+                "gnosis, CustomerName, Daterequired, FootImpression, Factory, Ship_to, \r\n        " +
+                "                 Shipping_Address, Return_Positive, ODMaterial, White_PolyPro, G" +
+                "raphite, DressDevice1, DressDevice3, Cork, PlastizoteDiabetic, PolyproPlantarFil" +
+                "l_Shell, PolyproPlantarFill, ChildrensDevice, Cork_LeatherDevice, \r\n            " +
+                "             CastBalanceLeftOption, CastBalance_L, CastBalanceRightOption, CastB" +
+                "alance_R, RaiseArch, Raise_ArchFill_L, Raise_ArchFill_R, LowerArch, Lower_ArchFi" +
+                "ll_L, Lower_ArchFill_R, SameasCast, RFP_Option, RFP_LOption, \r\n                 " +
+                "        RFP_L, RFP_ROption, RFP_R, FFP_LOption, FFP_L, FFP_ROption, FFP_R, Grind" +
+                "ing, HCD, HCD_Other, Material, Thickness, TopCovers, Length, Len_AddBottomCover," +
+                " HeelSpur_L, HeelSpur_R, Ray_L, Ray_R, MetCut_L, \r\n                         MetC" +
+                "ut_R, ShellMedialFlag_L, ShellMedialFlange_R, ShellLateralFlange_L, ShellLateral" +
+                "Flange_R, LateralClip_L, LateralClip_R, PlantarFaciaGrove_L, PlantarFaciaGrove_R" +
+                ", LateralHeel_L, LateralHeel_R, MedialHeel_L, \r\n                         MedialH" +
+                "eel_R, RigidMortons_L, RigidMortons_R, MortonsExt_L, MortonsExt_R, RevMortons_L," +
+                " RevMortons_R, ArchFillPad_L, ArchFillPad_R, MedialFlange_L, MedialFlange_R, Lat" +
+                "eralFlange_L, LateralFlange_R, \r\n                         HeelSpurPad_L, HeelSpu" +
+                "rPad_R, HeelCushion_L, HeelCushion_R, Cuboid_L, Cuboid_R, MetatarsalRaise_L, Met" +
+                "atarsalRaise_R, KineticWedge_L, KineticWedge_R, NeuromaPad_L, NeuromaPad_R, MetP" +
+                "ad_Options, MetPad_L,\r\n                          MetPad_R, MetBar_Options, MetBa" +
+                "r_L, MetBar_R, DistalEndOfShell_X, DistalEndOfShell_Y, Notes, Sub_U_Cut, R1, R2," +
+                " R3, R4, R5, L1, L2, L3, L4, L5\r\nFROM            RptView\r\nWHERE        (OrderID " +
+                "= @OID)";
+            this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5492,6 +5520,32 @@ namespace ImageRX.ImageOrthoDBDataSet3TableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual ImageOrthoDBDataSet3.RptViewDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            ImageOrthoDBDataSet3.RptViewDataTable dataTable = new ImageOrthoDBDataSet3.RptViewDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, false)]
+        public virtual int FillBy1(ImageOrthoDBDataSet3.RptViewDataTable dataTable, int OID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(OID));
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual ImageOrthoDBDataSet3.RptViewDataTable GetDataByID(int OID) {
+            this.Adapter.SelectCommand = this.CommandCollection[1];
+            this.Adapter.SelectCommand.Parameters[0].Value = ((int)(OID));
             ImageOrthoDBDataSet3.RptViewDataTable dataTable = new ImageOrthoDBDataSet3.RptViewDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;

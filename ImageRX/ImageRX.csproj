@@ -252,6 +252,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="DesignUploads.aspx" />
+    <Content Include="Images\Left Foot Drawing.jpg" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
     <Content Include="OrderAction.aspx" />

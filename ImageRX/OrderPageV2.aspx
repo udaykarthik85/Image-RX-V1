@@ -5,13 +5,17 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
             
     <div style="width:auto">
-            <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="876px">
+            <rsweb:ReportViewer ID="ReportViewer1" runat="server" Font-Names="Verdana" Font-Size="8pt" WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="876px" SizeToReportContent="True">
                 <LocalReport ReportPath="Ordersummary.rdlc">
                     <DataSources>
                         <rsweb:ReportDataSource DataSourceId="ObjectDataSource1" Name="DataSet1" />
                     </DataSources>
                 </LocalReport>
             </rsweb:ReportViewer>
-            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="ImageRX.ImageOrthoDBDataSet3TableAdapters.RptViewTableAdapter"></asp:ObjectDataSource>
+            <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetDataByID" TypeName="ImageRX.ImageOrthoDBDataSet3TableAdapters.RptViewTableAdapter">
+                <SelectParameters>
+                    <asp:QueryStringParameter Name="OID" QueryStringField="ID" Type="Int32" />
+                </SelectParameters>
+            </asp:ObjectDataSource>
 </div>
 </asp:Content>
