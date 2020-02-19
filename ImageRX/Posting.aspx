@@ -177,6 +177,7 @@
                         <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Use Lab Discretion</asp:ListItem>
                         <asp:ListItem>Narrow</asp:ListItem>
+                        <asp:ListItem>Normal-Narrow</asp:ListItem>
                         <asp:ListItem>Normal</asp:ListItem>
                         <asp:ListItem>Wide</asp:ListItem>
                     </asp:DropDownList>
@@ -208,6 +209,30 @@
                         <asp:ListItem>Pink Plastizote</asp:ListItem>
                         <asp:ListItem>Special Poron</asp:ListItem>
                         <asp:ListItem>Soft EVA</asp:ListItem>
+                    </asp:DropDownList>
+                            </td>
+            </tr>
+                        <tr>
+                <td style="width: 907px; font-size: small; height: 32px;" class="text-left">
+                    Additional Padding:
+                    <asp:DropDownList ID="DropDownList26" runat="server" Height="19px" style="font-size: small" Width="211px">
+                        <asp:ListItem> </asp:ListItem>
+                        <asp:ListItem>1/16 Black Poron</asp:ListItem>
+<asp:ListItem>1/8 Black Poron</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+<asp:ListItem>1/8 Pink Plastizote</asp:ListItem>
+                        <asp:ListItem>1/16 P-Cell</asp:ListItem>
+                        <asp:ListItem>1/8 P-Cell</asp:ListItem>
+                        <asp:ListItem>1/16 Pink Plastizote1/8 Special Poron (slow recovery)</asp:ListItem>
+                        <asp:ListItem>1/8 Seamist (memory Foam)</asp:ListItem>
+                    </asp:DropDownList>
+                            &nbsp;
+                    <asp:DropDownList ID="DropDownList27" runat="server" Height="19px" style="font-size: small" Width="211px">
+                        <asp:ListItem> </asp:ListItem>
+                        <asp:ListItem>Heel To Mets</asp:ListItem>
+                        <asp:ListItem>Heel To Sulcus</asp:ListItem>
+                        <asp:ListItem>Heel To Toe</asp:ListItem>
+                        <asp:ListItem>Distal End of Shell To Toes</asp:ListItem>
                     </asp:DropDownList>
                             </td>
             </tr>
@@ -250,7 +275,13 @@
                     </asp:DropDownList>
                             &nbsp;&nbsp;
                     <asp:CheckBox ID="CheckBox1" runat="server" style="font-size: small" />
-                    <span style="font-size: small">Add Bottom Cover</span></td>
+                    <span style="font-size: small">Add Bottom Cover<asp:DropDownList ID="DropDownList28" runat="server" Height="18px" style="font-size: small" Width="120px">
+                        <asp:ListItem> </asp:ListItem>
+                        <asp:ListItem>Regular</asp:ListItem>
+                        <asp:ListItem>Spikey</asp:ListItem>
+                        <asp:ListItem>Suede</asp:ListItem>
+                    </asp:DropDownList>
+                            </span></td>
             </tr>
                         <tr>
                 <td style="width: 907px; font-size: xx-small; height: 32px;" class="text-left">

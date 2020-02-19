@@ -8,7 +8,7 @@ using System.Web.UI.WebControls;
 
 namespace ImageRX
 {
-    public partial class _Default : Page
+    public partial class _AlternateHome : Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -23,7 +23,7 @@ namespace ImageRX
             int i = 0;
             int j = 0;
             
-            string sql = "insert into tbl_Patient values('" + Text1.Value + "','" + Text2.Value + "','" + Text3.Value + "','" + Text4.Value + "','" + TextBox1.Text + "','" + TextBox3.Text + "','" + TextBox2.Text + "','"+DropDownList1.SelectedValue+"','" + RadioButtonList1.SelectedValue + "','" + TextBox4.Text + "','" + DropDownList4.SelectedValue + "','" + TextBox5.Text + "','"+Calendar1.SelectedDate+"','"+DropDownList2.SelectedValue+ "','" + DropDownList3.SelectedValue + "','" + RadioButtonList2.SelectedValue + "','" + TextBox6.Text+ "','" + RadioButtonList3.SelectedValue + "','','','','','" + DateTime.Now.ToString()+"')";
+            string sql = "insert into tbl_Patient values('" + Text1.Value + "','" + Text2.Value + "','" + Text3.Value + "','" + Text4.Value + "','" + TextBox1.Text + "','" + TextBox3.Text + "','" + TextBox2.Text + "','"+DropDownList1.SelectedValue+"','" + RadioButtonList1.SelectedValue + "','" + TextBox4.Text + "','" + TextBox5.Text + "','"+Calendar1.SelectedDate+"','"+DropDownList2.SelectedValue+ "','" + DropDownList3.SelectedValue + "','" + RadioButtonList2.SelectedValue + "','" + TextBox6.Text+ "','" + RadioButtonList3.SelectedValue + "','','','','','" + DateTime.Now.ToString()+"')";
             string sql2 = "select max(Order_ID) as PID from tbl_Patient";
            
             con.Open();

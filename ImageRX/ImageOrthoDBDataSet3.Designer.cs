@@ -5473,30 +5473,27 @@ namespace ImageRX.ImageOrthoDBDataSet3TableAdapters {
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[1].Connection = this.Connection;
-            this._commandCollection[1].CommandText = "SELECT        OrderID, OrderStatus, CreatedDate, LastModified, Cast_Number, patie" +
-                "nt_Name, height, weight, shoe_size, shoe_type, Age, No_of_Orthotics, Gender, Dia" +
-                "gnosis, CustomerName, Daterequired, FootImpression, Factory, Ship_to, \r\n        " +
-                "                 Shipping_Address, Return_Positive, ODMaterial, White_PolyPro, G" +
-                "raphite, DressDevice1, DressDevice3, Cork, PlastizoteDiabetic, PolyproPlantarFil" +
-                "l_Shell, PolyproPlantarFill, ChildrensDevice, Cork_LeatherDevice, \r\n            " +
-                "             CastBalanceLeftOption, CastBalance_L, CastBalanceRightOption, CastB" +
-                "alance_R, RaiseArch, Raise_ArchFill_L, Raise_ArchFill_R, LowerArch, Lower_ArchFi" +
-                "ll_L, Lower_ArchFill_R, SameasCast, RFP_Option, RFP_LOption, \r\n                 " +
-                "        RFP_L, RFP_ROption, RFP_R, FFP_LOption, FFP_L, FFP_ROption, FFP_R, Grind" +
-                "ing, HCD, HCD_Other, Material, Thickness, TopCovers, Length, Len_AddBottomCover," +
-                " HeelSpur_L, HeelSpur_R, Ray_L, Ray_R, MetCut_L, \r\n                         MetC" +
-                "ut_R, ShellMedialFlag_L, ShellMedialFlange_R, ShellLateralFlange_L, ShellLateral" +
-                "Flange_R, LateralClip_L, LateralClip_R, PlantarFaciaGrove_L, PlantarFaciaGrove_R" +
-                ", LateralHeel_L, LateralHeel_R, MedialHeel_L, \r\n                         MedialH" +
-                "eel_R, RigidMortons_L, RigidMortons_R, MortonsExt_L, MortonsExt_R, RevMortons_L," +
-                " RevMortons_R, ArchFillPad_L, ArchFillPad_R, MedialFlange_L, MedialFlange_R, Lat" +
-                "eralFlange_L, LateralFlange_R, \r\n                         HeelSpurPad_L, HeelSpu" +
-                "rPad_R, HeelCushion_L, HeelCushion_R, Cuboid_L, Cuboid_R, MetatarsalRaise_L, Met" +
-                "atarsalRaise_R, KineticWedge_L, KineticWedge_R, NeuromaPad_L, NeuromaPad_R, MetP" +
-                "ad_Options, MetPad_L,\r\n                          MetPad_R, MetBar_Options, MetBa" +
-                "r_L, MetBar_R, DistalEndOfShell_X, DistalEndOfShell_Y, Notes, Sub_U_Cut, R1, R2," +
-                " R3, R4, R5, L1, L2, L3, L4, L5\r\nFROM            RptView\r\nWHERE        (OrderID " +
-                "= @OID)";
+            this._commandCollection[1].CommandText = "SELECT Age, ArchFillPad_L, ArchFillPad_R, CastBalanceLeftOption, CastBalanceRight" +
+                "Option, CastBalance_L, CastBalance_R, Cast_Number, ChildrensDevice, Cork, Cork_L" +
+                "eatherDevice, CreatedDate, Cuboid_L, Cuboid_R, CustomerName, Daterequired, Diagn" +
+                "osis, DistalEndOfShell_X, DistalEndOfShell_Y, DressDevice1, DressDevice3, FFP_L," +
+                " FFP_LOption, FFP_R, FFP_ROption, Factory, FootImpression, Gender, Graphite, Gri" +
+                "nding, HCD, HCD_Other, HeelCushion_L, HeelCushion_R, HeelSpurPad_L, HeelSpurPad_" +
+                "R, HeelSpur_L, HeelSpur_R, KineticWedge_L, KineticWedge_R, L1, L2, L3, L4, L5, L" +
+                "astModified, LateralClip_L, LateralClip_R, LateralFlange_L, LateralFlange_R, Lat" +
+                "eralHeel_L, LateralHeel_R, Len_AddBottomCover, Length, LowerArch, Lower_ArchFill" +
+                "_L, Lower_ArchFill_R, Material, MedialFlange_L, MedialFlange_R, MedialHeel_L, Me" +
+                "dialHeel_R, MetBar_L, MetBar_Options, MetBar_R, MetCut_L, MetCut_R, MetPad_L, Me" +
+                "tPad_Options, MetPad_R, MetatarsalRaise_L, MetatarsalRaise_R, MortonsExt_L, Mort" +
+                "onsExt_R, NeuromaPad_L, NeuromaPad_R, No_of_Orthotics, Notes, ODMaterial, OrderI" +
+                "D, OrderStatus, PlantarFaciaGrove_L, PlantarFaciaGrove_R, PlastizoteDiabetic, Po" +
+                "lyproPlantarFill, PolyproPlantarFill_Shell, R1, R2, R3, R4, R5, RFP_L, RFP_LOpti" +
+                "on, RFP_Option, RFP_R, RFP_ROption, RaiseArch, Raise_ArchFill_L, Raise_ArchFill_" +
+                "R, Ray_L, Ray_R, Return_Positive, RevMortons_L, RevMortons_R, RigidMortons_L, Ri" +
+                "gidMortons_R, SameasCast, ShellLateralFlange_L, ShellLateralFlange_R, ShellMedia" +
+                "lFlag_L, ShellMedialFlange_R, Ship_to, Shipping_Address, Sub_U_Cut, Thickness, T" +
+                "opCovers, White_PolyPro, height, patient_Name, shoe_size, shoe_type, weight FROM" +
+                " RptView WHERE (OrderID = @OID)";
             this._commandCollection[1].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@OID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "OrderID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }

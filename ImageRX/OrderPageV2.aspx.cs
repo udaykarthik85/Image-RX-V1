@@ -18,6 +18,7 @@ namespace ImageRX
             if (!IsPostBack)
             {
                 ReportViewer1.LocalReport.EnableHyperlinks = true;
+                ReportViewer1.LocalReport.EnableExternalImages = true;
             }
 
         }

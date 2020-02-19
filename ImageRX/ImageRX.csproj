@@ -251,7 +251,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="AlternateHome.aspx" />
     <Content Include="DesignUploads.aspx" />
+    <Content Include="Images\image004.png" />
+    <Content Include="Images\image005.png" />
     <Content Include="Images\Left Foot Drawing.jpg" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
@@ -532,6 +535,13 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DashboarddataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AlternateHome.aspx.cs">
+      <DependentUpon>AlternateHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlternateHome.aspx.designer.cs">
+      <DependentUpon>AlternateHome.aspx</DependentUpon>
     </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>

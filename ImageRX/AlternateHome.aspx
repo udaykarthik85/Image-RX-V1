@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ImageRX._Default" %>
+﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AlternateHome.aspx.cs" Inherits="ImageRX._AlternateHome" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -120,12 +120,12 @@
                     <tr> 
                         <td style="width: 135px">Customer Name</td>
                         <td>
-                            <asp:DropDownList ID="DropDownList4" runat="server" Height="24px" Width="425px" DataSourceID="SqlDataSource1" DataTextField="CustomerName" DataValueField="CustomerName">
+                            <asp:DropDownList ID="DropDownList4" runat="server" Height="17px" Width="422px" DataSourceID="sds1" DataTextField="CustomerName" DataValueField="CustomerName">
                                 <asp:ListItem> </asp:ListItem>
                                 <asp:ListItem>California Image</asp:ListItem>
                                 <asp:ListItem>Mexico Image</asp:ListItem>
                             </asp:DropDownList>
-                            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ImageOrthoDBConnectionString %>" SelectCommand="SELECT DISTINCT [CustomerName] FROM [tbl_Customer]"></asp:SqlDataSource>
+                            <asp:SqlDataSource ID="sds1" runat="server" ConnectionString="<%$ ConnectionStrings:ImageOrthoDBConnectionString2 %>" SelectCommand="SELECT DISTINCT [CustomerName] FROM [tbl_Customer]"></asp:SqlDataSource>
                         </td>
                     </tr>
                     <tr> 

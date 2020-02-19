@@ -33,8 +33,10 @@ namespace ImageRX
             int LAFR = 0;
 
             String SMCO = "";
-            
-               CBLO = DropDownList11.SelectedItem.Value;
+            String ISC = "";
+            int ISCL = 0;
+
+            CBLO = DropDownList11.SelectedItem.Value;
                 CBL = Convert.ToInt32(DropDownList13.SelectedItem.Value);
             CBRO = DropDownList12.SelectedItem.Value;
                 CBR = Convert.ToInt32(DropDownList14.SelectedItem.Value);
@@ -55,12 +57,18 @@ namespace ImageRX
             {
                 SMCO = "Same as Cast";
                            }
+            if(RadioButton6.Checked == true)
+            {
+                ISC = "Image Scale";
+                ISCL = Convert.ToInt32(DropDownList20.SelectedItem.Value);
+
+            }
 
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
             SqlCommand cmd;
             int i = 0;
             int pid = (int)(Session["IDValue"]);
-            string sql = "INSERT INTO [dbo].[tbl_OMM] Values ("+pid+ ",'" + DropDownList19.SelectedValue + "','" + DropDownList1.SelectedValue+"','"+DropDownList2.SelectedValue+"','"+DropDownList3.SelectedValue+"','"+DropDownList5.SelectedValue+"','"+DropDownList6.SelectedValue+"','"+DropDownList7.SelectedValue+"','"+DropDownList8.SelectedValue+"','"+DropDownList9.SelectedValue+"','"+DropDownList10.SelectedValue+"','"+CheckBox1.Checked+"','"+CBLO+"',"+CBL+ ",'" + CBRO + "'," + CBR+",'"+RAFO+"',"+RAFL+","+RAFR+ ",'" + LAFO + "'," + LAFL + "," + LAFR + ",'" + SMCO + "')";
+            string sql = "INSERT INTO [dbo].[tbl_OMM] Values ("+pid+ ",'" + DropDownList19.SelectedValue + "','" + DropDownList1.SelectedValue+"','"+DropDownList2.SelectedValue+"','"+DropDownList3.SelectedValue+"','"+DropDownList5.SelectedValue+"','"+DropDownList6.SelectedValue+"','"+DropDownList7.SelectedValue+"','"+DropDownList8.SelectedValue+"','"+DropDownList9.SelectedValue+"','"+DropDownList10.SelectedValue+"','"+CheckBox1.Checked+"','"+CBLO+"',"+CBL+ ",'" + CBRO + "'," + CBR+",'"+RAFO+"',"+RAFL+","+RAFR+ ",'" + LAFO + "'," + LAFL + "," + LAFR + ",'" + SMCO + "','" + ISC + "'," + ISCL + ")";
           
 
 
@@ -106,6 +114,7 @@ namespace ImageRX
             RadioButton5.Checked = false;
             DropDownList15.Enabled = true;
             DropDownList16.Enabled = true;
+            
            }
 
         protected void RadioButton4_CheckedChanged(object sender, EventArgs e)
@@ -136,6 +145,7 @@ namespace ImageRX
                 DropDownList1.Enabled = false;
                 DropDownList1.SelectedIndex = 0;
                 DropDownList2.Enabled = true;
+                DropDownList21.Enabled = true;
                 DropDownList3.Enabled = true;
                 DropDownList5.Enabled = true;
                 DropDownList6.Enabled = false;
@@ -151,6 +161,8 @@ namespace ImageRX
             { DropDownList1.Enabled = true;
                 DropDownList2.SelectedIndex = 0;
                 DropDownList2.Enabled = false;
+                DropDownList21.Enabled = false;
+                DropDownList21.SelectedIndex = 0;
                 DropDownList5.Enabled = false;
                 DropDownList5.SelectedIndex = 0;
                 DropDownList6.Enabled = false;
@@ -167,6 +179,8 @@ namespace ImageRX
                 DropDownList1.SelectedIndex = 0;
                 DropDownList2.Enabled = false;
                 DropDownList2.SelectedIndex = 0;
+                DropDownList21.Enabled = false;
+                DropDownList21.SelectedIndex = 0;
                 DropDownList3.Enabled = false;
                 DropDownList3.SelectedIndex = 0;
                 DropDownList5.Enabled = false;
@@ -185,6 +199,8 @@ namespace ImageRX
                 DropDownList1.SelectedIndex = 0;
                 DropDownList2.Enabled = false;
                 DropDownList2.SelectedIndex = 0;
+                DropDownList21.Enabled = false;
+                DropDownList21.SelectedIndex = 0;
                 DropDownList3.Enabled = false;
                 DropDownList3.SelectedIndex = 0;
                 DropDownList5.Enabled = false;
@@ -204,6 +220,8 @@ namespace ImageRX
                 DropDownList1.SelectedIndex = 0;
                 DropDownList2.Enabled = false;
                 DropDownList2.SelectedIndex = 0;
+                DropDownList21.Enabled = false;
+                DropDownList21.SelectedIndex = 0;
                 DropDownList3.Enabled = false;
                 DropDownList3.SelectedIndex = 0;
                 DropDownList5.Enabled = false;
@@ -216,6 +234,26 @@ namespace ImageRX
                 CheckBox1.Checked = false;
 
             }
+        }
+
+        protected void RadioButton6_CheckedChanged(object sender, EventArgs e)
+        {
+            RadioButton4.Checked = false;
+            RadioButton3.Checked = false;
+            DropDownList15.Enabled = false;
+            DropDownList16.Enabled = false;
+            DropDownList17.Enabled = false;
+            DropDownList18.Enabled = false;
+            DropDownList17.SelectedValue = "0";
+            DropDownList18.SelectedValue = "0";
+            DropDownList15.SelectedValue = "0";
+            DropDownList16.SelectedValue = "0";
+            DropDownList20.Enabled = true;
+        }
+
+        protected void DropDownList21_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

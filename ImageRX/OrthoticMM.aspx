@@ -35,12 +35,18 @@
                 <td style="width: 178px; border-color: black; height: 30px; font-size: small;">
                     Graphite:</td>
                 <td style="width: 351px; border-color: black; height: 30px;">
-                    <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Enables="False" style="font-size: small" Width="379px">
+                    <asp:DropDownList ID="DropDownList2" runat="server" Height="16px" Enables="False" style="font-size: small" Width="138px">
                         <asp:ListItem> </asp:ListItem>
                         <asp:ListItem>Flex</asp:ListItem>
                         <asp:ListItem>Semi-Rigid</asp:ListItem>
                         <asp:ListItem>Rigid</asp:ListItem>
                         <asp:ListItem>Ultr-Rigid</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="DropDownList21" runat="server" Height="16px" Enables="False" style="font-size: small" Width="123px" OnSelectedIndexChanged="DropDownList21_SelectedIndexChanged">
+                        <asp:ListItem> </asp:ListItem>
+                        <asp:ListItem>PRX</asp:ListItem>
+                        <asp:ListItem>TL 2100</asp:ListItem>
+                        <asp:ListItem>TL Silver</asp:ListItem>
                     </asp:DropDownList>
                             </td>
             </tr>
@@ -122,7 +128,7 @@
                     Children&#39;s Devices:</td>
                 <td style="width: 351px; border-color: black; height: 30px;">
                     <asp:DropDownList ID="DropDownList10" runat="server" Height="16px" style="font-size: small" Width="384px">
-                        <asp:ListItem> </asp:ListItem>
+                        <asp:ListItem> None</asp:ListItem>
                         <asp:ListItem>UCBL (Promotes Vertical Gait)</asp:ListItem>
                         <asp:ListItem>Toe Out (Promotes Out-Toeing)</asp:ListItem>
                         <asp:ListItem>Toe In (Promotes In-Toeing)</asp:ListItem>
@@ -260,6 +266,26 @@
                 <td style="width: 351px; border-color: black; height: 39px;">
                     <asp:RadioButton ID="RadioButton5" AutoPostBack =true  runat="server" style="font-size: small" OnCheckedChanged="RadioButton5_CheckedChanged" />
 &nbsp;<span style="font-size: small">Same as Cast&nbsp; </span>
+                            </td>
+            </tr>
+                        <tr>
+                <td style="width: 178px; border-color: black; height: 39px;">
+                            &nbsp;</td>
+                <td style="width: 351px; border-color: black; height: 39px;">
+                    <asp:RadioButton ID="RadioButton6" AutoPostBack =true  runat="server" style="font-size: small" OnCheckedChanged="RadioButton6_CheckedChanged" />
+&nbsp;<span style="font-size: small">Image Scale:</span><asp:DropDownList ID="DropDownList20" Enabled="false" runat="server" style="font-size: small">
+                        <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
+                    </asp:DropDownList>
                             </td>
             </tr>
                         </table>

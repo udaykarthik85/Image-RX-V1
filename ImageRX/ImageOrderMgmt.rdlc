@@ -653,20 +653,6 @@
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="ImageOrthoDBDataSet2">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>3c71b3d5-6b9b-4b89-be49-5a660c8dcbaf</rd:DataSourceID>
-    </DataSource>
-    <DataSource Name="ImageOrthoDBDataSet">
-      <ConnectionProperties>
-        <DataProvider>System.Data.DataSet</DataProvider>
-        <ConnectString>/* Local Connection */</ConnectString>
-      </ConnectionProperties>
-      <rd:DataSourceID>c4ec6533-6b62-4fef-b0e2-06f168d9d201</rd:DataSourceID>
-    </DataSource>
     <DataSource Name="DashboarddataSet">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>

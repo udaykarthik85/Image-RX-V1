@@ -22,7 +22,7 @@
                 <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox9" runat="server" type="checkbox" />R<input id="Checkbox10" runat="server" type="checkbox" /></td>
             </tr>
             <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">HEEL SPUR WELL WITH CUSHION</span></td>
+                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">INTRINSIC HEEL HEEL HOLE CUT OUT</span></td>
                 <td class="text-center" colspan="2" style="font-size: xx-small">1ST RAY CUT OUT</td>
                 <td class="text-center" colspan="2" style="font-size: xx-small">1ST MET CUT OUT</td>
                 <td class="text-center" colspan="2" style="font-size: xx-small">MEDIAL FLANGE</td>
