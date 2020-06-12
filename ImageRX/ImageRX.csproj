@@ -248,14 +248,21 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="Contact.aspx" />
+    <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="AlternateHome.aspx" />
     <Content Include="DesignUploads.aspx" />
+    <Content Include="Images\IOLLogo - Smaller.jpg" />
+    <Content Include="ManageOrders.aspx" />
+    <Content Include="ReportPage.aspx" />
+    <Content Include="Images\EditOrder.png" />
     <Content Include="Images\image004.png" />
     <Content Include="Images\image005.png" />
     <Content Include="Images\Left Foot Drawing.jpg" />
+    <Content Include="Images\NewOrder.png" />
+    <Content Include="Images\Report.png" />
     <Content Include="OrderPageV2.aspx" />
     <Content Include="FileUploads.aspx" />
     <Content Include="OrderAction.aspx" />
@@ -324,6 +331,39 @@
     </None>
     <Content Include="ImageOrthoDBDataSet3.xss">
       <DependentUpon>ImageOrthoDBDataSet3.xsd</DependentUpon>
+    </Content>
+    <Content Include="ImageOrthoDBDataSet_OS.xsc">
+      <DependentUpon>ImageOrthoDBDataSet_OS.xsd</DependentUpon>
+    </Content>
+    <None Include="ImageOrthoDBDataSet_OS.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ImageOrthoDBDataSet_OS.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="ImageOrthoDBDataSet_OS.xss">
+      <DependentUpon>ImageOrthoDBDataSet_OS.xsd</DependentUpon>
+    </Content>
+    <Content Include="OSDataset.xsc">
+      <DependentUpon>OSDataset.xsd</DependentUpon>
+    </Content>
+    <None Include="OSDataset.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OSDataset.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="OSDataset.xss">
+      <DependentUpon>OSDataset.xsd</DependentUpon>
+    </Content>
+    <Content Include="OSDataset1.xsc">
+      <DependentUpon>OSDataset1.xsd</DependentUpon>
+    </Content>
+    <None Include="OSDataset1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>OSDataset1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="OSDataset1.xss">
+      <DependentUpon>OSDataset1.xsd</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\ImageRX.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -573,10 +613,37 @@
     <Compile Include="DesignUploads.aspx.designer.cs">
       <DependentUpon>DesignUploads.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ManageOrders.aspx.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ManageOrders.aspx.designer.cs">
+      <DependentUpon>ManageOrders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OSDataset.cs">
+      <DependentUpon>OSDataset.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="OSDataset1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OSDataset1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPage.aspx.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPage.aspx.designer.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ImageOrthoDBDataSet3.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ImageOrthoDBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ImageOrthoDBDataSet_OS.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ImageOrthoDBDataSet_OS.xsd</DependentUpon>
     </Compile>
     <Compile Include="OrderPageV2.aspx.cs">
       <DependentUpon>OrderPageV2.aspx</DependentUpon>
@@ -632,6 +699,11 @@
     </Compile>
     <Compile Include="OrthoticMM.aspx.designer.cs">
       <DependentUpon>OrthoticMM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OSDataset.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>OSDataset.xsd</DependentUpon>
     </Compile>
     <Compile Include="Posting.aspx.cs">
       <DependentUpon>Posting.aspx</DependentUpon>
@@ -695,6 +767,7 @@
   <ItemGroup>
     <EmbeddedResource Include="ImageOrderMgmt.rdlc" />
     <EmbeddedResource Include="Ordersummary.rdlc" />
+    <EmbeddedResource Include="Report1.rdlc" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

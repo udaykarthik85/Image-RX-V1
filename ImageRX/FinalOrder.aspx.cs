@@ -18,13 +18,13 @@ namespace ImageRX
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
                 int pid = (int)(Session["IDValue"]);
                     con.Open();
-             SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_Patient] WHERE [Order_id]= '" + pid + "'", con);
+             SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_OrderDetails] WHERE [Order_id]= '" + pid + "'", con);
             SqlDataReader reader = com.ExecuteReader();
 
             while (reader.Read())
             {
                 Label1.Text = reader["Cast_Number"].ToString();
-                Label2.Text = reader["Patient_Name"].ToString();
+                Label2.Text = reader["Patient_FirstName"].ToString()+" " + reader["Patient_LastName"].ToString();
                 Label28.Text = reader["CustomerName"].ToString();
                 Label29.Text = reader["Daterequired"].ToString();
                 Label3.Text = reader["shoe_size"].ToString();
@@ -35,8 +35,6 @@ namespace ImageRX
                 Label26.Text = reader["No_Of_Orthotics"].ToString();
 
                 Label27.Text = reader["Diagnosis"].ToString();
-                Label30.Text = reader["FootIMpression"].ToString();
-
              
             }
             reader.Close();

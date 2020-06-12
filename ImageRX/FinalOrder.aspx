@@ -45,12 +45,6 @@
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
                         </tr>
                         <tr>
-                <td style="width: 635px; font-size: small;">
-                    <strong>Foot Impression:</strong>
-                    <asp:Label ID="Label30" runat="server" Text="Label"></asp:Label>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
-                        </tr>
-                        <tr>
                 <td style="width: 635px; font-size: small; height: 102px;">
                     <strong>Diagnosis:</strong><asp:Label ID="Label27" runat="server" Text="Label"></asp:Label>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 

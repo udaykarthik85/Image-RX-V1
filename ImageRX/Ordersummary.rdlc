@@ -6,26 +6,28 @@
         <TablixBody>
           <TablixColumns>
             <TablixColumn>
-              <Width>8.21234in</Width>
+              <Width>5.16823in</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
             <TablixRow>
-              <Height>7.95286in</Height>
+              <Height>7.45286in</Height>
               <TablixCells>
                 <TablixCell>
                   <CellContents>
                     <Rectangle Name="Rectangle1">
                       <ReportItems>
-                        <Textbox Name="OrderID">
+                        <Textbox Name="Order_ID">
                           <CanGrow>true</CanGrow>
                           <KeepTogether>true</KeepTogether>
                           <Paragraphs>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!OrderID.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!Order_ID.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -33,15 +35,20 @@
                               </Style>
                             </Paragraph>
                           </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.14861in</Top>
-                          <Left>1.1149in</Left>
-                          <Height>0.27708in</Height>
-                          <Width>1.50597in</Width>
+                          <rd:DefaultName>Order_ID</rd:DefaultName>
+                          <Top>0.06955in</Top>
+                          <Left>0.67046in</Left>
+                          <Height>0.20764in</Height>
+                          <Width>0.68211in</Width>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -57,6 +64,7 @@
                                 <TextRun>
                                   <Value>Order ID</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -65,10 +73,10 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.14861in</Top>
-                          <Left>0.20349in</Left>
-                          <Height>0.26318in</Height>
-                          <Width>0.88364in</Width>
+                          <Top>0.05566in</Top>
+                          <Left>0.07849in</Left>
+                          <Height>0.22153in</Height>
+                          <Width>0.59197in</Width>
                           <ZIndex>1</ZIndex>
                           <Style>
                             <Border>
@@ -88,7 +96,9 @@
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Cast_Number.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -97,15 +107,20 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.43958in</Top>
-                          <Left>1.1149in</Left>
-                          <Height>0.20417in</Height>
-                          <Width>2.03264in</Width>
+                          <Top>0.30497in</Top>
+                          <Left>0.69089in</Left>
+                          <Height>0.16249in</Height>
+                          <Width>0.85706in</Width>
                           <ZIndex>2</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -119,8 +134,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!CustomerName.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!No_of_Orthotics.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -129,211 +146,20 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.14861in</Top>
-                          <Left>4.34666in</Left>
-                          <Height>0.24931in</Height>
-                          <Width>3.59765in</Width>
+                          <Top>0.0869in</Top>
+                          <Left>2.39762in</Left>
+                          <Height>0.19028in</Height>
+                          <Width>2.58919in</Width>
                           <ZIndex>3</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID6">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!patient_Name.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.42222in</Top>
-                          <Left>4.36055in</Left>
-                          <Height>0.23542in</Height>
-                          <Width>3.55598in</Width>
-                          <ZIndex>4</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID7">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Shoe Size</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.68542in</Top>
-                          <Left>4.34666in</Left>
-                          <Height>0.18334in</Height>
-                          <Width>0.88403in</Width>
-                          <ZIndex>5</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID8">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!shoe_size.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.69584in</Top>
-                          <Left>5.27235in</Left>
-                          <Height>0.17292in</Height>
-                          <Width>0.45209in</Width>
-                          <ZIndex>6</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID11">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Patient</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.42569in</Top>
-                          <Left>3.21292in</Left>
-                          <Height>0.21806in</Height>
-                          <Width>1.1893in</Width>
-                          <ZIndex>7</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID12">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Age.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.67153in</Top>
-                          <Left>3.88985in</Left>
-                          <Height>0.19723in</Height>
-                          <Width>0.45681in</Width>
-                          <ZIndex>8</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID14">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>=Fields!Gender.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.675in</Top>
-                          <Left>3.22833in</Left>
-                          <Height>0.20417in</Height>
-                          <Width>0.65486in</Width>
-                          <ZIndex>9</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -341,11 +167,11 @@
                           </Style>
                         </Textbox>
                         <Line Name="Line1">
-                          <Top>1.01042in</Top>
-                          <Left>0.13338in</Left>
+                          <Top>0.52302in</Top>
+                          <Left>0.05725in</Left>
                           <Height>0in</Height>
-                          <Width>7.78315in</Width>
-                          <ZIndex>10</ZIndex>
+                          <Width>4.92956in</Width>
+                          <ZIndex>4</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -360,8 +186,10 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=FormatDateTime(Fields!Daterequired.Value,DateFormat.ShortDate)</Value>
-                                  <Style />
+                                  <Value>=Fields!Daterequired.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -370,15 +198,20 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.67152in</Top>
-                          <Left>1.14268in</Left>
-                          <Height>0.19375in</Height>
-                          <Width>1.4782in</Width>
-                          <ZIndex>11</ZIndex>
+                          <Top>0.30496in</Top>
+                          <Left>3.97111in</Left>
+                          <Height>0.1625in</Height>
+                          <Width>1.0157in</Width>
+                          <ZIndex>5</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -392,8 +225,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Customer</Value>
+                                  <Value># of Orthotics</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -404,11 +238,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.14861in</Top>
-                          <Left>3.21292in</Left>
-                          <Height>0.24931in</Height>
-                          <Width>1.07819in</Width>
-                          <ZIndex>12</ZIndex>
+                          <Top>0.0869in</Top>
+                          <Left>1.42201in</Left>
+                          <Height>0.19029in</Height>
+                          <Width>0.92005in</Width>
+                          <ZIndex>6</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -426,8 +260,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>CAD Modeling</Value>
+                                  <Value>Shoe Type:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -436,11 +271,11 @@
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>1.11614in</Top>
-                          <Left>0.77664in</Left>
-                          <Height>0.27362in</Height>
-                          <Width>2.41501in</Width>
-                          <ZIndex>13</ZIndex>
+                          <Top>1.22649in</Top>
+                          <Left>0.07849in</Left>
+                          <Height>0.20277in</Height>
+                          <Width>0.78641in</Width>
+                          <ZIndex>7</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -458,25 +293,48 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Negative Cast Balance:</Value>
+                                  <Value>POSITIVE PRODUCTION / GRINDING / BASE SHELL INSTRUCTIONS</Value>
                                   <Style>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>1.41754in</Top>
-                          <Left>0.2476in</Left>
-                          <Height>0.32154in</Height>
-                          <Width>3.55933in</Width>
-                          <ZIndex>14</ZIndex>
+                          <Top>1.68968in</Top>
+                          <Left>0.05725in</Left>
+                          <Height>0.26462in</Height>
+                          <Width>4.92956in</Width>
+                          <ZIndex>8</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -490,19 +348,21 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="Left Foot: "+Fields!CastBalanceLeftOption.Value+"-"+CStr(Fields!CastBalance_L.Value)</Value>
-                                  <Style />
+                                  <Value>="LEFT: "&amp;Fields!Left_NCB.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>1.80852in</Top>
-                          <Left>0.26149in</Left>
-                          <Height>0.23611in</Height>
-                          <Width>3.54544in</Width>
-                          <ZIndex>15</ZIndex>
+                          <Top>2.28119in</Top>
+                          <Left>0.09238in</Left>
+                          <Height>0.13195in</Height>
+                          <Width>2.20802in</Width>
+                          <ZIndex>9</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -520,19 +380,21 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="Right Foot: " + Fields!CastBalanceRightOption.Value + "-" + CSTR(Fields!CastBalance_R.Value)</Value>
-                                  <Style />
+                                  <Value>="Right: "&amp;Fields!Right_NCB.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.10019in</Top>
-                          <Left>0.2476in</Left>
-                          <Height>0.22312in</Height>
-                          <Width>3.55933in</Width>
-                          <ZIndex>16</ZIndex>
+                          <Top>2.48258in</Top>
+                          <Left>0.08829in</Left>
+                          <Height>0.17799in</Height>
+                          <Width>2.21211in</Width>
+                          <ZIndex>10</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -550,21 +412,24 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Medial Plaster Arch Fill:</Value>
+                                  <Value>Negative Cast Balance</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.37886in</Top>
-                          <Left>0.2476in</Left>
-                          <Height>0.24355in</Height>
-                          <Width>3.54544in</Width>
-                          <ZIndex>17</ZIndex>
+                          <Top>2.02375in</Top>
+                          <Left>0.08829in</Left>
+                          <Height>0.188in</Height>
+                          <Width>2.21211in</Width>
+                          <ZIndex>11</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -582,23 +447,21 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!RaiseArch.Value+"- L: "+CStr(Fields!Raise_ArchFill_L.Value)+",R: "+CStr(Fields!Raise_ArchFill_R.Value)
-+";"+vbcrlf+
-
-Fields!LowerArch.Value+"- L: "+CStr(Fields!Lower_ArchFill_L.Value)+",R: "+CStr(Fields!Lower_ArchFill_R.Value)
-+";"+Fields!SameasCast.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!Raise_ArchFill.Value+" \ "+Fields!Lower_ArchFill.Value+" \ "+Fields!SameasCast.Value+" \ "+Fields!ImageScale.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.69186in</Top>
-                          <Left>0.2476in</Left>
-                          <Height>0.31165in</Height>
-                          <Width>3.54544in</Width>
-                          <ZIndex>18</ZIndex>
+                          <Top>2.28119in</Top>
+                          <Left>2.3872in</Left>
+                          <Height>0.13195in</Height>
+                          <Width>2.59961in</Width>
+                          <ZIndex>12</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -616,8 +479,9 @@ Fields!LowerArch.Value+"- L: "+CStr(Fields!Lower_ArchFill_L.Value)+",R: "+CStr(F
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Shell Modifications:</Value>
+                                  <Value>Base Shell</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -626,11 +490,11 @@ Fields!LowerArch.Value+"- L: "+CStr(Fields!Lower_ArchFill_L.Value)+",R: "+CStr(F
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>3.0174in</Top>
-                          <Left>0.2476in</Left>
-                          <Height>0.27777in</Height>
-                          <Width>3.57322in</Width>
-                          <ZIndex>19</ZIndex>
+                          <Top>2.48258in</Top>
+                          <Left>2.39762in</Left>
+                          <Height>0.17799in</Height>
+                          <Width>2.58919in</Width>
+                          <ZIndex>13</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -648,59 +512,21 @@ Fields!LowerArch.Value+"- L: "+CStr(Fields!Lower_ArchFill_L.Value)+",R: "+CStr(F
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=iif(Fields!ShellMedialFlag_L.Value="True      ","MEDIAL FLANGE,","")+
-iif(Fields!ShellLateralFlange_L.Value="True      ","LATERAL FLANGE,","")+
-iif(Fields!LateralClip_L.Value="True      ","LATERAL CLIP,","")+
-iif(Fields!PlantarFaciaGrove_L.Value="True      ","PLANTAR FACIA GROVE,","")+
-iif(Fields!LateralHeel_L.Value="True      ","LATERAL HEEL SKIVE","")+
-iif(Fields!MedialHeel_L.Value="True      ","MEDIAL HEEL SKIVE,","")+
-iif(Fields!RigidMortons_L.Value="True      ","RIGID MORTONS EXTENSION","")</Value>
-                                  <Style />
+                                  <Value>=Fields!BaseShell.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>3.33684in</Top>
-                          <Left>0.26149in</Left>
-                          <Height>0.74456in</Height>
-                          <Width>3.55933in</Width>
-                          <ZIndex>20</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID23">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>MOLDING</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>1.11614in</Top>
-                          <Left>5.28569in</Left>
-                          <Height>0.34932in</Height>
-                          <Width>1.8534in</Width>
-                          <ZIndex>21</ZIndex>
+                          <Top>2.73001in</Top>
+                          <Left>2.3872in</Left>
+                          <Height>0.40214in</Height>
+                          <Width>2.59961in</Width>
+                          <ZIndex>14</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -718,11 +544,11 @@ iif(Fields!RigidMortons_L.Value="True      ","RIGID MORTONS EXTENSION","")</Valu
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!ODMaterial.Value+": "+Fields!White_PolyPro.Value+Fields!Graphite.Value+
-Fields!DressDevice1.Value+"-"+Fields!DressDevice3.Value+Fields!Cork.Value+ 
-Fields!PlastizoteDiabetic.Value+
-Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
-                                  <Style />
+                                  <Value>Diagnosis</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -731,43 +557,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>1.50712in</Top>
-                          <Left>4.21097in</Left>
-                          <Height>0.53751in</Height>
-                          <Width>3.78889in</Width>
-                          <ZIndex>22</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID29">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>="Children Devices: " + Fields!ChildrensDevice.Value</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style>
-                                <TextAlign>Left</TextAlign>
-                              </Style>
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.05852in</Top>
-                          <Left>4.21097in</Left>
-                          <Height>0.24567in</Height>
-                          <Width>3.79597in</Width>
-                          <ZIndex>23</ZIndex>
+                          <Top>1.45704in</Top>
+                          <Left>0.07849in</Left>
+                          <Height>0.1632in</Height>
+                          <Width>0.78641in</Width>
+                          <ZIndex>15</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -785,8 +579,10 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>="Cork and Leather Device: " + Fields!Cork_LeatherDevice.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!Diagnosis.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -795,15 +591,20 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.30419in</Top>
-                          <Left>4.20389in</Left>
-                          <Height>0.27362in</Height>
-                          <Width>3.79597in</Width>
-                          <ZIndex>24</ZIndex>
+                          <Top>1.45704in</Top>
+                          <Left>0.89267in</Left>
+                          <Height>0.1632in</Height>
+                          <Width>2.27773in</Width>
+                          <ZIndex>16</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -818,7 +619,9 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Grinding.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -827,11 +630,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.50501in</Top>
-                          <Left>2.00507in</Left>
-                          <Height>0.23819in</Height>
-                          <Width>1.45544in</Width>
-                          <ZIndex>25</ZIndex>
+                          <Top>2.73001in</Top>
+                          <Left>0.72602in</Left>
+                          <Height>0.20834in</Height>
+                          <Width>1.57438in</Width>
+                          <ZIndex>17</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -849,8 +652,10 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!HCD.Value+"-"+Fields!HCD_Other.Value</Value>
-                                  <Style />
+                                  <Value>=Fields!HCD.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -859,11 +664,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.75709in</Top>
-                          <Left>2.01215in</Left>
-                          <Height>0.19861in</Height>
-                          <Width>1.45544in</Width>
-                          <ZIndex>26</ZIndex>
+                          <Top>2.96612in</Top>
+                          <Left>1.16507in</Left>
+                          <Height>0.16603in</Height>
+                          <Width>1.13533in</Width>
+                          <ZIndex>18</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -883,6 +688,7 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                                 <TextRun>
                                   <Value>Heel Cup Depth</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -893,11 +699,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.75709in</Top>
-                          <Left>0.3037in</Left>
-                          <Height>0.19861in</Height>
-                          <Width>1.70845in</Width>
-                          <ZIndex>27</ZIndex>
+                          <Top>2.95223in</Top>
+                          <Left>0.10926in</Left>
+                          <Height>0.17991in</Height>
+                          <Width>1.05581in</Width>
+                          <ZIndex>19</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -917,6 +723,7 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                                 <TextRun>
                                   <Value>Grinding</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -927,11 +734,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.50501in</Top>
-                          <Left>0.3037in</Left>
-                          <Height>0.23819in</Height>
-                          <Width>1.63193in</Width>
-                          <ZIndex>28</ZIndex>
+                          <Top>2.73001in</Top>
+                          <Left>0.10926in</Left>
+                          <Height>0.20834in</Height>
+                          <Width>0.5612in</Width>
+                          <ZIndex>20</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -951,6 +758,7 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                                 <TextRun>
                                   <Value>Shell Modifications:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -961,11 +769,11 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.98348in</Top>
-                          <Left>0.31078in</Left>
+                          <Top>3.50234in</Top>
+                          <Left>2.39081in</Left>
                           <Height>0.20907in</Height>
-                          <Width>3.15681in</Width>
-                          <ZIndex>29</ZIndex>
+                          <Width>2.58196in</Width>
+                          <ZIndex>21</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -983,12 +791,10 @@ Fields!PolyproPlantarFill_Shell.Value+Fields!PolyproPlantarFill.Value</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Microsoft.VisualBasic.Interaction.iif(Fields!ShellMedialFlag_L.Value = "True      ", "MEDIAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True      ", "LATERAL FLANGE,", "") +
- Microsoft.VisualBasic.Interaction.iif(Fields!LateralClip_L.Value = "True      ", "LATERAL CLIP,", "") + 
- Microsoft.VisualBasic.Interaction.iif(Fields!PlantarFaciaGrove_L.Value = "True      ", "PLANTAR FACIA GROVE,", "") + 
- Microsoft.VisualBasic.Interaction.iif(Fields!RigidMortons_L.Value = "True      ", "RIGID MORTONS EXTENSION", "")</Value>
-                                  <Style />
+                                  <Value>=Fields!Shipping_Address.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style>
@@ -997,47 +803,20 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.86327in</Top>
-                          <Left>4.19681in</Left>
-                          <Height>0.48688in</Height>
-                          <Width>3.80305in</Width>
-                          <ZIndex>30</ZIndex>
+                          <Top>1.22649in</Top>
+                          <Left>3.19819in</Left>
+                          <Height>0.39375in</Height>
+                          <Width>1.78862in</Width>
+                          <ZIndex>22</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
                             </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID33">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Grinding</Value>
-                                  <Style>
-                                    <FontWeight>Bold</FontWeight>
-                                  </Style>
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.2064in</Top>
-                          <Left>1.15901in</Left>
-                          <Height>0.22917in</Height>
-                          <Width>1.59861in</Width>
-                          <ZIndex>31</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1051,25 +830,21 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Microsoft.VisualBasic.Interaction.iif(Fields!Ray_L.Value =   "True      ", "1st Ray Cut Out,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!MetCut_L.Value = "True      ", "1st Met Cut Out,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!ShellMedialFlag_L.Value = "True      ", "MEDIAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True      ", "LATERAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!LateralClip_L.Value = "True      ", "LATERAL CLIP,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!RigidMortons_L.Value = "True      ", "RIGID MORTONS EXTENSION", "")+
-Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "INTRINSIC HEEL HEEL HOLE CUT OUT", "")</Value>
-                                  <Style />
+                                  <Value>="LEFT: "+Fields!ShellModifications_L.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>5.22033in</Top>
-                          <Left>0.31078in</Left>
-                          <Height>0.44715in</Height>
-                          <Width>3.51004in</Width>
-                          <ZIndex>32</ZIndex>
+                          <Top>3.7253in</Top>
+                          <Left>2.39081in</Left>
+                          <Height>0.23889in</Height>
+                          <Width>2.58196in</Width>
+                          <ZIndex>23</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1093,19 +868,42 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>3.46126in</Top>
-                          <Left>5.41079in</Left>
-                          <Height>0.25214in</Height>
-                          <Width>1.00068in</Width>
-                          <ZIndex>33</ZIndex>
+                          <Top>3.20159in</Top>
+                          <Left>0.10926in</Left>
+                          <Height>0.23131in</Height>
+                          <Width>2.19114in</Width>
+                          <ZIndex>24</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1121,6 +919,7 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                                 <TextRun>
                                   <Value>Extrinsic Rear Foot Posting</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1129,11 +928,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>3.74118in</Top>
-                          <Left>4.19681in</Left>
+                          <Top>3.72387in</Top>
+                          <Left>0.08557in</Left>
                           <Height>0.225in</Height>
-                          <Width>3.15681in</Width>
-                          <ZIndex>34</ZIndex>
+                          <Width>2.18705in</Width>
+                          <ZIndex>25</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1151,39 +950,9 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Fields!RFP_Option.Value+": L:"+Fields!RFP_LOption.Value+"-"+CStr(Fields!RFP_L.Value)+", R:"+Cstr(Fields!RFP_ROption.Value)+"-"+CStr(Fields!RFP_R.Value)</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>3.98007in</Top>
-                          <Left>4.19681in</Left>
-                          <Height>0.34305in</Height>
-                          <Width>3.16389in</Width>
-                          <ZIndex>35</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID49">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>Extrinsic Fore Foot Posting</Value>
+                                  <Value>=Fields!RFP_Left.Value</Value>
                                   <Style>
-                                    <FontWeight>Bold</FontWeight>
+                                    <FontSize>8pt</FontSize>
                                   </Style>
                                 </TextRun>
                               </TextRuns>
@@ -1191,41 +960,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.37868in</Top>
-                          <Left>4.20389in</Left>
-                          <Height>0.21805in</Height>
-                          <Width>3.15681in</Width>
-                          <ZIndex>36</ZIndex>
-                          <Style>
-                            <Border>
-                              <Style>None</Style>
-                            </Border>
-                            <PaddingLeft>2pt</PaddingLeft>
-                            <PaddingRight>2pt</PaddingRight>
-                            <PaddingTop>2pt</PaddingTop>
-                            <PaddingBottom>2pt</PaddingBottom>
-                          </Style>
-                        </Textbox>
-                        <Textbox Name="OrderID112">
-                          <CanGrow>true</CanGrow>
-                          <KeepTogether>true</KeepTogether>
-                          <Paragraphs>
-                            <Paragraph>
-                              <TextRuns>
-                                <TextRun>
-                                  <Value>="L:" + Fields!FFP_LOption.Value+ "-" + CStr(Fields!FFP_L.Value) + ", R:" + Fields!FFP_ROption.Value + "-" + CStr(Fields!FFP_R.Value)</Value>
-                                  <Style />
-                                </TextRun>
-                              </TextRuns>
-                              <Style />
-                            </Paragraph>
-                          </Paragraphs>
-                          <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>4.62451in</Top>
-                          <Left>4.20389in</Left>
-                          <Height>0.2736in</Height>
-                          <Width>3.16389in</Width>
-                          <ZIndex>37</ZIndex>
+                          <Top>3.96276in</Top>
+                          <Left>0.09238in</Left>
+                          <Height>0.20763in</Height>
+                          <Width>2.18024in</Width>
+                          <ZIndex>26</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1255,15 +994,36 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>5.78214in</Top>
-                          <Left>0.79053in</Left>
-                          <Height>0.20415in</Height>
-                          <Width>2.60281in</Width>
-                          <ZIndex>38</ZIndex>
+                          <Top>5.36903in</Top>
+                          <Left>0.08829in</Left>
+                          <Height>0.25149in</Height>
+                          <Width>2.21211in</Width>
+                          <ZIndex>27</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1277,24 +1037,21 @@ Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpur_L.Value = "True      ", "I
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value xml:space="preserve">  </Value>
-                                  <Style />
-                                </TextRun>
-                                <TextRun>
-                                  <Value>=Fields!Material.Value+"-"+Fields!Thickness.Value+"-"+Fields!TopCovers.Value+"-"+Fields!Length.Value+","+
-iif(Fields!Len_AddBottomCover.Value="True      ","Add Bottom Cover","")</Value>
-                                  <Style />
+                                  <Value>=Fields!Extensions.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>6.01406in</Top>
-                          <Left>0.26149in</Left>
-                          <Height>0.27013in</Height>
-                          <Width>3.51004in</Width>
-                          <ZIndex>39</ZIndex>
+                          <Top>5.67607in</Top>
+                          <Left>0.0646in</Left>
+                          <Height>0.17639in</Height>
+                          <Width>2.25704in</Width>
+                          <ZIndex>28</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1312,20 +1069,21 @@ iif(Fields!Len_AddBottomCover.Value="True      ","Add Bottom Cover","")</Value>
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>= Microsoft.VisualBasic.Interaction.iif(Fields!ShellMedialFlag_L.Value = "True      ", "MEDIAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True      ", "LATERAL FLANGE,", "")</Value>
-                                  <Style />
+                                  <Value>=Fields!TopCover.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>6.31197in</Top>
-                          <Left>0.26149in</Left>
-                          <Height>0.21103in</Height>
-                          <Width>3.51004in</Width>
-                          <ZIndex>40</ZIndex>
+                          <Top>5.90802in</Top>
+                          <Left>0.05725in</Left>
+                          <Height>0.17978in</Height>
+                          <Width>2.25704in</Width>
+                          <ZIndex>29</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1349,19 +1107,42 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                                   </Style>
                                 </TextRun>
                               </TextRuns>
-                              <Style />
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>5.05292in</Top>
-                          <Left>5.20137in</Left>
-                          <Height>0.19026in</Height>
-                          <Width>1.86997in</Width>
-                          <ZIndex>41</ZIndex>
+                          <Top>3.20159in</Top>
+                          <Left>2.39762in</Left>
+                          <Height>0.23131in</Height>
+                          <Width>2.58919in</Width>
+                          <ZIndex>30</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1377,6 +1158,7 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                                 <TextRun>
                                   <Value>Soft Modifications:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1385,11 +1167,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>5.28485in</Top>
-                          <Left>4.21097in</Left>
+                          <Top>4.33431in</Top>
+                          <Left>2.39081in</Left>
                           <Height>0.24583in</Height>
-                          <Width>2.63957in</Width>
-                          <ZIndex>42</ZIndex>
+                          <Width>2.58196in</Width>
+                          <ZIndex>31</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1407,33 +1189,21 @@ Microsoft.VisualBasic.Interaction.iif(Fields!ShellLateralFlange_L.Value = "True 
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>=Microsoft.VisualBasic.Interaction.iif(Fields!MortonsExt_L.Value = "True      ", "MORTONS EXTENSION,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!RevMortons_L.Value = "True      ", "REV .MORTONS EXTENSION,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!ArchFillPad_L.Value = "True      ", "ARCH FILL PAD,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!MedialFlange_L.Value = "True      ", "MEDIAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!LateralFlange_L.Value = "True      ", "LATERAL FLANGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!HeelSpurPad_L.Value = "True      ", "HEEL SPUR PAD,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!HeelCushion_L.Value = "True      ", "HEEL CUSION", "")+ 
-Microsoft.VisualBasic.Interaction.iif(Fields!Cuboid_L.Value = "True      ", "CUBOID SUPPORT PAD,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!MetatarsalRaise_L.Value = "True      ", "METATARSAL RAISE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!KineticWedge_L.Value = "True      ", "KINETIC WEDGE,", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!NeuromaPad_L.Value = "True      ", "NEUROMA PAD,", "") +vbcrlf+
-Microsoft.VisualBasic.Interaction.iif(Fields!MetPad_L.Value = "True      ", "MET PAD"+Fields!MetPad_Options.Value+",", "") + 
-Microsoft.VisualBasic.Interaction.iif(Fields!MetBar_L.Value = "True      ", "MET BAR"+Fields!MetBar_Options.Value+",", "")+vbcrlf+ 
-Microsoft.VisualBasic.Interaction.iif(Fields!DistalEndOfShell_X.Value &lt;&gt; "", "DISTAL END OF SHELL X:"+Fields!DistalEndOfShell_X.Value+", Y:"+Fields!DistalEndOfShell_Y.Value+",", "") +vbcrlf+
-Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SUB-U CUT OUT:", "")</Value>
-                                  <Style />
+                                  <Value>="LEFT: "&amp;Fields!SoftModifications_L.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>5.60012in</Top>
-                          <Left>4.21097in</Left>
-                          <Height>0.34645in</Height>
-                          <Width>3.79597in</Width>
-                          <ZIndex>43</ZIndex>
+                          <Top>4.62181in</Top>
+                          <Left>2.40123in</Left>
+                          <Height>0.19311in</Height>
+                          <Width>2.58196in</Width>
+                          <ZIndex>32</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1463,15 +1233,36 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>6.53689in</Top>
-                          <Left>1.31264in</Left>
-                          <Height>0.19721in</Height>
-                          <Width>1.50886in</Width>
-                          <ZIndex>44</ZIndex>
+                          <Top>6.59318in</Top>
+                          <Left>0.0646in</Left>
+                          <Height>0.22925in</Height>
+                          <Width>2.2358in</Width>
+                          <ZIndex>33</ZIndex>
                           <Style>
                             <Border>
-                              <Style>None</Style>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
                             </Border>
+                            <TopBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </TopBorder>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <LeftBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </LeftBorder>
+                            <RightBorder>
+                              <Color>Black</Color>
+                              <Style>Solid</Style>
+                              <Width>3pt</Width>
+                            </RightBorder>
                             <PaddingLeft>2pt</PaddingLeft>
                             <PaddingRight>2pt</PaddingRight>
                             <PaddingTop>2pt</PaddingTop>
@@ -1486,18 +1277,20 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                               <TextRuns>
                                 <TextRun>
                                   <Value>=Fields!Notes.Value</Value>
-                                  <Style />
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
                                 </TextRun>
                               </TextRuns>
                               <Style />
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>6.76188in</Top>
-                          <Left>0.283in</Left>
-                          <Height>0.24723in</Height>
-                          <Width>3.51004in</Width>
-                          <ZIndex>45</ZIndex>
+                          <Top>6.85021in</Top>
+                          <Left>0.0646in</Left>
+                          <Height>0.48408in</Height>
+                          <Width>2.20802in</Width>
+                          <ZIndex>34</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1517,6 +1310,7 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                                 <TextRun>
                                   <Value>Cast #:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1525,11 +1319,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.45346in</Top>
-                          <Left>0.1896in</Left>
-                          <Height>0.19028in</Height>
-                          <Width>0.89753in</Width>
-                          <ZIndex>46</ZIndex>
+                          <Top>0.27719in</Top>
+                          <Left>0.05725in</Left>
+                          <Height>0.19027in</Height>
+                          <Width>0.60586in</Width>
+                          <ZIndex>35</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1549,6 +1343,7 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                                 <TextRun>
                                   <Value>Due Date:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1557,11 +1352,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>0.67152in</Top>
-                          <Left>0.19205in</Left>
-                          <Height>0.19375in</Height>
-                          <Width>0.89508in</Width>
-                          <ZIndex>47</ZIndex>
+                          <Top>0.30496in</Top>
+                          <Left>3.29112in</Left>
+                          <Height>0.1625in</Height>
+                          <Width>0.65078in</Width>
+                          <ZIndex>36</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1573,11 +1368,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                           </Style>
                         </Textbox>
                         <Line Name="Line2">
-                          <Top>1.02703in</Top>
-                          <Left>4.09611in</Left>
-                          <Height>6.7737in</Height>
+                          <Top>2.02375in</Top>
+                          <Left>2.34206in</Left>
+                          <Height>3.13002in</Height>
                           <Width>0in</Width>
-                          <ZIndex>48</ZIndex>
+                          <ZIndex>37</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1589,11 +1384,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                           <Source>External</Source>
                           <Value>http://imagerx.azurewebsites.net/images/image004.png</Value>
                           <Sizing>FitProportional</Sizing>
-                          <Top>5.98823in</Top>
-                          <Left>4.699in</Left>
-                          <Height>1.8125in</Height>
-                          <Width>1.21334in</Width>
-                          <ZIndex>49</ZIndex>
+                          <Top>5.63288in</Top>
+                          <Left>2.66521in</Left>
+                          <Height>1.33333in</Height>
+                          <Width>0.7391in</Width>
+                          <ZIndex>38</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1604,11 +1399,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                           <Source>External</Source>
                           <Value>http://imagerx.azurewebsites.net/images/image005.png</Value>
                           <Sizing>FitProportional</Sizing>
-                          <Top>5.98823in</Top>
-                          <Left>6.10177in</Left>
-                          <Height>1.8125in</Height>
-                          <Width>1.375in</Width>
-                          <ZIndex>50</ZIndex>
+                          <Top>5.63289in</Top>
+                          <Left>3.81486in</Left>
+                          <Height>1.33332in</Height>
+                          <Width>0.86141in</Width>
+                          <ZIndex>39</ZIndex>
                           <Style>
                             <Border>
                               <Style>None</Style>
@@ -1616,11 +1411,11 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                           </Style>
                         </Image>
                         <Line Name="Line3">
-                          <Top>5.71269in</Top>
-                          <Left>0.17298in</Left>
+                          <Top>5.27181in</Top>
+                          <Left>0.04336in</Left>
                           <Height>0in</Height>
-                          <Width>3.92313in</Width>
-                          <ZIndex>51</ZIndex>
+                          <Width>4.92941in</Width>
+                          <ZIndex>40</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1635,8 +1430,9 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>Shell Modifications:</Value>
+                                  <Value>Ship to Patient:</Value>
                                   <Style>
+                                    <FontSize>8pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -1647,10 +1443,395 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             </Paragraph>
                           </Paragraphs>
                           <rd:DefaultName>OrderID</rd:DefaultName>
-                          <Top>2.60559in</Top>
-                          <Left>4.19681in</Left>
-                          <Height>0.18824in</Height>
-                          <Width>3.80305in</Width>
+                          <Top>1.22649in</Top>
+                          <Left>2.21706in</Left>
+                          <Height>0.20277in</Height>
+                          <Width>0.93946in</Width>
+                          <ZIndex>41</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID101">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!RFP_Right.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.19817in</Top>
+                          <Left>0.09238in</Left>
+                          <Height>0.20763in</Height>
+                          <Width>2.18024in</Width>
+                          <ZIndex>42</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID42">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Extrinsic Fore Foot Posting</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.4058in</Top>
+                          <Left>0.08829in</Left>
+                          <Height>0.225in</Height>
+                          <Width>2.18433in</Width>
+                          <ZIndex>43</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID102">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!FFP_Left.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.67246in</Top>
+                          <Left>0.07849in</Left>
+                          <Height>0.20763in</Height>
+                          <Width>2.16336in</Width>
+                          <ZIndex>44</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID103">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!FFP_Right.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.93565in</Top>
+                          <Left>0.09238in</Left>
+                          <Height>0.21812in</Height>
+                          <Width>2.16336in</Width>
+                          <ZIndex>45</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID43">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Bottom_Cover.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>6.10168in</Top>
+                          <Left>0.06459in</Left>
+                          <Height>0.15554in</Height>
+                          <Width>2.23581in</Width>
+                          <ZIndex>46</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="Order_ID2">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!OrderDate.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>Order_ID</rd:DefaultName>
+                          <Top>0.5369in</Top>
+                          <Left>0.89267in</Left>
+                          <Height>0.21805in</Height>
+                          <Width>0.79764in</Width>
+                          <ZIndex>47</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID25">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Order Date</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.5369in</Top>
+                          <Left>0.06459in</Left>
+                          <Height>0.21805in</Height>
+                          <Width>0.80031in</Width>
+                          <ZIndex>48</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID26">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Age.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.98065in</Top>
+                          <Left>0.40657in</Left>
+                          <Height>0.20418in</Height>
+                          <Width>0.45832in</Width>
+                          <ZIndex>49</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID27">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!CustomerName.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.56468in</Top>
+                          <Left>2.36984in</Left>
+                          <Height>0.19027in</Height>
+                          <Width>2.61697in</Width>
+                          <ZIndex>50</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID28">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!PatientName.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.79662in</Top>
+                          <Left>0.89267in</Left>
+                          <Height>0.15625in</Height>
+                          <Width>2.51164in</Width>
+                          <ZIndex>51</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID29">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Shoe Size</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.99454in</Top>
+                          <Left>2.70778in</Left>
+                          <Height>0.19029in</Height>
+                          <Width>0.69653in</Width>
                           <ZIndex>52</ZIndex>
                           <Style>
                             <Border>
@@ -1662,38 +1843,406 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             <PaddingBottom>2pt</PaddingBottom>
                           </Style>
                         </Textbox>
-                        <Line Name="Line4">
-                          <Top>4.15084in</Top>
-                          <Left>0.13338in</Left>
-                          <Height>0in</Height>
-                          <Width>3.96273in</Width>
+                        <Textbox Name="OrderID36">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!shoe_size.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.99454in</Top>
+                          <Left>3.45292in</Left>
+                          <Height>0.19029in</Height>
+                          <Width>0.66184in</Width>
                           <ZIndex>53</ZIndex>
                           <Style>
                             <Border>
-                              <Style>Solid</Style>
-                              <Width>2pt</Width>
+                              <Style>None</Style>
                             </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
-                        </Line>
-                        <Line Name="Line5">
-                          <Top>3.41959in</Top>
-                          <Left>4.07673in</Left>
-                          <Height>0in</Height>
-                          <Width>3.92313in</Width>
+                        </Textbox>
+                        <Textbox Name="OrderID47">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Patient Name</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.76884in</Top>
+                          <Left>0.0646in</Left>
+                          <Height>0.18403in</Height>
+                          <Width>0.8003in</Width>
                           <ZIndex>54</ZIndex>
                           <Style>
                             <Border>
-                              <Style>Solid</Style>
-                              <Width>2pt</Width>
+                              <Style>None</Style>
                             </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
                           </Style>
-                        </Line>
-                        <Line Name="Line6">
-                          <Top>4.98348in</Top>
-                          <Left>4.07673in</Left>
-                          <Height>0in</Height>
-                          <Width>3.92313in</Width>
+                        </Textbox>
+                        <Textbox Name="OrderID48">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Weight</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.99454in</Top>
+                          <Left>1.7042in</Left>
+                          <Height>0.19028in</Height>
+                          <Width>0.4712in</Width>
                           <ZIndex>55</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID49">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Gender.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.98065in</Top>
+                          <Left>1.17896in</Left>
+                          <Height>0.20418in</Height>
+                          <Width>0.51135in</Width>
+                          <ZIndex>56</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID53">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!shoe_type.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>1.22649in</Top>
+                          <Left>0.92045in</Left>
+                          <Height>0.20277in</Height>
+                          <Width>1.25494in</Width>
+                          <ZIndex>57</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID54">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Doctor</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.56468in</Top>
+                          <Left>1.7042in</Left>
+                          <Height>0.19027in</Height>
+                          <Width>0.63786in</Width>
+                          <ZIndex>58</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID55">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Age</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.96676in</Top>
+                          <Left>0.05725in</Left>
+                          <Height>0.21806in</Height>
+                          <Width>0.32155in</Width>
+                          <ZIndex>59</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID56">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Sex</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.99454in</Top>
+                          <Left>0.89267in</Left>
+                          <Height>0.19028in</Height>
+                          <Width>0.2724in</Width>
+                          <ZIndex>60</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID57">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!weight.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.99454in</Top>
+                          <Left>2.1754in</Left>
+                          <Height>0.19029in</Height>
+                          <Width>0.4803in</Width>
+                          <ZIndex>61</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID23">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Medial Plaster Arch Fill</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>2.02375in</Top>
+                          <Left>2.36984in</Left>
+                          <Height>0.188in</Height>
+                          <Width>2.61697in</Width>
+                          <ZIndex>62</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID104">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Post_Material.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>3.46068in</Top>
+                          <Left>0.07849in</Left>
+                          <Height>0.20763in</Height>
+                          <Width>2.19413in</Width>
+                          <ZIndex>63</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Line Name="Line4">
+                          <Top>5.14681in</Top>
+                          <Left>2.34941in</Left>
+                          <Height>2.18747in</Height>
+                          <Width>0in</Width>
+                          <ZIndex>64</ZIndex>
                           <Style>
                             <Border>
                               <Style>Solid</Style>
@@ -1701,6 +2250,280 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
                             </Border>
                           </Style>
                         </Line>
+                        <Textbox Name="OrderID105">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SubCutOut_R.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>5.32737in</Top>
+                          <Left>2.40123in</Left>
+                          <Height>0.20763in</Height>
+                          <Width>1.16628in</Width>
+                          <ZIndex>65</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID106">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!SubCutOut_L.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>5.36903in</Top>
+                          <Left>3.56751in</Left>
+                          <Height>0.16597in</Height>
+                          <Width>1.40526in</Width>
+                          <ZIndex>66</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID6">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>Factory:</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.30497in</Top>
+                          <Left>1.58962in</Left>
+                          <Height>0.16249in</Height>
+                          <Width>0.58578in</Width>
+                          <ZIndex>67</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID7">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Factory.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Left</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>0.30496in</Top>
+                          <Left>2.1754in</Left>
+                          <Height>0.1625in</Height>
+                          <Width>1.11572in</Width>
+                          <ZIndex>68</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <BottomBorder>
+                              <Color>Black</Color>
+                              <Style>Double</Style>
+                              <Width>3pt</Width>
+                            </BottomBorder>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID58">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="RIGHT: "&amp;Fields!ShellModifications_R.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.00586in</Top>
+                          <Left>2.39081in</Left>
+                          <Height>0.23889in</Height>
+                          <Width>2.58196in</Width>
+                          <ZIndex>69</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID59">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>="RIGHT: "&amp;Fields!SoftModifications_R.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style />
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>4.8427in</Top>
+                          <Left>2.39081in</Left>
+                          <Height>0.23889in</Height>
+                          <Width>2.58196in</Width>
+                          <ZIndex>70</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID60">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!Logo.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>6.32667in</Top>
+                          <Left>0.04336in</Left>
+                          <Height>0.19707in</Height>
+                          <Width>0.96246in</Width>
+                          <ZIndex>71</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
+                        <Textbox Name="OrderID61">
+                          <CanGrow>true</CanGrow>
+                          <KeepTogether>true</KeepTogether>
+                          <Paragraphs>
+                            <Paragraph>
+                              <TextRuns>
+                                <TextRun>
+                                  <Value>=Fields!ReturnPositive.Value</Value>
+                                  <Style>
+                                    <FontSize>8pt</FontSize>
+                                    <FontWeight>Bold</FontWeight>
+                                  </Style>
+                                </TextRun>
+                              </TextRuns>
+                              <Style>
+                                <TextAlign>Center</TextAlign>
+                              </Style>
+                            </Paragraph>
+                          </Paragraphs>
+                          <rd:DefaultName>OrderID</rd:DefaultName>
+                          <Top>6.32667in</Top>
+                          <Left>1.07526in</Left>
+                          <Height>0.19707in</Height>
+                          <Width>1.22514in</Width>
+                          <ZIndex>72</ZIndex>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                            <PaddingLeft>2pt</PaddingLeft>
+                            <PaddingRight>2pt</PaddingRight>
+                            <PaddingTop>2pt</PaddingTop>
+                            <PaddingBottom>2pt</PaddingBottom>
+                          </Style>
+                        </Textbox>
                       </ReportItems>
                       <PageBreak>
                         <BreakLocation>End</BreakLocation>
@@ -1734,8 +2557,8 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
         <DataSetName>DataSet1</DataSetName>
         <Top>0.04131in</Top>
         <Left>0.10339in</Left>
-        <Height>7.95286in</Height>
-        <Width>8.21234in</Width>
+        <Height>7.45286in</Height>
+        <Width>5.16823in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -1743,10 +2566,10 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
         </Style>
       </Tablix>
     </ReportItems>
-    <Height>8.89972in</Height>
+    <Height>7.56639in</Height>
     <Style />
   </Body>
-  <Width>8.51226in</Width>
+  <Width>5.35495in</Width>
   <Page>
     <PageHeight>10in</PageHeight>
     <InteractiveHeight>11in</InteractiveHeight>
@@ -1755,51 +2578,67 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
   </Page>
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DataSet1">
+    <DataSource Name="ImageOrthoDBDataSet_OS">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>acd3586e-8bf5-4449-bce6-a1e6c8417e02</rd:DataSourceID>
+      <rd:DataSourceID>9a830443-2224-4f98-811f-c3a90f00465f</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
     <DataSet Name="DataSet1">
       <Query>
-        <DataSourceName>DataSet1</DataSourceName>
+        <DataSourceName>ImageOrthoDBDataSet_OS</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="OrderID">
-          <DataField>OrderID</DataField>
+        <Field Name="Order_ID">
+          <DataField>Order_ID</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="OrderStatus">
-          <DataField>OrderStatus</DataField>
+        <Field Name="Status">
+          <DataField>Status</DataField>
           <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CreatedDate">
-          <DataField>CreatedDate</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="LastModified">
-          <DataField>LastModified</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
         </Field>
         <Field Name="Cast_Number">
           <DataField>Cast_Number</DataField>
           <rd:TypeName>System.Int32</rd:TypeName>
         </Field>
-        <Field Name="patient_Name">
-          <DataField>patient_Name</DataField>
+        <Field Name="No_of_Orthotics">
+          <DataField>No_of_Orthotics</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="height">
-          <DataField>height</DataField>
+        <Field Name="CustomerName">
+          <DataField>CustomerName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OrderDate">
+          <DataField>OrderDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="PatientName">
+          <DataField>PatientName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Daterequired">
+          <DataField>Daterequired</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Age">
+          <DataField>Age</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="weight">
           <DataField>weight</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="height">
+          <DataField>height</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="shoe_size">
@@ -1810,176 +2649,20 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
           <DataField>shoe_type</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Age">
-          <DataField>Age</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="No_of_Orthotics">
-          <DataField>No_of_Orthotics</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Gender">
-          <DataField>Gender</DataField>
+        <Field Name="Shipping_Address">
+          <DataField>Shipping_Address</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Diagnosis">
           <DataField>Diagnosis</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="CustomerName">
-          <DataField>CustomerName</DataField>
+        <Field Name="Left_NCB">
+          <DataField>Left_NCB</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Daterequired">
-          <DataField>Daterequired</DataField>
-          <rd:TypeName>System.DateTime</rd:TypeName>
-        </Field>
-        <Field Name="FootImpression">
-          <DataField>FootImpression</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Factory">
-          <DataField>Factory</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Ship_to">
-          <DataField>Ship_to</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Shipping_Address">
-          <DataField>Shipping_Address</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Return_Positive">
-          <DataField>Return_Positive</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ODMaterial">
-          <DataField>ODMaterial</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="White_PolyPro">
-          <DataField>White_PolyPro</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Graphite">
-          <DataField>Graphite</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DressDevice1">
-          <DataField>DressDevice1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DressDevice3">
-          <DataField>DressDevice3</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cork">
-          <DataField>Cork</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PlastizoteDiabetic">
-          <DataField>PlastizoteDiabetic</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PolyproPlantarFill_Shell">
-          <DataField>PolyproPlantarFill_Shell</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="PolyproPlantarFill">
-          <DataField>PolyproPlantarFill</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ChildrensDevice">
-          <DataField>ChildrensDevice</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cork_LeatherDevice">
-          <DataField>Cork_LeatherDevice</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CastBalanceLeftOption">
-          <DataField>CastBalanceLeftOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CastBalance_L">
-          <DataField>CastBalance_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="CastBalanceRightOption">
-          <DataField>CastBalanceRightOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="CastBalance_R">
-          <DataField>CastBalance_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="RaiseArch">
-          <DataField>RaiseArch</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Raise_ArchFill_L">
-          <DataField>Raise_ArchFill_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Raise_ArchFill_R">
-          <DataField>Raise_ArchFill_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="LowerArch">
-          <DataField>LowerArch</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Lower_ArchFill_L">
-          <DataField>Lower_ArchFill_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Lower_ArchFill_R">
-          <DataField>Lower_ArchFill_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="SameasCast">
-          <DataField>SameasCast</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_Option">
-          <DataField>RFP_Option</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_LOption">
-          <DataField>RFP_LOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_L">
-          <DataField>RFP_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="RFP_ROption">
-          <DataField>RFP_ROption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RFP_R">
-          <DataField>RFP_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="FFP_LOption">
-          <DataField>FFP_LOption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FFP_L">
-          <DataField>FFP_L</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="FFP_ROption">
-          <DataField>FFP_ROption</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="FFP_R">
-          <DataField>FFP_R</DataField>
-          <rd:TypeName>System.Int32</rd:TypeName>
-        </Field>
-        <Field Name="Grinding">
-          <DataField>Grinding</DataField>
+        <Field Name="Right_NCB">
+          <DataField>Right_NCB</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="HCD">
@@ -1988,284 +2671,116 @@ Microsoft.VisualBasic.Interaction.iif(Fields!Sub_U_Cut.Value = "True      ", "SU
         </Field>
         <Field Name="HCD_Other">
           <DataField>HCD_Other</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Raise_ArchFill">
+          <DataField>Raise_ArchFill</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Material">
-          <DataField>Material</DataField>
+        <Field Name="Lower_ArchFill">
+          <DataField>Lower_ArchFill</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Thickness">
-          <DataField>Thickness</DataField>
+        <Field Name="SameasCast">
+          <DataField>SameasCast</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="TopCovers">
-          <DataField>TopCovers</DataField>
+        <Field Name="ImageScale">
+          <DataField>ImageScale</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Length">
-          <DataField>Length</DataField>
+        <Field Name="BaseShell">
+          <DataField>BaseShell</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Len_AddBottomCover">
-          <DataField>Len_AddBottomCover</DataField>
+        <Field Name="Post_Material">
+          <DataField>Post_Material</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="HeelSpur_L">
-          <DataField>HeelSpur_L</DataField>
+        <Field Name="RFP_Left">
+          <DataField>RFP_Left</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="HeelSpur_R">
-          <DataField>HeelSpur_R</DataField>
+        <Field Name="RFP_Right">
+          <DataField>RFP_Right</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Ray_L">
-          <DataField>Ray_L</DataField>
+        <Field Name="FFP_Left">
+          <DataField>FFP_Left</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Ray_R">
-          <DataField>Ray_R</DataField>
+        <Field Name="FFP_Right">
+          <DataField>FFP_Right</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MetCut_L">
-          <DataField>MetCut_L</DataField>
+        <Field Name="Extensions">
+          <DataField>Extensions</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="MetCut_R">
-          <DataField>MetCut_R</DataField>
+        <Field Name="TopCover">
+          <DataField>TopCover</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ShellMedialFlag_L">
-          <DataField>ShellMedialFlag_L</DataField>
+        <Field Name="Bottom_Cover">
+          <DataField>Bottom_Cover</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ShellMedialFlange_R">
-          <DataField>ShellMedialFlange_R</DataField>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ShellLateralFlange_L">
-          <DataField>ShellLateralFlange_L</DataField>
+        <Field Name="ReturnPositive">
+          <DataField>ReturnPositive</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="ShellLateralFlange_R">
-          <DataField>ShellLateralFlange_R</DataField>
+        <Field Name="ShellModifications_L">
+          <DataField>ShellModifications_L</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LateralClip_L">
-          <DataField>LateralClip_L</DataField>
+        <Field Name="ShellModifications_R">
+          <DataField>ShellModifications_R</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LateralClip_R">
-          <DataField>LateralClip_R</DataField>
+        <Field Name="SoftModifications_L">
+          <DataField>SoftModifications_L</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PlantarFaciaGrove_L">
-          <DataField>PlantarFaciaGrove_L</DataField>
+        <Field Name="SoftModifications_R">
+          <DataField>SoftModifications_R</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="PlantarFaciaGrove_R">
-          <DataField>PlantarFaciaGrove_R</DataField>
+        <Field Name="SubCutOut">
+          <DataField>SubCutOut</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LateralHeel_L">
-          <DataField>LateralHeel_L</DataField>
+        <Field Name="SubCutOut_R">
+          <DataField>SubCutOut_R</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="LateralHeel_R">
-          <DataField>LateralHeel_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MedialHeel_L">
-          <DataField>MedialHeel_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MedialHeel_R">
-          <DataField>MedialHeel_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RigidMortons_L">
-          <DataField>RigidMortons_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RigidMortons_R">
-          <DataField>RigidMortons_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MortonsExt_L">
-          <DataField>MortonsExt_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MortonsExt_R">
-          <DataField>MortonsExt_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RevMortons_L">
-          <DataField>RevMortons_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="RevMortons_R">
-          <DataField>RevMortons_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ArchFillPad_L">
-          <DataField>ArchFillPad_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ArchFillPad_R">
-          <DataField>ArchFillPad_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MedialFlange_L">
-          <DataField>MedialFlange_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MedialFlange_R">
-          <DataField>MedialFlange_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LateralFlange_L">
-          <DataField>LateralFlange_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="LateralFlange_R">
-          <DataField>LateralFlange_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeelSpurPad_L">
-          <DataField>HeelSpurPad_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeelSpurPad_R">
-          <DataField>HeelSpurPad_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeelCushion_L">
-          <DataField>HeelCushion_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="HeelCushion_R">
-          <DataField>HeelCushion_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cuboid_L">
-          <DataField>Cuboid_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="Cuboid_R">
-          <DataField>Cuboid_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetatarsalRaise_L">
-          <DataField>MetatarsalRaise_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetatarsalRaise_R">
-          <DataField>MetatarsalRaise_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="KineticWedge_L">
-          <DataField>KineticWedge_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="KineticWedge_R">
-          <DataField>KineticWedge_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NeuromaPad_L">
-          <DataField>NeuromaPad_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="NeuromaPad_R">
-          <DataField>NeuromaPad_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetPad_Options">
-          <DataField>MetPad_Options</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetPad_L">
-          <DataField>MetPad_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetPad_R">
-          <DataField>MetPad_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetBar_Options">
-          <DataField>MetBar_Options</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetBar_L">
-          <DataField>MetBar_L</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="MetBar_R">
-          <DataField>MetBar_R</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DistalEndOfShell_X">
-          <DataField>DistalEndOfShell_X</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="DistalEndOfShell_Y">
-          <DataField>DistalEndOfShell_Y</DataField>
+        <Field Name="SubCutOut_L">
+          <DataField>SubCutOut_L</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="Notes">
           <DataField>Notes</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Sub_U_Cut">
-          <DataField>Sub_U_Cut</DataField>
+        <Field Name="Factory">
+          <DataField>Factory</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="R1">
-          <DataField>R1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="R2">
-          <DataField>R2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="R3">
-          <DataField>R3</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="R4">
-          <DataField>R4</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="R5">
-          <DataField>R5</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="L1">
-          <DataField>L1</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="L2">
-          <DataField>L2</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="L3">
-          <DataField>L3</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="L4">
-          <DataField>L4</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="L5">
-          <DataField>L5</DataField>
+        <Field Name="Grinding">
+          <DataField>Grinding</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DataSet1</rd:DataSetName>
-        <rd:SchemaPath>C:\Users\kdandebo\Documents\Visual Studio 2015\Projects\ImageRX\ImageRX\DataSet1.xsd</rd:SchemaPath>
-        <rd:TableName>RptView</rd:TableName>
+        <rd:DataSetName>ImageOrthoDBDataSet_OS</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\kdandebo\Documents\Visual Studio 2015\Projects\ImageRX\ImageRX\ImageOrthoDBDataSet_OS.xsd</rd:SchemaPath>
+        <rd:TableName>OrderSummary</rd:TableName>
         <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
         <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
-        <rd:TableAdapterName>RptViewTableAdapter</rd:TableAdapterName>
+        <rd:TableAdapterName>OrderSummaryTableAdapter</rd:TableAdapterName>
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

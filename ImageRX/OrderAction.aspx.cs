@@ -33,39 +33,62 @@ namespace ImageRX
             {
                 Label25.Text = readStage["NewOrder"].ToString();
                 TextBox1.Text = readStage["NewOrder_tek"].ToString();
-                Label26.Text = readStage["LabReceived"].ToString();
-                if (readStage["LabReceived_tek"] != DBNull.Value || readStage["LabReceived_tek"].ToString() != "")
-                { TextBox2.Text = readStage["LabReceived_tek"].ToString(); }
+                Label26.Text = readStage["ReadytoProcess"].ToString();
+                if (readStage["ReadytoProcess_tek"] != DBNull.Value || readStage["ReadytoProcess_tek"].ToString() != "")
+                { TextBox2.Text = readStage["ReadytoProcess_tek"].ToString(); }
 
                 Label37.Text = readStage["DesignStart"].ToString();
                 if (readStage["DesignStart_tek"] != DBNull.Value || readStage["DesignStart_tek"].ToString() != "")
                 { TextBox13.Text = readStage["DesignStart_tek"].ToString(); }
 
-                Label38.Text = readStage["LabReady"].ToString();
-                if (readStage["LabReady_tek"] != DBNull.Value || readStage["LabReady_tek"].ToString() != "")
-                { TextBox14.Text = readStage["LabReady_tek"].ToString(); }
+                Label38.Text = readStage["CAM"].ToString();
+                if (readStage["CAM_tek"] != DBNull.Value || readStage["CAM_tek"].ToString() != "")
+                { TextBox14.Text = readStage["CAM_tek"].ToString(); }
 
-                Label27.Text = readStage["ManufacturingStart"].ToString();
-                if (readStage["ManufacturingStart_tek"].ToString() != "" || readStage["ManufacturingStart_tek"] != DBNull.Value)
-                { TextBox3.Text = readStage["ManufacturingStart_tek"].ToString(); }
-                Label28.Text = readStage["Station1"].ToString();
-                if (readStage["Station1_tek"].ToString() != "" || readStage["Station1_tek"] != DBNull.Value)
-                { TextBox4.Text = readStage["Station1_tek"].ToString(); }
-                Label34.Text = readStage["Station2"].ToString();
-                if (readStage["Station2_tek"].ToString() != "" || readStage["Station2_tek"] != DBNull.Value)
-                { TextBox10.Text = readStage["Station2_tek"].ToString(); }
-                Label35.Text = readStage["Station3"].ToString();
-                if (readStage["Station3_tek"].ToString() != "" || readStage["Station3_tek"] != DBNull.Value)
-                { TextBox11.Text = readStage["Station3_tek"].ToString(); }
-                Label36.Text = readStage["Station4"].ToString();
-                if (readStage["Station4_tek"].ToString() != "" || readStage["Station4_tek"] != DBNull.Value)
-                { TextBox12.Text = readStage["Station4_tek"].ToString(); }
+                Label27.Text = readStage["Milled"].ToString();
+                if (readStage["Milled_tek"].ToString() != "" || readStage["Milled_tek"] != DBNull.Value)
+                { TextBox3.Text = readStage["Milled_tek"].ToString(); }
+
+                Label28.Text = readStage["Molding"].ToString();
+                if (readStage["Molding_tek"].ToString() != "" || readStage["Molding_tek"] != DBNull.Value)
+                { TextBox4.Text = readStage["Modling_tek"].ToString(); }
+
+
+                Label34.Text = readStage["Grinding"].ToString();
+                if (readStage["Grinding_tek"].ToString() != "" || readStage["Grinding_tek"] != DBNull.Value)
+                { TextBox10.Text = readStage["Grinding_tek"].ToString(); }
+
+                Label35.Text = readStage["Posting"].ToString();
+                if (readStage["Posting_tek"].ToString() != "" || readStage["Posting_tek"] != DBNull.Value)
+                { TextBox11.Text = readStage["Posting_tek"].ToString(); }
+
+                Label36.Text = readStage["Accomodations"].ToString();
+                if (readStage["Accomodations_tek"].ToString() != "" || readStage["Accomodations_tek"] != DBNull.Value)
+                { TextBox12.Text = readStage["Accomodations_tek"].ToString(); }
+
+                Label39.Text = readStage["TopCovering"].ToString();
+                if (readStage["TopCovering_tek"].ToString() != "" || readStage["TopCovering_tek"] != DBNull.Value)
+                { TextBox15.Text = readStage["TopCovering_tek"].ToString(); }
+
+                Label40.Text = readStage["Finishing"].ToString();
+                if (readStage["Finishing_tek"].ToString() != "" || readStage["Finishing_tek"] != DBNull.Value)
+                { TextBox16.Text = readStage["Finishing_tek"].ToString(); }
+
+
                 Label32.Text = readStage["ManufacturerQuality"].ToString();
                 if (readStage["ManufacturerQuality_tek"].ToString() != "" || readStage["ManufacturerQuality_tek"] != DBNull.Value)
                 { TextBox8.Text = readStage["ManufacturerQuality_tek"].ToString(); }
-                Label33.Text = readStage["ShipByManufacturer"].ToString();
-                if (readStage["ShipByManufacturer_tek"].ToString() != "" || readStage["ShipByManufacturer_tek"] != DBNull.Value)
-                { TextBox9.Text = readStage["ShipByManufacturer_tek"].ToString(); }
+
+                Label33.Text = readStage["Shipped"].ToString();
+                if (readStage["ShipBy_CA"].ToString() != "" || readStage["ShipBy_CA"] != DBNull.Value)
+                { TextBox9.Text = readStage["ShipBy_CA"].ToString(); }
+                if (readStage["ShipBy_MX"].ToString() != "" || readStage["ShipBy_MX"] != DBNull.Value)
+                { TextBox17.Text = readStage["ShipBy_MX"].ToString(); }
+
+                Label41.Text = readStage["AdditionalQuality"].ToString();
+                if (readStage["AdditionalQuality_tek"].ToString() != "" || readStage["AdditionalQuality_tek"] != DBNull.Value)
+                { TextBox18.Text = readStage["AdditionalQuality_tek"].ToString(); }
+
             }
             readStage.Close();
             con.Close();
@@ -82,10 +105,10 @@ namespace ImageRX
             SqlDataReader reader = cmd.ExecuteReader();
             while (reader.Read())
                 {
-                if (reader["LabReceived"] == DBNull.Value)
+                if (reader["ReadytoProcess"] == DBNull.Value)
                 {
                     reader.Close();
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [LabReceived] = '" + DateTime.Now.ToString() + "',[LabReceived_tek] = '" + TextBox2.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [ReadytoProcess] = '" + DateTime.Now.ToString() + "',[ReadytoProcess_tek] = '" + TextBox2.Text + "' where [OrderID] = " + v + "";
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i=da.InsertCommand.ExecuteNonQuery();
@@ -100,54 +123,72 @@ namespace ImageRX
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["LabReady"] == DBNull.Value)
+                else if (reader["CAM"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [LabReady] = '" + DateTime.Now.ToString() + "',[LabReady_tek] = '" + TextBox14.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [CAM] = '" + DateTime.Now.ToString() + "',[CAM_tek] = '" + TextBox14.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["ManufacturingStart"] == DBNull.Value)
+                else if (reader["Milled"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [ManufacturingStart] = '" + DateTime.Now.ToString() + "',[ManufacturingStart_tek] = '" + TextBox3.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Milled] = '" + DateTime.Now.ToString() + "',[Milled_tek] = '" + TextBox3.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["Station1"] == DBNull.Value)
+                else if (reader["Molding"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Station1] = '" + DateTime.Now.ToString() + "',[Station1_tek] = '" + TextBox4.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Molding] = '" + DateTime.Now.ToString() + "',[Molding_tek] = '" + TextBox4.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["Station2"] == DBNull.Value)
+                else if (reader["Grinding"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Station2] = '" + DateTime.Now.ToString() + "',[Station2_tek] = '" + TextBox10.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Grinding] = '" + DateTime.Now.ToString() + "',[Grinding_tek] = '" + TextBox10.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["Station3"] == DBNull.Value)
+                else if (reader["Posting"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Station3] = '" + DateTime.Now.ToString() + "',[Station3_tek] = '" + TextBox11.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Posting] = '" + DateTime.Now.ToString() + "',[Posting_tek] = '" + TextBox11.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
                 }
-                else if (reader["Station4"] == DBNull.Value)
+                else if (reader["Accomodations"] == DBNull.Value)
                 {
-                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Station4] = '" + DateTime.Now.ToString() + "',[Station4_tek] = '" + TextBox12.Text + "' where [OrderID] = " + v + "";
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Accomodations] = '" + DateTime.Now.ToString() + "',[Accomodations_tek] = '" + TextBox12.Text + "' where [OrderID] = " + v + "";
+                    reader.Close();
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand(sql, con);
+                    i = da.InsertCommand.ExecuteNonQuery();
+                    Response.Redirect(Request.RawUrl);
+                }
+                else if (reader["TopCovering"] == DBNull.Value)
+                {
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [TopCovering] = '" + DateTime.Now.ToString() + "',[TopCovering_tek] = '" + TextBox15.Text + "' where [OrderID] = " + v + "";
+                    reader.Close();
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand(sql, con);
+                    i = da.InsertCommand.ExecuteNonQuery();
+                    Response.Redirect(Request.RawUrl);
+                }
+                else if (reader["Finishing"] == DBNull.Value)
+                {
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [Finishing] = '" + DateTime.Now.ToString() + "',[Finishing_tek] = '" + TextBox16.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
@@ -164,14 +205,24 @@ namespace ImageRX
                     Response.Redirect(Request.RawUrl);
                    
                 }
-                else if (reader["ShipByManufacturer"] == DBNull.Value)
+                else if (reader["Shipped"] == DBNull.Value)
                 {
-                   string sql = "update [dbo].[tbl_OrderStageDate] SET [ShipByManufacturer] = '" + DateTime.Now.ToString() + "',[ShipByManufacturer_tek] = '" + TextBox9.Text + "' where [OrderID] = " + v + "";
+                   string sql = "update [dbo].[tbl_OrderStageDate] SET [Shipped] = '" + DateTime.Now.ToString() + "',[ShipBy_MX] = '" + TextBox17.Text + "',[ShipBy_CA] = '" + TextBox9.Text + "' where [OrderID] = " + v + "";
                     reader.Close();
                     SqlDataAdapter da = new SqlDataAdapter();
                     da.InsertCommand = new SqlCommand(sql, con);
                     i = da.InsertCommand.ExecuteNonQuery();
                     Response.Redirect(Request.RawUrl);
+                }
+                else if (reader["AdditionalQuality"] == DBNull.Value)
+                {
+                    string sql = "update [dbo].[tbl_OrderStageDate] SET [AdditionalQualityy] = '" + DateTime.Now.ToString() + "',[AdditionalQuality_tek] = '" + TextBox18.Text + "' where [OrderID] = " + v + "";
+                    reader.Close();
+                    SqlDataAdapter da = new SqlDataAdapter();
+                    da.InsertCommand = new SqlCommand(sql, con);
+                    i = da.InsertCommand.ExecuteNonQuery();
+                    Response.Redirect(Request.RawUrl);
+
                 }
                 else
                 {
@@ -188,7 +239,7 @@ namespace ImageRX
         {
             string v = Request.QueryString["id"];
             
-            Response.Redirect("OrderPageV2.aspx?id=" + v);
+            Response.Redirect("ReportPage.aspx?id=" + v);
         }
 
         protected void Upload_Click(object sender, EventArgs e)

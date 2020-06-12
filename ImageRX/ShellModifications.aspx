@@ -1,196 +1,283 @@
 ﻿<%@ Page Title="SHELL MODIFICATIONS" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ShellModifications.aspx.cs" Inherits="ImageRX.ShellModifications" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2 class="text-left" style="font-size: large; margin-left: 0px;"><span style="font-weight: bold">SHELL MODIFICATIONS</span></h2>
+    <h2 class="text-left" style="font-size: large; margin-left: 0px; width: 781px;"><span style="font-weight: bold">SHELL MODIFICATIONS</span></h2>
     <h3>
         <table style="width:106%;">
             <tr style="font-size: x-small">
-                <td class="text-center" style="font-size: small; width: 100px;">
-                    <img alt="" src="Images/Heel%20Hole.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 71px;">L<input id="Checkbox1" runat="server" type="checkbox" /> R<input id="Checkbox2" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/1st%20ray%20cutout.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox3" runat="server" type="checkbox" />R<input id="Checkbox4" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/1st%20met%20cutout.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox5" runat="server" type="checkbox" />R<input id="Checkbox6" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Medial%20Flange.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox7" runat="server" type="checkbox" />R<input id="Checkbox8" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Lateral%20Flange.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox9" runat="server" type="checkbox" />R<input id="Checkbox10" runat="server" type="checkbox" /></td>
+                <td class="text-center" style="font-size: medium; width: 261px;">
+                    <strong>Left</strong></td>
+                <td class="text-center" style="font-size: medium; width: 260px;">
+                    <strong>Right</strong></td>
             </tr>
             <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">INTRINSIC HEEL HEEL HOLE CUT OUT</span></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">1ST RAY CUT OUT</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">1ST MET CUT OUT</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">MEDIAL FLANGE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">LATERAL FLANGE</td>
+                <td class="text-left" style="font-size: small; width: 261px;">
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" style="font-size: x-small">
+                        <asp:ListItem>1st Ray Cut Out</asp:ListItem>
+                        <asp:ListItem>Intrinsic Heel Hole Cut Out</asp:ListItem>
+                        <asp:ListItem>1st  Met Cut Out</asp:ListItem>
+                        <asp:ListItem>Medial Flange</asp:ListItem>
+                        <asp:ListItem>Lateral Flange</asp:ListItem>
+                        <asp:ListItem>Lateral Clip</asp:ListItem>
+                        <asp:ListItem>Plantar Fascia Groove</asp:ListItem>
+                        <asp:ListItem>Rigid Mortons Ext - End at IPJ</asp:ListItem>
+                        <asp:ListItem>Rigid Mortons Ext - End of Toes</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 2nd </asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 3rd</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 4th</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 5th</asp:ListItem>
+                        <asp:ListItem>Full Length Shell</asp:ListItem>
+                    </asp:CheckBoxList>
+                </td>
+                <td class="text-left" style="font-size: small; width: 260px;">
+                    <asp:CheckBoxList ID="CheckBoxList2" runat="server" Height="203px" style="font-size: x-small">
+                        <asp:ListItem>Intrinsic Heel Hole Cut Out</asp:ListItem>
+                        <asp:ListItem>1st Ray Cut Out</asp:ListItem>
+                        <asp:ListItem>1st  Met Cut Out</asp:ListItem>
+                        <asp:ListItem>Medial Flange</asp:ListItem>
+                        <asp:ListItem>Lateral Flange</asp:ListItem>
+                        <asp:ListItem>Lateral Clip</asp:ListItem>
+                        <asp:ListItem>Plantar Fascia Groove</asp:ListItem>
+                        <asp:ListItem>Rigid Mortons Ext - End at IPJ</asp:ListItem>
+                        <asp:ListItem>Rigid Mortons Ext - End of Toes</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 2nd</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 3rd</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 4th</asp:ListItem>
+                        <asp:ListItem>Rigid Extension - under 5th</asp:ListItem>
+                        <asp:ListItem>Full Length Shell</asp:ListItem>
+                    </asp:CheckBoxList>
+                </td>
             </tr>
-        </table>
-    </h3>
-    <h3>
-         <table style="width:106%;">
-            <tr style="font-size: x-small">
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Lateralclip.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox11" runat="server" type="checkbox" />R<input id="Checkbox12" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/FaciaGrove.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox13" runat="server" type="checkbox" />R<input id="Checkbox14" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/LateralHeelSkive.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox15" runat="server" type="checkbox" />R<input id="Checkbox16" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/MedialHeelSkive.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox17" runat="server" type="checkbox" />R<input id="Checkbox41" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/RigidMortonsExt.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 67px;">L<input id="Checkbox19" runat="server" type="checkbox" />R<input id="Checkbox20" runat="server" type="checkbox" /></td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">LATERAL CLIP</span></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">PLANTAR FACIA GROVE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">LATERAL HEEL SKIVE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">MEDIAL HEEL SKIVE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">RIGID MORTONS EXTENSION</td>
-            </tr>
-        </table>
-
+            </table>
     </h3>
 
-    <h2 class="text-left" style="font-size: large; margin-left: 0px;"><span style="font-weight: bold">SOFT MODIFICATIONS</span></h2>
+    <h2 class="text-left" style="font-size: large; margin-left: 0px; width: 779px;"><span style="font-weight: bold">SOFT MODIFICATIONS</span></h2>
     <h3>
         <table style="width:106%;">
             <tr style="font-size: x-small">
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img alt="" src="Images/Mortons%20Ext.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox21" runat="server" type="checkbox" />R<input id="Checkbox22" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Rev%20Mortons%20Ext.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox23" runat="server" type="checkbox" />R<input id="Checkbox24" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Arch%20Fill.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox25" runat="server" type="checkbox" />R<input id="Checkbox26" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/MedialFlangeSoft.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox27" runat="server" type="checkbox" />R<input id="Checkbox28" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/LateralFlangeSoft.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox29" runat="server" type="checkbox" />R<input id="Checkbox30" runat="server" type="checkbox" /></td>
+                <td class="text-center" style="font-size: medium; width: 260px;">
+                    <strong>Left</strong></td>
+                <td class="text-center" style="font-size: medium; width: 260px;">
+                    <strong>Right</strong></td>
             </tr>
             <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">MORTONS EXTENSION</span></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">REV.MORTONS EXTENSION</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">ARCH FILL PAD (PLANTAR / DORSAL)</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">MEDIAL FLANGE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">LATERAL FLANGE</td>
+                <td class="text-left" style="font-size: medium; width: 260px;">
+                    <span style="font-size: small">1 to 5 Sulcus Pad </span>
+                    <asp:DropDownList ID="DropDownList7" runat="server" style="font-size: small">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>EVA 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>EVA 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Slow Recovery 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>Slow Recovery 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Black Poron 1/8&quot;</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="text-left" style="font-size: medium; width: 260px;">
+                    <span style="font-size: small">1 to 5 Sulcus Pad </span>
+                    <asp:DropDownList ID="DropDownList12" runat="server" style="font-size: small">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>EVA 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>EVA 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Slow Recovery 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>Slow Recovery 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Black Poron 1/8&quot;</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
             </tr>
-        </table>
+            <tr style="font-size: x-small">
+                <td class="text-left" style="font-size: medium; width: 260px;">
+                    <span style="font-size: small">Grind In: </span>
+                    <asp:DropDownList ID="DropDownList8" runat="server" style="font-size: small">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>Varus</asp:ListItem>
+                        <asp:ListItem>Valgus</asp:ListItem>
+                        <asp:ListItem>Neutral</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="DropDownList9" runat="server" style="font-size: small">
+                        <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td class="text-left" style="font-size: medium; width: 260px;">
+                    <span style="font-size: small">Grind In: </span>
+                    <asp:DropDownList ID="DropDownList10" runat="server" style="font-size: small">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>Varus</asp:ListItem>
+                        <asp:ListItem>Valgus</asp:ListItem>
+                        <asp:ListItem>Neutral</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:DropDownList ID="DropDownList11" runat="server" style="font-size: small">
+                        <asp:ListItem>0</asp:ListItem>
+                        <asp:ListItem>1</asp:ListItem>
+                        <asp:ListItem>2</asp:ListItem>
+                        <asp:ListItem>3</asp:ListItem>
+                        <asp:ListItem>4</asp:ListItem>
+                        <asp:ListItem>5</asp:ListItem>
+                        <asp:ListItem>6</asp:ListItem>
+                        <asp:ListItem>7</asp:ListItem>
+                        <asp:ListItem>8</asp:ListItem>
+                        <asp:ListItem>9</asp:ListItem>
+                        <asp:ListItem>10</asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+            </tr>
+            <tr style="font-size: x-small">
+                <td class="text-left" style="font-size: small; ">
+                    <asp:CheckBoxList ID="CheckBoxList3" runat="server" style="font-size: x-small" AutoPostBack ="true" OnSelectedIndexChanged="CheckBoxList3_SelectedIndexChanged">
+                        <asp:ListItem>Mortons Ext - Black Poron To Toes</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Black Poron To IPJ</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Crepe To Toes</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Crepe To IPJ</asp:ListItem>
+                        <asp:ListItem>Rev. Mortons Ext</asp:ListItem>
+                        <asp:ListItem>Arch Pad</asp:ListItem>
+                        <asp:ListItem>Medial Flange - Cork Reinforced with Spikey</asp:ListItem>
+                        <asp:ListItem>Medial Flange - Cork Reinforced with Regular</asp:ListItem>
+                        <asp:ListItem>Medial Flange - EVA Reinforced with Spikey</asp:ListItem>
+                        <asp:ListItem>Medial Flange - EVA Reinforced with Regular</asp:ListItem>
+                        <asp:ListItem>Lateral Flange</asp:ListItem>
+                        <asp:ListItem>Heel Pad</asp:ListItem>
+                        <asp:ListItem>Heel Cushion</asp:ListItem>
+                        <asp:ListItem>Cuboid Support Pad</asp:ListItem>
+                        <asp:ListItem>Metatarsal Raise</asp:ListItem>
+                        <asp:ListItem>Kinetic Wedge</asp:ListItem>
+                        <asp:ListItem>Neuroma Pad</asp:ListItem>
+                        <asp:ListItem>Plantar Fascia Groove</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/16&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Dancers Pad</asp:ListItem>
+                        <asp:ListItem Value="Met Bar">Met Bar</asp:ListItem>
+                        <asp:ListItem>Met Pad</asp:ListItem>
+                    </asp:CheckBoxList>
+                    Met Pad Thickness:<asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;<asp:TextBox ID="TextBox2" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                    <br />
+                    Met Pad Placement:<asp:DropDownList ID="DropDownList13" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList13_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;<asp:TextBox ID="TextBox6" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                    <asp:DropDownList ID="DropDownList14" runat="server" AutoPostBack="true" >
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>Distal</asp:ListItem>
+                        <asp:ListItem>Proximal</asp:ListItem>
+                    </asp:DropDownList>
+                    <br />
+                    Met Bar:<asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged" Height="16px">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                &nbsp;<asp:TextBox ID="TextBox3" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                </td>
+                <td class="text-left" style="font-size: small; width: 260px;">
+                    <asp:CheckBoxList ID="CheckBoxList4" runat="server" style="font-size: x-small" OnSelectedIndexChanged="CheckBoxList4_SelectedIndexChanged" AutoPostBack ="true">
+                        <asp:ListItem>Mortons Ext - Black Poron To Toes</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Black Poron To IPJ</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Crepe To Toes</asp:ListItem>
+                        <asp:ListItem>Mortons Ext - Crepe To IPJ</asp:ListItem>
+                        <asp:ListItem>Rev. Mortons Ext</asp:ListItem>
+                        <asp:ListItem>Arch Pad</asp:ListItem>
+                        <asp:ListItem>Medial Flange - Cork Reinforced with Spikey</asp:ListItem>
+                        <asp:ListItem>Medial Flange - Cork Reinforced with Regular</asp:ListItem>
+                        <asp:ListItem>Medial Flange - EVA Reinforced with Spikey</asp:ListItem>
+                        <asp:ListItem>Medial Flange - EVA Reinforced with Regular</asp:ListItem>
+                        <asp:ListItem>Lateral Flange</asp:ListItem>
+                        <asp:ListItem>Heel Pad</asp:ListItem>
+                        <asp:ListItem>Heel Cushion</asp:ListItem>
+                        <asp:ListItem>Cuboid Support Pad</asp:ListItem>
+                        <asp:ListItem>Metatarsal Raise</asp:ListItem>
+                        <asp:ListItem>Kinetic Wedge</asp:ListItem>
+                        <asp:ListItem>Neuroma Pad</asp:ListItem>
+                        <asp:ListItem>Plantar Fascia Groove</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/16&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/8&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 3/16&quot;</asp:ListItem>
+                        <asp:ListItem>Runners Wedge 1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Dancers Pad</asp:ListItem>
+                        <asp:ListItem>Met Bar</asp:ListItem>
+                        <asp:ListItem>Met Pad</asp:ListItem>
+                    </asp:CheckBoxList>
+                    Met Pad Thickness:<asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;<asp:TextBox ID="TextBox4" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                    <br />
+                    Met Pad Placement:<asp:DropDownList ID="DropDownList15" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList15_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;<asp:TextBox ID="TextBox7" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                    <asp:DropDownList ID="DropDownList16" runat="server" AutoPostBack="true" >
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>Distal</asp:ListItem>
+                        <asp:ListItem>Proximal</asp:ListItem>
+                    </asp:DropDownList>
+                    <br />
+                    Met Bar:<asp:DropDownList ID="DropDownList4" runat="server" AutoPostBack="true" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged">
+                        <asp:ListItem></asp:ListItem>
+                        <asp:ListItem>1/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/8&quot;</asp:ListItem>
+                        <asp:ListItem>3/16&quot;</asp:ListItem>
+                        <asp:ListItem>1/4&quot;</asp:ListItem>
+                        <asp:ListItem>Other</asp:ListItem>
+                    </asp:DropDownList>
+                &nbsp;<asp:TextBox ID="TextBox5" runat="server" Enabled="False" Width="48px"></asp:TextBox>
+                </td>
+            </tr>
+            <tr style="font-size: x-small">
+                <td class="text-left" style="font-size: small; width: 260px;">
+                    &nbsp;</td>
+                <td class="text-left" style="font-size: small; width: 260px;">
+                    &nbsp;</td>
+            </tr>
+            </table>
     </h3>
     <h3>
          <table  style="width:106%;">
             <tr style="font-size: x-small">
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Heel%20Spur%20Pad.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox31" runat="server" type="checkbox" />R<input id="Checkbox32" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px; ">
-                    <img src="Images/Heel%20Cushion.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox33" runat="server" type="checkbox" />R<input id="Checkbox34" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 24px; ">
-                    <img src="Images/CuboidPad.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 85px;">L<input id="Checkbox35" runat="server" type="checkbox" />R<input id="Checkbox36" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/Metatarsal%20Raise.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox37" runat="server" type="checkbox" />R<input id="Checkbox42" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small;  width: 27px; ">
-                    <img src="Images/Kinetic%20Wedge.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px; ">L<input id="Checkbox39" runat="server" type="checkbox" />R<input id="Checkbox38" runat="server" type="checkbox" /></td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small"><span style="font-size: xx-small">HEEL SPUR PAD</span></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">HEEL CUSHION</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">CUBOID SUPPORT PAD</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">METATARSAL RAISE</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">KINETIC WEDGE</td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" style="font-size: small; width: 27px;">
-                    <img src="Images/NeuromaPad.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox43" runat="server" type="checkbox" />R<input id="Checkbox44" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small; width: 27px; ">
-                    <img src="Images/Met%20Pad.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 82px;">L<input id="Checkbox45" runat="server" type="checkbox" />R<input id="Checkbox46" runat="server" type="checkbox" /></td>
-                <td class="text-center" style="font-size: small;  width: 24px; ">
-                    <img src="Images/MetBar.jpg" style="width: 113px; height: 124px" /></td>
-                <td class="text-center" style="font-size: small; width: 85px;">L<input id="Checkbox47" runat="server" type="checkbox" />R<input id="Checkbox48" runat="server" type="checkbox" /></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small" rowspan="2">
-                    <img alt="" src="Images/metpadplacement.jpg" style="width: 195px; height: 212px; margin-left: 0px; margin-top: 0px;" /></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small; width: 195px; height: 124px;" >DISTAL END OF SHELL<br />
-                    <br />
-                    X:
-                    <asp:TextBox ID="TextBox2" runat="server" Width="25px"></asp:TextBox>
-                    <br />
-                    Y:
-                    <asp:TextBox ID="TextBox3" runat="server" Width="25px"></asp:TextBox>
-                </td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small">NEUROMA PAD</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">
-                    <div class="text-left">
-                        MET PAD</div>
-                    <div style="text-align: justify">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" Width="135px">
-                            <asp:ListItem>LowProfile</asp:ListItem>
-                            <asp:ListItem>Small</asp:ListItem>
-                            <asp:ListItem>Medium</asp:ListItem>
-                            <asp:ListItem>Large</asp:ListItem>
-                        </asp:RadioButtonList>
-                    </div>
-                </td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">
-                    <div style="text-align: justify">
-                        MET BAR</div>
-                    <div style="text-align: justify">
-                        <asp:RadioButtonList ID="RadioButtonList2" runat="server" AutoPostBack="True">
-                            <asp:ListItem>Small</asp:ListItem>
-                            <asp:ListItem>Medium</asp:ListItem>
-                            <asp:ListItem>Large</asp:ListItem>
-                        </asp:RadioButtonList>
-                    </div>
-                </td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-left" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-left" colspan="2" style="font-size: medium"><strong>NOTES:</strong></td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-            </tr>
-            <tr style="font-size: x-small">
-                <td class="text-left" colspan="5" style="font-size: xx-small">
-                    <asp:TextBox ID="TextBox1" runat="server" Height="223px" Width="679px" TextMode="MultiLine"></asp:TextBox>
-                </td>
-                <td class="text-left" colspan="5" style="font-size: xx-small">
-                    <asp:CheckBox ID="CheckBox49" runat="server" />
-                    SUB-U CUT OUT<br />
+                <td class="text-center" colspan="3" style="font-size: xx-small">
+                    &nbsp;</td>
+                <td class="text-center" style="font-size: xx-small">
+                    <asp:CheckBox ID="CheckBox49" runat="server" autopostback="true" OnCheckedChanged="CheckBox49_CheckedChanged"/>
+                    SUB-U CUT OUT
+                    <asp:RadioButton ID="RadioButton1" runat="server" autopostback="true" Enabled="False" OnCheckedChanged="RadioButton1_CheckedChanged"/>
+                    Channel
+                    <asp:RadioButton ID="RadioButton2" runat="server" autopostback="true" Enabled="False" OnCheckedChanged="RadioButton2_CheckedChanged"/>
+                    Pocket<br />
                     <asp:CheckBox ID="CheckBox50" runat="server" />
                     R1<asp:CheckBox ID="CheckBox51" runat="server" />
                     R2<asp:CheckBox ID="CheckBox52" runat="server" />
@@ -208,25 +295,20 @@
                     <img alt="" src="Images/fp.jpg" style="width: 77px; height: 216px" />&nbsp;&nbsp; </td>
             </tr>
             <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
+                <td class="text-center" style="font-size: xx-small" colspan="4">
+                    <asp:TextBox ID="TextBox1" runat="server" Height="223px" Width="679px" TextMode="MultiLine"></asp:TextBox>
+                </td>
             </tr>
             <tr style="font-size: x-small">
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
-                <td class="text-center" colspan="2" style="font-size: xx-small">&nbsp;</td>
+                <td class="text-center" style="font-size: xx-small">&nbsp;</td>
+                <td class="text-center" style="font-size: xx-small">&nbsp;</td>
+                <td class="text-center" colspan="2" style="font-size: xx-small">
+                    <asp:Button ID="Button1" runat="server" Height="31px" OnClick="Button1_Click" style="font-size: medium" Text="Go to File Uploads" Width="177px" />
+                </td>
             </tr>
         </table>
 
     </h3>
     <p>
-         <asp:Button class="btn btn-default"  runat="server" aria-autocomplete="inline" Text="Submit & Proceed to Upload Scaned Images" OnClick="FileUploads_Click" />
-
-
-    </p>
+         &nbsp;</p>
 </asp:Content>

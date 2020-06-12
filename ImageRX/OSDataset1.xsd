@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="OSDataset1" targetNamespace="http://tempuri.org/OSDataset1.xsd" xmlns:mstns="http://tempuri.org/OSDataset1.xsd" xmlns="http://tempuri.org/OSDataset1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="ImageOrthoDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ImageOrthoDBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.ImageOrthoDBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="OrderSummaryTableAdapter" GeneratorDataComponentClassName="OrderSummaryTableAdapter" Name="OrderSummary" UserDataComponentName="OrderSummaryTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ImageOrthoDBConnectionString (Web.config)" DbObjectName="ImageOrthoDB.dbo.OrderSummary" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Order_ID, Status, Cast_Number, PurchaseOrder, TypeofOrthotic, PreSelection, No_of_Orthotics, CustomerName, Factory, OrderDate, PatientName, Daterequired, Age, Gender, weight, height, shoe_size, shoe_type, Shipping_Address, Diagnosis, Left_NCB, Right_NCB, HCD, HCD_Other, Raise_ArchFill, Lower_ArchFill, SameasCast, ImageScale, BaseShell, Grinding, KBS, KBS_Left, KBS_Right, Post_Material, ERP_Option, RFP_Left, RFP_Right, FFP_Left, FFP_Right, Wedge, Extensions, TopCover, Bottom_Cover, Logo, ReturnPositive, ShellModifications_L, ShellModifications_R, SoftModifications_L, SoftModifications_R, SubCutOut, SubCutOut_R, SubCutOut_L, Notes FROM dbo.OrderSummary</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Order_ID" DataSetColumn="Order_ID" />
+              <Mapping SourceColumn="Status" DataSetColumn="Status" />
+              <Mapping SourceColumn="Cast_Number" DataSetColumn="Cast_Number" />
+              <Mapping SourceColumn="PurchaseOrder" DataSetColumn="PurchaseOrder" />
+              <Mapping SourceColumn="TypeofOrthotic" DataSetColumn="TypeofOrthotic" />
+              <Mapping SourceColumn="PreSelection" DataSetColumn="PreSelection" />
+              <Mapping SourceColumn="No_of_Orthotics" DataSetColumn="No_of_Orthotics" />
+              <Mapping SourceColumn="CustomerName" DataSetColumn="CustomerName" />
+              <Mapping SourceColumn="Factory" DataSetColumn="Factory" />
+              <Mapping SourceColumn="OrderDate" DataSetColumn="OrderDate" />
+              <Mapping SourceColumn="PatientName" DataSetColumn="PatientName" />
+              <Mapping SourceColumn="Daterequired" DataSetColumn="Daterequired" />
+              <Mapping SourceColumn="Age" DataSetColumn="Age" />
+              <Mapping SourceColumn="Gender" DataSetColumn="Gender" />
+              <Mapping SourceColumn="weight" DataSetColumn="weight" />
+              <Mapping SourceColumn="height" DataSetColumn="height" />
+              <Mapping SourceColumn="shoe_size" DataSetColumn="shoe_size" />
+              <Mapping SourceColumn="shoe_type" DataSetColumn="shoe_type" />
+              <Mapping SourceColumn="Shipping_Address" DataSetColumn="Shipping_Address" />
+              <Mapping SourceColumn="Diagnosis" DataSetColumn="Diagnosis" />
+              <Mapping SourceColumn="Left_NCB" DataSetColumn="Left_NCB" />
+              <Mapping SourceColumn="Right_NCB" DataSetColumn="Right_NCB" />
+              <Mapping SourceColumn="HCD" DataSetColumn="HCD" />
+              <Mapping SourceColumn="HCD_Other" DataSetColumn="HCD_Other" />
+              <Mapping SourceColumn="Raise_ArchFill" DataSetColumn="Raise_ArchFill" />
+              <Mapping SourceColumn="Lower_ArchFill" DataSetColumn="Lower_ArchFill" />
+              <Mapping SourceColumn="SameasCast" DataSetColumn="SameasCast" />
+              <Mapping SourceColumn="ImageScale" DataSetColumn="ImageScale" />
+              <Mapping SourceColumn="BaseShell" DataSetColumn="BaseShell" />
+              <Mapping SourceColumn="Grinding" DataSetColumn="Grinding" />
+              <Mapping SourceColumn="KBS" DataSetColumn="KBS" />
+              <Mapping SourceColumn="KBS_Left" DataSetColumn="KBS_Left" />
+              <Mapping SourceColumn="KBS_Right" DataSetColumn="KBS_Right" />
+              <Mapping SourceColumn="Post_Material" DataSetColumn="Post_Material" />
+              <Mapping SourceColumn="ERP_Option" DataSetColumn="ERP_Option" />
+              <Mapping SourceColumn="RFP_Left" DataSetColumn="RFP_Left" />
+              <Mapping SourceColumn="RFP_Right" DataSetColumn="RFP_Right" />
+              <Mapping SourceColumn="FFP_Left" DataSetColumn="FFP_Left" />
+              <Mapping SourceColumn="FFP_Right" DataSetColumn="FFP_Right" />
+              <Mapping SourceColumn="Wedge" DataSetColumn="Wedge" />
+              <Mapping SourceColumn="Extensions" DataSetColumn="Extensions" />
+              <Mapping SourceColumn="TopCover" DataSetColumn="TopCover" />
+              <Mapping SourceColumn="Bottom_Cover" DataSetColumn="Bottom_Cover" />
+              <Mapping SourceColumn="Logo" DataSetColumn="Logo" />
+              <Mapping SourceColumn="ReturnPositive" DataSetColumn="ReturnPositive" />
+              <Mapping SourceColumn="ShellModifications_L" DataSetColumn="ShellModifications_L" />
+              <Mapping SourceColumn="ShellModifications_R" DataSetColumn="ShellModifications_R" />
+              <Mapping SourceColumn="SoftModifications_L" DataSetColumn="SoftModifications_L" />
+              <Mapping SourceColumn="SoftModifications_R" DataSetColumn="SoftModifications_R" />
+              <Mapping SourceColumn="SubCutOut" DataSetColumn="SubCutOut" />
+              <Mapping SourceColumn="SubCutOut_R" DataSetColumn="SubCutOut_R" />
+              <Mapping SourceColumn="SubCutOut_L" DataSetColumn="SubCutOut_L" />
+              <Mapping SourceColumn="Notes" DataSetColumn="Notes" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="ImageOrthoDBConnectionString (Web.config)" DbObjectName="ImageOrthoDB.dbo.OrderSummary" DbObjectType="View" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetDataBy" GeneratorSourceName="FillBy" GetMethodModifier="Public" GetMethodName="GetDataBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT Order_ID, Status, Cast_Number, PurchaseOrder, TypeofOrthotic, PreSelection, No_of_Orthotics, CustomerName, Factory, OrderDate, PatientName, Daterequired, Age, Gender, weight, height, shoe_size, shoe_type, Shipping_Address, Diagnosis, Left_NCB, Right_NCB, HCD, HCD_Other, Raise_ArchFill, Lower_ArchFill, SameasCast, ImageScale, BaseShell, Grinding, KBS, KBS_Left, KBS_Right, Post_Material, ERP_Option, RFP_Left, RFP_Right, FFP_Left, FFP_Right, Wedge, Extensions, TopCover, Bottom_Cover, Logo, ReturnPositive, ShellModifications_L, ShellModifications_R, SoftModifications_L, SoftModifications_R, SubCutOut, SubCutOut_R, SubCutOut_L, Notes FROM dbo.OrderSummary where Order_ID = @OID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="OID" ColumnName="Order_ID" DataSourceName="ImageOrthoDB.dbo.OrderSummary" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@OID" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="Order_ID" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="OSDataset1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="OSDataset1" msprop:Generator_UserDSName="OSDataset1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="OrderSummary" msprop:Generator_TableClassName="OrderSummaryDataTable" msprop:Generator_TableVarName="tableOrderSummary" msprop:Generator_RowChangedName="OrderSummaryRowChanged" msprop:Generator_TablePropName="OrderSummary" msprop:Generator_RowDeletingName="OrderSummaryRowDeleting" msprop:Generator_RowChangingName="OrderSummaryRowChanging" msprop:Generator_RowEvHandlerName="OrderSummaryRowChangeEventHandler" msprop:Generator_RowDeletedName="OrderSummaryRowDeleted" msprop:Generator_RowClassName="OrderSummaryRow" msprop:Generator_UserTableName="OrderSummary" msprop:Generator_RowEvArgName="OrderSummaryRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Order_ID" msprop:Generator_ColumnVarNameInTable="columnOrder_ID" msprop:Generator_ColumnPropNameInRow="Order_ID" msprop:Generator_ColumnPropNameInTable="Order_IDColumn" msprop:Generator_UserColumnName="Order_ID" type="xs:int" />
+              <xs:element name="Status" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnStatus" msprop:Generator_ColumnPropNameInRow="Status" msprop:Generator_ColumnPropNameInTable="StatusColumn" msprop:Generator_UserColumnName="Status" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Cast_Number" msprop:Generator_ColumnVarNameInTable="columnCast_Number" msprop:Generator_ColumnPropNameInRow="Cast_Number" msprop:Generator_ColumnPropNameInTable="Cast_NumberColumn" msprop:Generator_UserColumnName="Cast_Number">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PurchaseOrder" msprop:Generator_ColumnVarNameInTable="columnPurchaseOrder" msprop:Generator_ColumnPropNameInRow="PurchaseOrder" msprop:Generator_ColumnPropNameInTable="PurchaseOrderColumn" msprop:Generator_UserColumnName="PurchaseOrder" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TypeofOrthotic" msprop:Generator_ColumnVarNameInTable="columnTypeofOrthotic" msprop:Generator_ColumnPropNameInRow="TypeofOrthotic" msprop:Generator_ColumnPropNameInTable="TypeofOrthoticColumn" msprop:Generator_UserColumnName="TypeofOrthotic" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PreSelection" msprop:Generator_ColumnVarNameInTable="columnPreSelection" msprop:Generator_ColumnPropNameInRow="PreSelection" msprop:Generator_ColumnPropNameInTable="PreSelectionColumn" msprop:Generator_UserColumnName="PreSelection" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="No_of_Orthotics" msprop:Generator_ColumnVarNameInTable="columnNo_of_Orthotics" msprop:Generator_ColumnPropNameInRow="No_of_Orthotics" msprop:Generator_ColumnPropNameInTable="No_of_OrthoticsColumn" msprop:Generator_UserColumnName="No_of_Orthotics" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Factory" msprop:Generator_ColumnVarNameInTable="columnFactory" msprop:Generator_ColumnPropNameInRow="Factory" msprop:Generator_ColumnPropNameInTable="FactoryColumn" msprop:Generator_UserColumnName="Factory" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OrderDate" msprop:Generator_ColumnVarNameInTable="columnOrderDate" msprop:Generator_ColumnPropNameInRow="OrderDate" msprop:Generator_ColumnPropNameInTable="OrderDateColumn" msprop:Generator_UserColumnName="OrderDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="PatientName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPatientName" msprop:Generator_ColumnPropNameInRow="PatientName" msprop:Generator_ColumnPropNameInTable="PatientNameColumn" msprop:Generator_UserColumnName="PatientName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="202" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Daterequired" msprop:Generator_ColumnVarNameInTable="columnDaterequired" msprop:Generator_ColumnPropNameInRow="Daterequired" msprop:Generator_ColumnPropNameInTable="DaterequiredColumn" msprop:Generator_UserColumnName="Daterequired" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Age" msprop:Generator_ColumnVarNameInTable="columnAge" msprop:Generator_ColumnPropNameInRow="Age" msprop:Generator_ColumnPropNameInTable="AgeColumn" msprop:Generator_UserColumnName="Age">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Gender" msprop:Generator_ColumnVarNameInTable="columnGender" msprop:Generator_ColumnPropNameInRow="Gender" msprop:Generator_ColumnPropNameInTable="GenderColumn" msprop:Generator_UserColumnName="Gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="weight" msprop:Generator_ColumnVarNameInTable="columnweight" msprop:Generator_ColumnPropNameInRow="weight" msprop:Generator_ColumnPropNameInTable="weightColumn" msprop:Generator_UserColumnName="weight" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="height" msprop:Generator_ColumnVarNameInTable="columnheight" msprop:Generator_ColumnPropNameInRow="height" msprop:Generator_ColumnPropNameInTable="heightColumn" msprop:Generator_UserColumnName="height" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shoe_size" msprop:Generator_ColumnVarNameInTable="columnshoe_size" msprop:Generator_ColumnPropNameInRow="shoe_size" msprop:Generator_ColumnPropNameInTable="shoe_sizeColumn" msprop:Generator_UserColumnName="shoe_size" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="shoe_type" msprop:Generator_ColumnVarNameInTable="columnshoe_type" msprop:Generator_ColumnPropNameInRow="shoe_type" msprop:Generator_ColumnPropNameInTable="shoe_typeColumn" msprop:Generator_UserColumnName="shoe_type" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Shipping_Address" msprop:Generator_ColumnVarNameInTable="columnShipping_Address" msprop:Generator_ColumnPropNameInRow="Shipping_Address" msprop:Generator_ColumnPropNameInTable="Shipping_AddressColumn" msprop:Generator_UserColumnName="Shipping_Address" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Diagnosis" msprop:Generator_ColumnVarNameInTable="columnDiagnosis" msprop:Generator_ColumnPropNameInRow="Diagnosis" msprop:Generator_ColumnPropNameInTable="DiagnosisColumn" msprop:Generator_UserColumnName="Diagnosis" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Left_NCB" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLeft_NCB" msprop:Generator_ColumnPropNameInRow="Left_NCB" msprop:Generator_ColumnPropNameInTable="Left_NCBColumn" msprop:Generator_UserColumnName="Left_NCB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="41" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Right_NCB" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRight_NCB" msprop:Generator_ColumnPropNameInRow="Right_NCB" msprop:Generator_ColumnPropNameInTable="Right_NCBColumn" msprop:Generator_UserColumnName="Right_NCB" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="41" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HCD" msprop:Generator_ColumnVarNameInTable="columnHCD" msprop:Generator_ColumnPropNameInRow="HCD" msprop:Generator_ColumnPropNameInTable="HCDColumn" msprop:Generator_UserColumnName="HCD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="HCD_Other" msprop:Generator_ColumnVarNameInTable="columnHCD_Other" msprop:Generator_ColumnPropNameInRow="HCD_Other" msprop:Generator_ColumnPropNameInTable="HCD_OtherColumn" msprop:Generator_UserColumnName="HCD_Other" type="xs:int" minOccurs="0" />
+              <xs:element name="Raise_ArchFill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRaise_ArchFill" msprop:Generator_ColumnPropNameInRow="Raise_ArchFill" msprop:Generator_ColumnPropNameInTable="Raise_ArchFillColumn" msprop:Generator_UserColumnName="Raise_ArchFill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="119" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lower_ArchFill" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLower_ArchFill" msprop:Generator_ColumnPropNameInRow="Lower_ArchFill" msprop:Generator_ColumnPropNameInTable="Lower_ArchFillColumn" msprop:Generator_UserColumnName="Lower_ArchFill" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="119" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SameasCast" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSameasCast" msprop:Generator_ColumnPropNameInRow="SameasCast" msprop:Generator_ColumnPropNameInTable="SameasCastColumn" msprop:Generator_UserColumnName="SameasCast" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="12" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ImageScale" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnImageScale" msprop:Generator_ColumnPropNameInRow="ImageScale" msprop:Generator_ColumnPropNameInTable="ImageScaleColumn" msprop:Generator_UserColumnName="ImageScale" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="81" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="BaseShell" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBaseShell" msprop:Generator_ColumnPropNameInRow="BaseShell" msprop:Generator_ColumnPropNameInTable="BaseShellColumn" msprop:Generator_UserColumnName="BaseShell" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="360" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Grinding" msprop:Generator_ColumnVarNameInTable="columnGrinding" msprop:Generator_ColumnPropNameInRow="Grinding" msprop:Generator_ColumnPropNameInTable="GrindingColumn" msprop:Generator_UserColumnName="Grinding" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KBS" msprop:Generator_ColumnVarNameInTable="columnKBS" msprop:Generator_ColumnPropNameInRow="KBS" msprop:Generator_ColumnPropNameInTable="KBSColumn" msprop:Generator_UserColumnName="KBS" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KBS_Left" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKBS_Left" msprop:Generator_ColumnPropNameInRow="KBS_Left" msprop:Generator_ColumnPropNameInTable="KBS_LeftColumn" msprop:Generator_UserColumnName="KBS_Left" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="107" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="KBS_Right" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnKBS_Right" msprop:Generator_ColumnPropNameInRow="KBS_Right" msprop:Generator_ColumnPropNameInTable="KBS_RightColumn" msprop:Generator_UserColumnName="KBS_Right" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="108" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Post_Material" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnPost_Material" msprop:Generator_ColumnPropNameInRow="Post_Material" msprop:Generator_ColumnPropNameInTable="Post_MaterialColumn" msprop:Generator_UserColumnName="Post_Material" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ERP_Option" msprop:Generator_ColumnVarNameInTable="columnERP_Option" msprop:Generator_ColumnPropNameInRow="ERP_Option" msprop:Generator_ColumnPropNameInTable="ERP_OptionColumn" msprop:Generator_UserColumnName="ERP_Option" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFP_Left" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRFP_Left" msprop:Generator_ColumnPropNameInRow="RFP_Left" msprop:Generator_ColumnPropNameInTable="RFP_LeftColumn" msprop:Generator_UserColumnName="RFP_Left" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="78" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="RFP_Right" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnRFP_Right" msprop:Generator_ColumnPropNameInRow="RFP_Right" msprop:Generator_ColumnPropNameInTable="RFP_RightColumn" msprop:Generator_UserColumnName="RFP_Right" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="79" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFP_Left" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFFP_Left" msprop:Generator_ColumnPropNameInRow="FFP_Left" msprop:Generator_ColumnPropNameInTable="FFP_LeftColumn" msprop:Generator_UserColumnName="FFP_Left" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="80" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FFP_Right" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnFFP_Right" msprop:Generator_ColumnPropNameInRow="FFP_Right" msprop:Generator_ColumnPropNameInTable="FFP_RightColumn" msprop:Generator_UserColumnName="FFP_Right" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="81" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Wedge" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnWedge" msprop:Generator_ColumnPropNameInRow="Wedge" msprop:Generator_ColumnPropNameInTable="WedgeColumn" msprop:Generator_UserColumnName="Wedge" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="76" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Extensions" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnExtensions" msprop:Generator_ColumnPropNameInRow="Extensions" msprop:Generator_ColumnPropNameInTable="ExtensionsColumn" msprop:Generator_UserColumnName="Extensions" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="684" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TopCover" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnTopCover" msprop:Generator_ColumnPropNameInRow="TopCover" msprop:Generator_ColumnPropNameInTable="TopCoverColumn" msprop:Generator_UserColumnName="TopCover" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="221" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Bottom_Cover" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBottom_Cover" msprop:Generator_ColumnPropNameInRow="Bottom_Cover" msprop:Generator_ColumnPropNameInTable="Bottom_CoverColumn" msprop:Generator_UserColumnName="Bottom_Cover" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="224" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Logo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnLogo" msprop:Generator_ColumnPropNameInRow="Logo" msprop:Generator_ColumnPropNameInTable="LogoColumn" msprop:Generator_UserColumnName="Logo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ReturnPositive" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnReturnPositive" msprop:Generator_ColumnPropNameInRow="ReturnPositive" msprop:Generator_ColumnPropNameInTable="ReturnPositiveColumn" msprop:Generator_UserColumnName="ReturnPositive" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellModifications_L" msprop:Generator_ColumnVarNameInTable="columnShellModifications_L" msprop:Generator_ColumnPropNameInRow="ShellModifications_L" msprop:Generator_ColumnPropNameInTable="ShellModifications_LColumn" msprop:Generator_UserColumnName="ShellModifications_L">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ShellModifications_R" msprop:Generator_ColumnVarNameInTable="columnShellModifications_R" msprop:Generator_ColumnPropNameInRow="ShellModifications_R" msprop:Generator_ColumnPropNameInTable="ShellModifications_RColumn" msprop:Generator_UserColumnName="ShellModifications_R">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoftModifications_L" msprop:Generator_ColumnVarNameInTable="columnSoftModifications_L" msprop:Generator_ColumnPropNameInRow="SoftModifications_L" msprop:Generator_ColumnPropNameInTable="SoftModifications_LColumn" msprop:Generator_UserColumnName="SoftModifications_L">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SoftModifications_R" msprop:Generator_ColumnVarNameInTable="columnSoftModifications_R" msprop:Generator_ColumnPropNameInRow="SoftModifications_R" msprop:Generator_ColumnPropNameInTable="SoftModifications_RColumn" msprop:Generator_UserColumnName="SoftModifications_R">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubCutOut" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSubCutOut" msprop:Generator_ColumnPropNameInRow="SubCutOut" msprop:Generator_ColumnPropNameInTable="SubCutOutColumn" msprop:Generator_UserColumnName="SubCutOut" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="21" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubCutOut_R" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSubCutOut_R" msprop:Generator_ColumnPropNameInRow="SubCutOut_R" msprop:Generator_ColumnPropNameInTable="SubCutOut_RColumn" msprop:Generator_UserColumnName="SubCutOut_R" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SubCutOut_L" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnSubCutOut_L" msprop:Generator_ColumnPropNameInRow="SubCutOut_L" msprop:Generator_ColumnPropNameInTable="SubCutOut_LColumn" msprop:Generator_UserColumnName="SubCutOut_L" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Notes" msprop:Generator_ColumnVarNameInTable="columnNotes" msprop:Generator_ColumnPropNameInRow="Notes" msprop:Generator_ColumnPropNameInTable="NotesColumn" msprop:Generator_UserColumnName="Notes">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
