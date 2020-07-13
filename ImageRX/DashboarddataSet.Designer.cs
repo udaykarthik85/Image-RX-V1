@@ -509,7 +509,7 @@ namespace ImageRX {
                 this.columnOrderID.AllowDBNull = false;
                 this.columnCast_Number.AllowDBNull = false;
                 this.columnStatus.ReadOnly = true;
-                this.columnStatus.MaxLength = 50;
+                this.columnStatus.MaxLength = 20;
                 this.columnshoe_type.MaxLength = 100;
                 this.columnPhysician.MaxLength = 100;
                 this.columnpatient_Name.AllowDBNull = false;

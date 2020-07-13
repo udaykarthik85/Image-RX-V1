@@ -65,8 +65,9 @@
                     </span>
                     <asp:DropDownList ID="DropDownList38" runat="server" Height="25px" Width="167px" AutoPostBack="true" style="font-size: 9pt">
                         <asp:ListItem></asp:ListItem>
-                        <asp:ListItem>California</asp:ListItem>
-                        <asp:ListItem>Mexico</asp:ListItem>
+                        <asp:ListItem>iOrthotics - NYC</asp:ListItem>
+                        <asp:ListItem>XYZ - NYC</asp:ListItem>
+                        <asp:ListItem>XYZ - California</asp:ListItem>
                     </asp:DropDownList>
                 </td>
                 <td><span style="font-size: 9pt">Order Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

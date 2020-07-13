@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ImageRX {
+namespace test {
     
     
     public partial class SiteMaster {

@@ -38,6 +38,7 @@
                 <asp:BoundField DataField="Daterequired" HeaderText="Daterequired" SortExpression="Daterequired" />
                 <asp:HyperLinkField DataNavigateUrlFields="OrderID" DataNavigateUrlFormatString="http://imagerx.azurewebsites.net/ReportPage?id={0}" Text="Print" />
                 <asp:HyperLinkField DataNavigateUrlFields="OrderID" DataNavigateUrlFormatString="http://imagerx.azurewebsites.net/OrderAction?id={0}" Text="Process" />
+                <asp:HyperLinkField DataNavigateUrlFields="OrderID" DataNavigateUrlFormatString="https://imagerx.azurewebsites.net/Invoice?id={0}" Text="Invoice" />
             </Columns>
             <EditRowStyle BackColor="#999999" />
             <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />

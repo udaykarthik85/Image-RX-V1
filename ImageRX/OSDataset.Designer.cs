@@ -1209,7 +1209,7 @@ namespace ImageRX {
                 this.columnSameasCast.MaxLength = 12;
                 this.columnImageScale.ReadOnly = true;
                 this.columnImageScale.MaxLength = 81;
-                this.columnBaseShell.MaxLength = 200;
+                this.columnBaseShell.MaxLength = 100;
                 this.columnGrinding.MaxLength = 50;
                 this.columnKBS.MaxLength = 50;
                 this.columnKBS_Left.ReadOnly = true;
