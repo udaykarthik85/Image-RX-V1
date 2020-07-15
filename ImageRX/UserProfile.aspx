@@ -15,7 +15,8 @@
                 <td class="text-center" colspan="3">Welcome @Username! Please complete your Profile to move forward with Ordering Process. </td>
             </tr>
             <tr>
-                <td style="width: 340px">Do you work for registered Practice:<asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" />
+                <td style="width: 340px">Do you work for registered Practice:<br />
+                    <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" />
                     Yes
                     <asp:RadioButton ID="RadioButton2" runat="server" />
                     No</td>
