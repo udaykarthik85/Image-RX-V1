@@ -12,13 +12,18 @@
                 <table style="width: 99%;">
                     <tr>
                         <td class="text-center">
-                            <img alt="New Order" src="Images/NewOrder.png" style="width: 167px; height: 172px" /></td>
+                            <img alt="" src="Images/User%20Profile.png" style="width: 165px; height: 170px" /></td>
                         <td class="text-center">
-                            <img alt="manage" src="Images/EditOrder.png" style="width: 169px; height: 172px" /></td>
+                            <img alt="New Order" src="Images/NewOrder.png" style="width: 165px; height: 170px" /></td>
                         <td class="text-center">
-                            <img alt="Report" src="Images/Report.png" style="width: 166px; height: 172px" /></td>
+                            <img alt="manage" src="Images/EditOrder.png" style="width: 165px; height: 170px" /></td>
+                        <td class="text-center">
+                            <img alt="Report" src="Images/Report.png" style="width: 165px; height: 170px" /></td>
                     </tr>
                     <tr>
+                        <td class="text-center">
+                            <asp:Button ID="Button4" runat="server" Text="User Profile" OnClick="Button4_Click" />
+                        </td>
                         <td class="text-center">
                             <asp:Button ID="Button1" runat="server" Text="New Order" Width="118px" OnClick="Button1_Click" />
                         </td>
@@ -30,6 +35,7 @@
                         </td>
                     </tr>
                     <tr>
+                        <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
