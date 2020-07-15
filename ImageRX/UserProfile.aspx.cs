@@ -25,9 +25,11 @@ namespace ImageRX
 
         }
 
-        protected void RadioButton1_CheckedChanged(object sender, EventArgs e)
+       
+
+        protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(RadioButton1.Checked == true)
+            if(RadioButtonList1.SelectedIndex ==0)
             {
                 DropDownList1.Visible = true;
                 DropDownList1.Enabled = true;

@@ -16,12 +16,13 @@
             </tr>
             <tr>
                 <td style="width: 340px">Do you work for registered Practice:<br />
-                    <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" />
-                    Yes
-                    <asp:RadioButton ID="RadioButton2" runat="server" />
-                    No</td>
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
+                        <asp:ListItem>Yes</asp:ListItem>
+                        <asp:ListItem>No</asp:ListItem>
+                    </asp:RadioButtonList>
+                </td>
                 <td colspan="2">If Yes Select your Practice:
-                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="customerDS" DataTextField="DisplayName" DataValueField="DisplayName" Enabled="False" Visible="False">
+                    <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="customerDS" DataTextField="DisplayName" DataValueField="DisplayName" >
                     </asp:DropDownList>
                     <asp:SqlDataSource ID="customerDS" runat="server" ConnectionString="<%$ ConnectionStrings:ImageOrthoDBConnectionString %>" SelectCommand="SELECT [DisplayName] FROM [QBO_Customer]"></asp:SqlDataSource>
                 </td>
