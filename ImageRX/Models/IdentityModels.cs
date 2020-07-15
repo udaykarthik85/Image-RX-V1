@@ -92,7 +92,7 @@ namespace ImageRX
             }
             else
             {
-                response.Redirect("~/");
+                response.Redirect("../Home.aspx");
             }
         }
     }
