@@ -1,7 +1,23 @@
 ﻿<%@ Page Title="File Uploads" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="FileUploads.aspx.cs" Inherits="ImageRX.FileUploads" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %>Please upload scanned images</h2>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-12">
+                
+            <h2 style="margin-top:20px">Scan and Upload Images using TECHMED</h2>
+            <hr />
+                <div class="col-md-8">
+                    <label class="control-label">Scan Image with 3DSizeMe:</label>
+                    <input type="button" value="Scan-3DSizeMe" onclick="launch3DsizeME()" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%--<h2><%: Title %>Please upload scanned images</h2>
     <h3>
         <table style="width:100%; font-size: xx-small; border-color: black">
                         <tr>
@@ -64,5 +80,5 @@
             &nbsp;
             </p>
     <p>
-                &nbsp;</p>
+                &nbsp;</p>--%>
 </asp:Content>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        function launch3DsizeME() {
+            var encodedData = btoa(
+            '{\
+ "Token": "JWT 3232322323211",\
+ "URL": "https://myportal.com/v1/upload",\
+ "FirstName": "John",\
+ "LastName": "Doe",\
+ "Email": "john.doe@mail.com",\
+ "PatientId": "12343",\
+ "Gender": "Male",\
+ "Browser": "Chrome",\
+ "returnURL": "ignored_for_chrome",\
+ "httpHeaderFieldParameters": {\
+ "x-api-key": "04f495432311aae2ec962370e25"\
+ },\
+ "bodyParameters": {\
+ "myBodyParameters": {\
+ "param1": "bodyParamValue1",\
+"param2": "bodyParamValue2"\
+ }\
+ }\
+ }');
+            document.getElementById("encoded").innerHTML = 'Encoded :' + encodedData;
+            document.getElementById("decoded").innerHTML = 'Decoded : ' + atob(encodedData);
+            location = 'tm3d-in-3dsizeme://' + encodedData;
+        } </script>
+    <h2>3DsizeME</h2>
+    <p id="encoded"></p>
+    <p id="decoded"></p>
+    <button onclick="launch3DsizeME()" type="button">Scan!</button>
+</body>
+</html>
