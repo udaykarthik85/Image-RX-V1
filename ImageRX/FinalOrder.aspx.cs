@@ -1,4 +1,9 @@
-﻿using System;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Drive.v3;
+using Google.Apis.Download;
+using Google.Apis.Services;
+using Google.Apis.Util.Store;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -8,16 +13,19 @@ using System.Web;
 using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Threading;
 
 namespace ImageRX
 {
     public partial class FinalOrder: Page
     {
+        public static string[] Scopes = { Google.Apis.Drive.v3.DriveService.Scope.Drive };
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-                int pid = (int)(Session["IDValue"]);
-                    con.Open();
+            int pid = (int)(Session["IDValue"]);
+           // int pid = 17;
+            con.Open();
              SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_OrderDetails] WHERE [Order_id]= '" + pid + "'", con);
             SqlDataReader reader = com.ExecuteReader();
 
@@ -39,14 +47,77 @@ namespace ImageRX
             }
             reader.Close();
             con.Close();
+
+        
         }
         protected void OrderSummary_Click(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-            int pid = (int)(Session["IDValue"]);
+             int pid = (int)(Session["IDValue"]);
+           // int pid = 17;
             con.Open();
             SqlCommand com = new SqlCommand("update [dbo].[tbl_Order] SET [OrderStatus] = 'Submitted' where [OrderID] = "+pid+"", con);
+            CreateFolderInFolder("1SgplfMVE8Uo7KrUY_MUWny-9PYabXY5H", pid.ToString());
             Response.Redirect("Thankyou.aspx");
+
+        }
+
+        //create Drive API service.    
+        public static Google.Apis.Drive.v3.DriveService GetService()
+        {
+            //get Credentials from client_secret.json file     
+            UserCredential credential;
+            var CSPath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
+
+            using (var stream = new FileStream(Path.Combine(CSPath, "client_secret_desk.json"), FileMode.Open, FileAccess.Read))
+            {
+                String FolderPath = System.Web.Hosting.HostingEnvironment.MapPath("~/"); ;
+                String FilePath = Path.Combine(FolderPath, "DriveServiceCredentials.json");
+
+                credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                    GoogleClientSecrets.Load(stream).Secrets,
+                    Scopes,
+                    "user",
+                    CancellationToken.None,
+                   
+                    new FileDataStore(FilePath, true)).Result;
+            }
+            
+
+            //create Drive API service.    
+            Google.Apis.Drive.v3.DriveService service = new Google.Apis.Drive.v3.DriveService(new BaseClientService.Initializer()
+            {
+                HttpClientInitializer = credential,
+                ApplicationName = "ImageRX",
+            });
+            return service;
+        }
+       
+
+        public static void CreateFolderInFolder(string folderId, string FolderName)
+        {
+
+            Google.Apis.Drive.v3.DriveService service = GetService();
+
+            var FileMetaData = new Google.Apis.Drive.v3.Data.File()
+            {
+                Name = Path.GetFileName(FolderName),
+                MimeType = "application/vnd.google-apps.folder",
+                Parents = new List<string>
+                   {
+                       folderId
+                   }
+            };
+
+
+            Google.Apis.Drive.v3.FilesResource.CreateRequest request;
+
+            request = service.Files.Create(FileMetaData);
+            request.Fields = "id";
+            var file = request.Execute();
+            Console.WriteLine("Folder ID: " + file.Id);
+
+            var file1 = request;
 
         }
 
