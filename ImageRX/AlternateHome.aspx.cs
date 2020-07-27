@@ -372,7 +372,7 @@ namespace ImageRX
                 da.InsertCommand = new SqlCommand(sql7, con);
                 j = da.InsertCommand.ExecuteNonQuery();
 
-                Response.Redirect("FileUploads.aspx");
+                Response.Redirect("FinalOrder.aspx");
 
 
 

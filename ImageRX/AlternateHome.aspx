@@ -1325,7 +1325,7 @@
             </tr>
             <tr>
                 <td class="text-center" colspan="2">
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Go To File Uploads" />
+                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Review the Final Order" />
                 </td>
             </tr>
             </table>
