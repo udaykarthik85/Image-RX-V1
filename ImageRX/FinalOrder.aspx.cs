@@ -57,7 +57,7 @@ namespace ImageRX
            // int pid = 17;
             con.Open();
             SqlCommand com = new SqlCommand("update [dbo].[tbl_Order] SET [OrderStatus] = 'Submitted' where [OrderID] = "+pid+"", con);
-            CreateFolderInFolder("1SgplfMVE8Uo7KrUY_MUWny-9PYabXY5H", pid.ToString());
+            CreateFolderInFolder("1UlRwFKA_RlHOa0FZlU-PqCcgRdVQcbAz", pid.ToString());
             Response.Redirect("Thankyou.aspx");
 
         }
@@ -69,7 +69,7 @@ namespace ImageRX
             UserCredential credential;
             var CSPath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
 
-            using (var stream = new FileStream(Path.Combine(CSPath, "client_secret_desk.json"), FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(Path.Combine(CSPath, "client_secret.json"), FileMode.Open, FileAccess.Read))
             {
                 String FolderPath = System.Web.Hosting.HostingEnvironment.MapPath("~/"); ;
                 String FilePath = Path.Combine(FolderPath, "DriveServiceCredentials.json");

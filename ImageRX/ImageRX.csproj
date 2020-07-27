@@ -411,11 +411,7 @@
     <Content Include="DashboarddataSet.xsc">
       <DependentUpon>DashboarddataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="client_secret.json">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="client_secret_test.json" />
-    <Content Include="client_secret_desk.json" />
+    <Content Include="client_secret.json" />
     <None Include="DashboarddataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DashboarddataSet.Designer.cs</LastGenOutput>
