@@ -16,7 +16,8 @@ namespace ImageRX
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-                int pid = (int)(Session["IDValue"]);
+             int pid = (int)(Session["IDValue"]);
+            //int pid = 17;
             int i = 0;
             
                     con.Open();

@@ -23,7 +23,7 @@ namespace ImageRX
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-            int pid = (int)(Session["IDValue"]);
+           int pid = (int)(Session["IDValue"]);
            // int pid = 17;
             con.Open();
              SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_OrderDetails] WHERE [Order_id]= '" + pid + "'", con);
@@ -52,13 +52,15 @@ namespace ImageRX
         }
         protected void OrderSummary_Click(object sender, EventArgs e)
         {
-            SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-             int pid = (int)(Session["IDValue"]);
-           // int pid = 17;
-            con.Open();
-            SqlCommand com = new SqlCommand("update [dbo].[tbl_Order] SET [OrderStatus] = 'Submitted' where [OrderID] = "+pid+"", con);
-            CreateFolderInFolder("1UlRwFKA_RlHOa0FZlU-PqCcgRdVQcbAz", pid.ToString());
-            Response.Redirect("Thankyou.aspx");
+  
+                SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
+               int pid = (int)(Session["IDValue"]);
+               // int pid = 17;
+                con.Open();
+                SqlCommand com = new SqlCommand("update [dbo].[tbl_Order] SET [OrderStatus] = 'Submitted' where [OrderID] = " + pid + "", con);
+                CreateFolderInFolder("1UlRwFKA_RlHOa0FZlU-PqCcgRdVQcbAz", pid.ToString());
+                Response.Redirect("Thankyou.aspx");
+  
 
         }
 
