@@ -368,6 +368,7 @@
     <Content Include="Account\ResetPasswordConfirmation.aspx" />
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
+    <Content Include="bin\ImageRX.dll" />
     <Content Include="google6f63bfad17140fb5.html" />
     <Content Include="Scripts\WebForms\3DSizeMe.js" />
     <Content Include="UserProfile.aspx" />
@@ -412,7 +413,10 @@
     <Content Include="DashboarddataSet.xsc">
       <DependentUpon>DashboarddataSet.xsd</DependentUpon>
     </Content>
-    <Content Include="client_secret.json" />
+    <Content Include="client_secret.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="credentials.json" />
     <None Include="DashboarddataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DashboarddataSet.Designer.cs</LastGenOutput>
@@ -433,6 +437,7 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
     <Fakes Include="Fakes\Newtonsoft.Json.fakes" />
+    <Content Include="DriveToken.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
     <None Include="ImageOrthoDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ImageOrthoDBDataSet.Designer.cs</LastGenOutput>
@@ -578,7 +583,6 @@
     <Content Include="Site.Mobile.Master" />
     <Content Include="Views\web.config" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
-    <Content Include="test.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

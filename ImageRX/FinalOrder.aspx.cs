@@ -19,12 +19,15 @@ namespace ImageRX
 {
     public partial class FinalOrder: Page
     {
+        
         public static string[] Scopes = { Google.Apis.Drive.v3.DriveService.Scope.Drive };
+        string cast_number = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+          // Session["IDValue"] = 17;
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
            int pid = (int)(Session["IDValue"]);
-           // int pid = 17;
+          //  int pid = 17;
             con.Open();
              SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_OrderDetails] WHERE [Order_id]= '" + pid + "'", con);
             SqlDataReader reader = com.ExecuteReader();
@@ -32,6 +35,7 @@ namespace ImageRX
             while (reader.Read())
             {
                 Label1.Text = reader["Cast_Number"].ToString();
+                cast_number = reader["Cast_Number"].ToString();
                 Label2.Text = reader["Patient_FirstName"].ToString()+" " + reader["Patient_LastName"].ToString();
                 Label28.Text = reader["CustomerName"].ToString();
                 Label29.Text = reader["Daterequired"].ToString();
@@ -55,10 +59,10 @@ namespace ImageRX
   
                 SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
                int pid = (int)(Session["IDValue"]);
-               // int pid = 17;
+              //int pid = 17;
                 con.Open();
                 SqlCommand com = new SqlCommand("update [dbo].[tbl_Order] SET [OrderStatus] = 'Submitted' where [OrderID] = " + pid + "", con);
-                CreateFolderInFolder("1UlRwFKA_RlHOa0FZlU-PqCcgRdVQcbAz", pid.ToString());
+                CreateFolderInFolder("1RzPg6xuJbwl94QA83CA8PctXS-Lf4HTI", cast_number);
                 Response.Redirect("Thankyou.aspx");
   
 
@@ -71,17 +75,16 @@ namespace ImageRX
             UserCredential credential;
             var CSPath = System.Web.Hosting.HostingEnvironment.MapPath("~/");
 
-            using (var stream = new FileStream(Path.Combine(CSPath, "client_secret.json"), FileMode.Open, FileAccess.Read))
+            using (var stream = new FileStream(Path.Combine(CSPath, "credentials.json"), FileMode.Open, FileAccess.Read))
             {
                 String FolderPath = System.Web.Hosting.HostingEnvironment.MapPath("~/"); ;
-                String FilePath = Path.Combine(FolderPath, "DriveServiceCredentials.json");
+                String FilePath = Path.Combine(FolderPath, "DriveToken.json");
 
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
                     GoogleClientSecrets.Load(stream).Secrets,
                     Scopes,
                     "user",
-                    CancellationToken.None,
-                   
+                    CancellationToken.None,                 
                     new FileDataStore(FilePath, true)).Result;
             }
             
