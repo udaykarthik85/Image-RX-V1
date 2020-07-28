@@ -442,9 +442,7 @@
     <Content Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Content>
-    <Fakes Include="Fakes\Newtonsoft.Json.fakes" />
     <Content Include="DriveToken.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user" />
-    <Fakes Include="Fakes\Newtonsoft.Json01.fakes" />
     <None Include="ImageOrthoDBDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ImageOrthoDBDataSet.Designer.cs</LastGenOutput>
@@ -939,6 +937,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Fakes\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
