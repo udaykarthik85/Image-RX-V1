@@ -26,7 +26,7 @@ namespace ImageRX
         protected void Page_Load(object sender, EventArgs e)
         {
             SqlConnection con = new SqlConnection("Data Source=orthodbserver.database.windows.net;Initial Catalog=ImageOrthoDB;Integrated Security=False;User ID=serveradmin;password=User$179317$;");
-            string pid = "74";//Request.QueryString["id"];
+            string pid = Request.QueryString["id"];
                     con.Open();
              SqlCommand com = new SqlCommand("Select * from [dbo].[tbl_OrderDetails] WHERE [Order_id]= '" + pid + "'", con);
             SqlDataReader reader = com.ExecuteReader();
